@@ -11,10 +11,16 @@
 		7A72805728922C7F00CF96E3 /* ProfileSettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A72805528922C7F00CF96E3 /* ProfileSettingViewModel.swift */; };
 		7A7280592892380500CF96E3 /* NoteListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7280582892380500CF96E3 /* NoteListViewModel.swift */; };
 		7A72805A2892380500CF96E3 /* NoteListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7280582892380500CF96E3 /* NoteListViewModel.swift */; };
+		7A7A4ED62892830B00EAB56F /* MarkdownEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7A4ED52892830B00EAB56F /* MarkdownEditorViewModel.swift */; };
+		7A7A4ED72892830B00EAB56F /* MarkdownEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7A4ED52892830B00EAB56F /* MarkdownEditorViewModel.swift */; };
 		7AB413FA2892677C008680C5 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB413F92892677C008680C5 /* HomeViewModel.swift */; };
 		7AB413FB2892677C008680C5 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB413F92892677C008680C5 /* HomeViewModel.swift */; };
 		7AB413FD289268DB008680C5 /* MarkdownEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB413FC289268DB008680C5 /* MarkdownEditorView.swift */; };
 		7AB413FE289268DB008680C5 /* MarkdownEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB413FC289268DB008680C5 /* MarkdownEditorView.swift */; };
+		7AB41401289277A7008680C5 /* Ink in Frameworks */ = {isa = PBXBuildFile; productRef = 7AB41400289277A7008680C5 /* Ink */; };
+		7AB41404289277C8008680C5 /* Ink in Frameworks */ = {isa = PBXBuildFile; productRef = 7AB41403289277C8008680C5 /* Ink */; };
+		7AB414062892787F008680C5 /* iOSPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB414052892787F008680C5 /* iOSPreview.swift */; };
+		7AB414072892787F008680C5 /* iOSPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB414052892787F008680C5 /* iOSPreview.swift */; };
 		7AB93643288AF3A2003F1842 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB93642288AF3A2003F1842 /* Tests_iOS.swift */; };
 		7AB93645288AF3A2003F1842 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB93644288AF3A2003F1842 /* Tests_iOSLaunchTests.swift */; };
 		7AB9364F288AF3A2003F1842 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB9364E288AF3A2003F1842 /* Tests_macOS.swift */; };
@@ -61,8 +67,10 @@
 /* Begin PBXFileReference section */
 		7A72805528922C7F00CF96E3 /* ProfileSettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingViewModel.swift; sourceTree = "<group>"; };
 		7A7280582892380500CF96E3 /* NoteListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListViewModel.swift; sourceTree = "<group>"; };
+		7A7A4ED52892830B00EAB56F /* MarkdownEditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownEditorViewModel.swift; sourceTree = "<group>"; };
 		7AB413F92892677C008680C5 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		7AB413FC289268DB008680C5 /* MarkdownEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownEditorView.swift; sourceTree = "<group>"; };
+		7AB414052892787F008680C5 /* iOSPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSPreview.swift; sourceTree = "<group>"; };
 		7AB9362A288AF39C003F1842 /* ZhaoCiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZhaoCiApp.swift; sourceTree = "<group>"; };
 		7AB9362B288AF39C003F1842 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7AB9362C288AF3A1003F1842 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AB41401289277A7008680C5 /* Ink in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AB41404289277C8008680C5 /* Ink in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +126,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7AB41402289277C8008680C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7AB93624288AF39C003F1842 = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +141,7 @@
 				7AB93641288AF3A2003F1842 /* Tests iOS */,
 				7AB9364D288AF3A2003F1842 /* Tests macOS */,
 				7AB93632288AF3A1003F1842 /* Products */,
+				7AB41402289277C8008680C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,6 +162,8 @@
 				7A7280582892380500CF96E3 /* NoteListViewModel.swift */,
 				7AB413F92892677C008680C5 /* HomeViewModel.swift */,
 				7AB413FC289268DB008680C5 /* MarkdownEditorView.swift */,
+				7AB414052892787F008680C5 /* iOSPreview.swift */,
+				7A7A4ED52892830B00EAB56F /* MarkdownEditorViewModel.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -201,6 +221,9 @@
 			dependencies = (
 			);
 			name = "ZhaoCi (iOS)";
+			packageProductDependencies = (
+				7AB41400289277A7008680C5 /* Ink */,
+			);
 			productName = "ZhaoCi (iOS)";
 			productReference = 7AB93631288AF3A1003F1842 /* ZhaoCi.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +241,9 @@
 			dependencies = (
 			);
 			name = "ZhaoCi (macOS)";
+			packageProductDependencies = (
+				7AB41403289277C8008680C5 /* Ink */,
+			);
 			productName = "ZhaoCi (macOS)";
 			productReference = 7AB93637288AF3A1003F1842 /* ZhaoCi.app */;
 			productType = "com.apple.product-type.application";
@@ -293,6 +319,9 @@
 				Base,
 			);
 			mainGroup = 7AB93624288AF39C003F1842;
+			packageReferences = (
+				7AB413FF289277A7008680C5 /* XCRemoteSwiftPackageReference "ink" */,
+			);
 			productRefGroup = 7AB93632288AF3A1003F1842 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -345,8 +374,10 @@
 			files = (
 				7AB9DCF728912B3400EEBAA3 /* HomeView.swift in Sources */,
 				7AB9DD092891759000EEBAA3 /* AvatarView.swift in Sources */,
+				7AB414062892787F008680C5 /* iOSPreview.swift in Sources */,
 				7AB9DCFA28912B9500EEBAA3 /* SettingsView.swift in Sources */,
 				7A72805628922C7F00CF96E3 /* ProfileSettingViewModel.swift in Sources */,
+				7A7A4ED62892830B00EAB56F /* MarkdownEditorViewModel.swift in Sources */,
 				7AB9DD032891395200EEBAA3 /* BorderedViewModifiy.swift in Sources */,
 				7AB9DCFD28912BAF00EEBAA3 /* NoteListView.swift in Sources */,
 				7AB9DD0028912C0600EEBAA3 /* TabItemView.swift in Sources */,
@@ -365,8 +396,10 @@
 			files = (
 				7AB9DCF828912B3400EEBAA3 /* HomeView.swift in Sources */,
 				7AB9DD0A2891759000EEBAA3 /* AvatarView.swift in Sources */,
+				7AB414072892787F008680C5 /* iOSPreview.swift in Sources */,
 				7AB9DCFB28912B9500EEBAA3 /* SettingsView.swift in Sources */,
 				7A72805728922C7F00CF96E3 /* ProfileSettingViewModel.swift in Sources */,
+				7A7A4ED72892830B00EAB56F /* MarkdownEditorViewModel.swift in Sources */,
 				7AB9DD042891395200EEBAA3 /* BorderedViewModifiy.swift in Sources */,
 				7AB9DCFE28912BAF00EEBAA3 /* NoteListView.swift in Sources */,
 				7AB9DD0128912C0600EEBAA3 /* TabItemView.swift in Sources */,
@@ -767,6 +800,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7AB413FF289277A7008680C5 /* XCRemoteSwiftPackageReference "ink" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/johnsundell/ink.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7AB41400289277A7008680C5 /* Ink */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7AB413FF289277A7008680C5 /* XCRemoteSwiftPackageReference "ink" */;
+			productName = Ink;
+		};
+		7AB41403289277C8008680C5 /* Ink */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7AB413FF289277A7008680C5 /* XCRemoteSwiftPackageReference "ink" */;
+			productName = Ink;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7AB93625288AF39C003F1842 /* Project object */;
 }
