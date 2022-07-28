@@ -11,6 +11,10 @@
 		7A72805728922C7F00CF96E3 /* ProfileSettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A72805528922C7F00CF96E3 /* ProfileSettingViewModel.swift */; };
 		7A7280592892380500CF96E3 /* NoteListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7280582892380500CF96E3 /* NoteListViewModel.swift */; };
 		7A72805A2892380500CF96E3 /* NoteListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7280582892380500CF96E3 /* NoteListViewModel.swift */; };
+		7AB413FA2892677C008680C5 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB413F92892677C008680C5 /* HomeViewModel.swift */; };
+		7AB413FB2892677C008680C5 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB413F92892677C008680C5 /* HomeViewModel.swift */; };
+		7AB413FD289268DB008680C5 /* MarkdownEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB413FC289268DB008680C5 /* MarkdownEditorView.swift */; };
+		7AB413FE289268DB008680C5 /* MarkdownEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB413FC289268DB008680C5 /* MarkdownEditorView.swift */; };
 		7AB93643288AF3A2003F1842 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB93642288AF3A2003F1842 /* Tests_iOS.swift */; };
 		7AB93645288AF3A2003F1842 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB93644288AF3A2003F1842 /* Tests_iOSLaunchTests.swift */; };
 		7AB9364F288AF3A2003F1842 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB9364E288AF3A2003F1842 /* Tests_macOS.swift */; };
@@ -57,6 +61,8 @@
 /* Begin PBXFileReference section */
 		7A72805528922C7F00CF96E3 /* ProfileSettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingViewModel.swift; sourceTree = "<group>"; };
 		7A7280582892380500CF96E3 /* NoteListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListViewModel.swift; sourceTree = "<group>"; };
+		7AB413F92892677C008680C5 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		7AB413FC289268DB008680C5 /* MarkdownEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownEditorView.swift; sourceTree = "<group>"; };
 		7AB9362A288AF39C003F1842 /* ZhaoCiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZhaoCiApp.swift; sourceTree = "<group>"; };
 		7AB9362B288AF39C003F1842 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7AB9362C288AF3A1003F1842 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -136,6 +142,8 @@
 				7AB9DD082891759000EEBAA3 /* AvatarView.swift */,
 				7A72805528922C7F00CF96E3 /* ProfileSettingViewModel.swift */,
 				7A7280582892380500CF96E3 /* NoteListViewModel.swift */,
+				7AB413F92892677C008680C5 /* HomeViewModel.swift */,
+				7AB413FC289268DB008680C5 /* MarkdownEditorView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -342,6 +350,8 @@
 				7AB9DD032891395200EEBAA3 /* BorderedViewModifiy.swift in Sources */,
 				7AB9DCFD28912BAF00EEBAA3 /* NoteListView.swift in Sources */,
 				7AB9DD0028912C0600EEBAA3 /* TabItemView.swift in Sources */,
+				7AB413FA2892677C008680C5 /* HomeViewModel.swift in Sources */,
+				7AB413FD289268DB008680C5 /* MarkdownEditorView.swift in Sources */,
 				7AB9DD0628916F8400EEBAA3 /* ProfileSettingView.swift in Sources */,
 				7AB93654288AF3A2003F1842 /* ContentView.swift in Sources */,
 				7A7280592892380500CF96E3 /* NoteListViewModel.swift in Sources */,
@@ -360,6 +370,8 @@
 				7AB9DD042891395200EEBAA3 /* BorderedViewModifiy.swift in Sources */,
 				7AB9DCFE28912BAF00EEBAA3 /* NoteListView.swift in Sources */,
 				7AB9DD0128912C0600EEBAA3 /* TabItemView.swift in Sources */,
+				7AB413FB2892677C008680C5 /* HomeViewModel.swift in Sources */,
+				7AB413FE289268DB008680C5 /* MarkdownEditorView.swift in Sources */,
 				7AB9DD0728916F8400EEBAA3 /* ProfileSettingView.swift in Sources */,
 				7AB93655288AF3A2003F1842 /* ContentView.swift in Sources */,
 				7A72805A2892380500CF96E3 /* NoteListViewModel.swift in Sources */,
