@@ -11,31 +11,40 @@ struct HomeView: View {
     @State var selectedTab = TabType.list.rawValue
     
     var body: some View {
-        TabView(selection: $selectedTab) {
-            ForEach(TabType.allCases) { type in
-                switch type {
-                case .list:
-                    NoteListView()
-                        .tabItem {
-                            TabItemView(tabName: type.tabName, tabIconName: "")
-                                .tag(type.rawValue)
-                        }
-                case .newNote:
-                    MarkdownEditorView()
-                        .tabItem {
-                            TabItemView(tabName: type.tabName, tabIconName: "")
-                                .tag(type.rawValue)
-                        }
-                case .setting:
-                    SettingsView(userName: "Jason")
-                        .tabItem {
-                            TabItemView(tabName: type.tabName, tabIconName: "")
-                                .tag(type.rawValue)
-                        }
+        NavigationView{
+            TabView(selection: $selectedTab) {
+                ForEach(TabType.allCases) { type in
+                    switch type {
+                    case .list:
+                        NoteListView()
+                            .navigationBarTitle("")
+                            .navigationBarHidden(true)
+                            .tabItem {
+                                TabItemView(tabName: type.tabName, tabIconName: "")
+                                    .tag(type.rawValue)
+                            }
+                    case .newNote:
+                        MarkdownEditorView()
+                            .navigationBarTitle("")
+                            .navigationBarHidden(true)
+                            .tabItem {
+                                TabItemView(tabName: type.tabName, tabIconName: "")
+                                    .tag(type.rawValue)
+                            }
+                    case .setting:
+                        SettingsView(userName: "Jason")
+                            .navigationBarTitle("")
+                            .navigationBarHidden(true)
+                            .tabItem {
+                                TabItemView(tabName: type.tabName, tabIconName: "")
+                                    .tag(type.rawValue)
+                            }
+                    }
                 }
             }
+            .accentColor(.orange)
         }
-        .accentColor(.orange)
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

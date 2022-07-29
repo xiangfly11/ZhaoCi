@@ -16,7 +16,7 @@ struct SettingsView: View {
     }
     
     var body: some View {
-        NavigationView {
+//        NavigationView {
             VStack {
                 ZStack {
                   VStack(spacing: 0) {
@@ -42,7 +42,7 @@ struct SettingsView: View {
                     
                 }
             }
-        }.navigationViewStyle(StackNavigationViewStyle())
+//        }.navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
