@@ -14,12 +14,14 @@ struct MarkdownEditorView: View {
     var html: String {
         var parser = MarkdownParser()
         let modifier = Modifier(target: .codeBlocks) { html, markdown in
-            return "<h3>This is code block:</h3>" + html
+            let codeBlock = setCodeBGBlock(with: .lightGray, html: html)
+             return codeBlock
         }
         
         parser.addModifier(modifier)
         return parser.html(from: markdownText)
     }
+    
     var body: some View {
         VStack {
             HStack {
@@ -77,6 +79,33 @@ extension MarkdownEditorView {
                 }.frame(height: height / 2)
             }
         }
+    }
+}
+
+extension MarkdownEditorView {
+    enum CodeBlockBGColor {
+        case lightGray
+        case darkGray
+        case orange
+        case blue
+    }
+    
+    func setCodeBGBlock(with theme: CodeBlockBGColor = .lightGray, html: String) -> String {
+        var bgColor = "<p style=\"background-color:rgb(211,211,211);\">"
+        switch theme {
+        case .lightGray:
+            break;
+        case .darkGray:
+            bgColor = "<p style=\"background-color:rgb(47,79,79);\">"
+        case .orange:
+            bgColor = "<p style=\"background-color:rgb(255,165,0);\">"
+        case .blue:
+            bgColor = "<p style=\"background-color:rgb(135,206,235);\">"
+        }
+        
+        let newCodeBlock1 = html.replacingOccurrences(of: "<code>", with: bgColor)
+        let newCodeBlock2 = newCodeBlock1.replacingOccurrences(of: "</code>", with: "</p>")
+        return newCodeBlock2
     }
 }
 
