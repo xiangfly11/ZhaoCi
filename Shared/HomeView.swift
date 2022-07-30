@@ -10,6 +10,10 @@ import SwiftUI
 struct HomeView: View {
     @State var selectedTab = TabType.list.rawValue
     
+    init() {
+        UITabBar.appearance().backgroundColor = UIColor.bengRouBai
+    }
+    
     var body: some View {
         NavigationView{
             TabView(selection: $selectedTab) {
@@ -42,7 +46,7 @@ struct HomeView: View {
                     }
                 }
             }
-            .accentColor(.orange)
+            .accentColor(Color(UIColor.chenXiHong))
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }
