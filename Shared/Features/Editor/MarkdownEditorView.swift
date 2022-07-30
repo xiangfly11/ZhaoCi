@@ -9,8 +9,15 @@ import SwiftUI
 import Ink
 
 struct MarkdownEditorView: View {
-    @State private var markdownText: String = ""
+    enum TextEditorType: Hashable {
+        case titleType
+        case contentType
+    }
+
+    @State private var titleText: String = ""
+    @State private var contentText: String = ""
     @State private var selectedType: Int = MarkdownEditorType.editor.rawValue
+    @FocusState private var focusedEditor: TextEditorType?
     var html: String {
         var parser = MarkdownParser()
         let modifier = Modifier(target: .codeBlocks) { html, markdown in
@@ -19,7 +26,7 @@ struct MarkdownEditorView: View {
         }
         
         parser.addModifier(modifier)
-        return parser.html(from: markdownText)
+        return parser.html(from: contentText)
     }
     
     var body: some View {
@@ -51,34 +58,53 @@ struct MarkdownEditorView: View {
     }
     
     init() {
-        UITextView.appearance().backgroundColor = UIColor.yunShuiLan
+        UITextView.appearance().backgroundColor = .clear
     }
 }
 
 extension MarkdownEditorView {
     func relayoutSubviews(height: CGFloat) -> some View {
         return VStack(alignment: .leading) {
+            if selectedType != MarkdownEditorType.preview.rawValue {
+                TextEditor(text: $titleText)
+                    .disableAutocorrection(true)
+                    .autocapitalization(.none)
+                    .frame(height: 44)
+                    .background(Color(UIColor.white))
+                    .padding()
+                    .focused($focusedEditor, equals: .titleType)
+                    .onSubmit {
+                        focusedEditor = nil
+                    }
+                    .onAppear {
+                        focusedEditor = .titleType
+                    }
+                    .submitLabel(.done)
+            }
             if selectedType == MarkdownEditorType.editor.rawValue {
-                TextEditor(text: $markdownText)
+                TextEditor(text: $contentText)
                     .disableAutocorrection(true)
                     .autocapitalization(.none)
-                    .frame(height: height - 1)
+                    .background(Color(UIColor.yunShuiLan))
+                    .focused($focusedEditor, equals: .contentType)
+                    .onSubmit {
+                        focusedEditor = nil
+                    }
+                    .submitLabel(.done)
             } else if selectedType == MarkdownEditorType.preview.rawValue {
-                ZStack {
-                    Rectangle()
-                      .foregroundColor(Color(UIColor.yuDuBai))
                     iOSPreview(html: html)
-                }.frame(height: height)
             } else if selectedType == MarkdownEditorType.split.rawValue {
-                TextEditor(text: $markdownText)
+                TextEditor(text: $contentText)
                     .disableAutocorrection(true)
                     .autocapitalization(.none)
-                    .frame(height: height / 2)
-                ZStack {
-                    Rectangle()
-                      .foregroundColor(Color(UIColor.yuDuBai))
+                    .background(Color(UIColor.yunShuiLan))
+                    .focused($focusedEditor, equals: .contentType)
+                    .onSubmit {
+                        focusedEditor = nil
+                    }
+                    .submitLabel(.done)
                     iOSPreview(html: html)
-                }.frame(height: height / 2)
+                    
             }
         }
     }

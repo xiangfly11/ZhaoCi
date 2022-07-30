@@ -15,6 +15,8 @@
 		7A7A4ED72892830B00EAB56F /* MarkdownEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7A4ED52892830B00EAB56F /* MarkdownEditorViewModel.swift */; };
 		7A7A4EDD2894F8B800EAB56F /* UIColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7A4EDC2894F8B800EAB56F /* UIColorExt.swift */; };
 		7A7A4EDE2894F8B800EAB56F /* UIColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7A4EDC2894F8B800EAB56F /* UIColorExt.swift */; };
+		7AB399C22895A130008B047C /* TabClipperShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB399C12895A12F008B047C /* TabClipperShape.swift */; };
+		7AB399C42895A14C008B047C /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB399C32895A14C008B047C /* Tab.swift */; };
 		7AB413FA2892677C008680C5 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB413F92892677C008680C5 /* HomeViewModel.swift */; };
 		7AB413FB2892677C008680C5 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB413F92892677C008680C5 /* HomeViewModel.swift */; };
 		7AB413FD289268DB008680C5 /* MarkdownEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB413FC289268DB008680C5 /* MarkdownEditorView.swift */; };
@@ -69,6 +71,8 @@
 		7A7280582892380500CF96E3 /* NoteListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListViewModel.swift; sourceTree = "<group>"; };
 		7A7A4ED52892830B00EAB56F /* MarkdownEditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownEditorViewModel.swift; sourceTree = "<group>"; };
 		7A7A4EDC2894F8B800EAB56F /* UIColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExt.swift; sourceTree = "<group>"; };
+		7AB399C12895A12F008B047C /* TabClipperShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabClipperShape.swift; sourceTree = "<group>"; };
+		7AB399C32895A14C008B047C /* Tab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		7AB413F92892677C008680C5 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		7AB413FC289268DB008680C5 /* MarkdownEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownEditorView.swift; sourceTree = "<group>"; };
 		7AB414052892787F008680C5 /* iOSPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSPreview.swift; sourceTree = "<group>"; };
@@ -133,6 +137,23 @@
 				7A7A4EDC2894F8B800EAB56F /* UIColorExt.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		7AB399BF2895A0FB008B047C /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				7AB399C02895A106008B047C /* CustomTabBar */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		7AB399C02895A106008B047C /* CustomTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				7AB399C12895A12F008B047C /* TabClipperShape.swift */,
+				7AB399C32895A14C008B047C /* Tab.swift */,
+			);
+			path = CustomTabBar;
 			sourceTree = "<group>";
 		};
 		7AB41402289277C8008680C5 /* Frameworks */ = {
@@ -208,6 +229,7 @@
 		7AB93629288AF39C003F1842 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				7AB399BF2895A0FB008B047C /* CustomView */,
 				7AB5E4602895029E0043F43B /* Features */,
 				7A7A4ED82893B54B00EAB56F /* Utils */,
 				7AB9362A288AF39C003F1842 /* ZhaoCiApp.swift */,
@@ -421,12 +443,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AB9DCF728912B3400EEBAA3 /* HomeView.swift in Sources */,
+				7AB399C42895A14C008B047C /* Tab.swift in Sources */,
 				7AB9DD092891759000EEBAA3 /* AvatarView.swift in Sources */,
 				7AB414062892787F008680C5 /* iOSPreview.swift in Sources */,
 				7AB9DCFA28912B9500EEBAA3 /* SettingsView.swift in Sources */,
 				7A72805628922C7F00CF96E3 /* ProfileSettingViewModel.swift in Sources */,
 				7A7A4ED62892830B00EAB56F /* MarkdownEditorViewModel.swift in Sources */,
 				7AB9DD032891395200EEBAA3 /* BorderedViewModifiy.swift in Sources */,
+				7AB399C22895A130008B047C /* TabClipperShape.swift in Sources */,
 				7AB9DCFD28912BAF00EEBAA3 /* NoteListView.swift in Sources */,
 				7AB9DD0028912C0600EEBAA3 /* TabItemView.swift in Sources */,
 				7A7A4EDD2894F8B800EAB56F /* UIColorExt.swift in Sources */,

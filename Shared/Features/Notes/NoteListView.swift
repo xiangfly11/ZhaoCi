@@ -14,15 +14,15 @@ struct NoteListView: View {
     private var paddingEdgeInset = EdgeInsets(top: 0, leading: 8, bottom: 0, trailing: 8)
     var body: some View {
         VStack {
-            TextField("Search Note Title", text: $searchedTitle)
-              .focused($searchTitleFocused)
-              .submitLabel(.done)
-              .onSubmit({
-                  searchNote()
-              })
-              .frame(height: 30)
-              .bordered()
-              .padding(paddingEdgeInset)
+//            TextField("Search Note Title", text: $searchedTitle)
+//              .focused($searchTitleFocused)
+//              .submitLabel(.done)
+//              .onSubmit({
+//                  searchNote()
+//              })
+//              .frame(height: 30)
+//              .bordered()
+//              .padding(paddingEdgeInset)
             
             Picker("", selection: $selectedIndex) {
                 ForEach(ListType.allCases) { type in
