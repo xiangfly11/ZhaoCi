@@ -29,8 +29,6 @@
 		7AB93651288AF3A2003F1842 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB93650288AF3A2003F1842 /* Tests_macOSLaunchTests.swift */; };
 		7AB93652288AF3A2003F1842 /* ZhaoCiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB9362A288AF39C003F1842 /* ZhaoCiApp.swift */; };
 		7AB93653288AF3A2003F1842 /* ZhaoCiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB9362A288AF39C003F1842 /* ZhaoCiApp.swift */; };
-		7AB93654288AF3A2003F1842 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB9362B288AF39C003F1842 /* ContentView.swift */; };
-		7AB93655288AF3A2003F1842 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB9362B288AF39C003F1842 /* ContentView.swift */; };
 		7AB93656288AF3A2003F1842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AB9362C288AF3A1003F1842 /* Assets.xcassets */; };
 		7AB93657288AF3A2003F1842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AB9362C288AF3A1003F1842 /* Assets.xcassets */; };
 		7AB9DCF728912B3400EEBAA3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB9DCF628912B3400EEBAA3 /* HomeView.swift */; };
@@ -75,7 +73,6 @@
 		7AB413FC289268DB008680C5 /* MarkdownEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownEditorView.swift; sourceTree = "<group>"; };
 		7AB414052892787F008680C5 /* iOSPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSPreview.swift; sourceTree = "<group>"; };
 		7AB9362A288AF39C003F1842 /* ZhaoCiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZhaoCiApp.swift; sourceTree = "<group>"; };
-		7AB9362B288AF39C003F1842 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7AB9362C288AF3A1003F1842 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AB93631288AF3A1003F1842 /* ZhaoCi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhaoCi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AB93637288AF3A1003F1842 /* ZhaoCi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhaoCi.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +129,7 @@
 		7A7A4ED82893B54B00EAB56F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				7AB9DD022891395200EEBAA3 /* BorderedViewModifiy.swift */,
 				7A7A4EDC2894F8B800EAB56F /* UIColorExt.swift */,
 			);
 			path = Utils;
@@ -142,6 +140,57 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7AB5E4602895029E0043F43B /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				7AB5E464289502E90043F43B /* Setting */,
+				7AB5E463289502E00043F43B /* Home */,
+				7AB5E462289502C20043F43B /* Editor */,
+				7AB5E461289502B10043F43B /* Notes */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		7AB5E461289502B10043F43B /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				7AB9DCFC28912BAE00EEBAA3 /* NoteListView.swift */,
+				7A7280582892380500CF96E3 /* NoteListViewModel.swift */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+		7AB5E462289502C20043F43B /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				7AB413FC289268DB008680C5 /* MarkdownEditorView.swift */,
+				7AB414052892787F008680C5 /* iOSPreview.swift */,
+				7A7A4ED52892830B00EAB56F /* MarkdownEditorViewModel.swift */,
+			);
+			path = Editor;
+			sourceTree = "<group>";
+		};
+		7AB5E463289502E00043F43B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7AB9DCF628912B3400EEBAA3 /* HomeView.swift */,
+				7AB9DCFF28912C0600EEBAA3 /* TabItemView.swift */,
+				7AB413F92892677C008680C5 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7AB5E464289502E90043F43B /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				7AB9DCF928912B9500EEBAA3 /* SettingsView.swift */,
+				7AB9DD082891759000EEBAA3 /* AvatarView.swift */,
+				7AB9DD0528916F8400EEBAA3 /* ProfileSettingView.swift */,
+				7A72805528922C7F00CF96E3 /* ProfileSettingViewModel.swift */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 		7AB93624288AF39C003F1842 = {
@@ -159,23 +208,10 @@
 		7AB93629288AF39C003F1842 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				7AB5E4602895029E0043F43B /* Features */,
 				7A7A4ED82893B54B00EAB56F /* Utils */,
 				7AB9362A288AF39C003F1842 /* ZhaoCiApp.swift */,
-				7AB9DCF628912B3400EEBAA3 /* HomeView.swift */,
-				7AB9362B288AF39C003F1842 /* ContentView.swift */,
 				7AB9362C288AF3A1003F1842 /* Assets.xcassets */,
-				7AB9DCF928912B9500EEBAA3 /* SettingsView.swift */,
-				7AB9DCFC28912BAE00EEBAA3 /* NoteListView.swift */,
-				7AB9DCFF28912C0600EEBAA3 /* TabItemView.swift */,
-				7AB9DD022891395200EEBAA3 /* BorderedViewModifiy.swift */,
-				7AB9DD0528916F8400EEBAA3 /* ProfileSettingView.swift */,
-				7AB9DD082891759000EEBAA3 /* AvatarView.swift */,
-				7A72805528922C7F00CF96E3 /* ProfileSettingViewModel.swift */,
-				7A7280582892380500CF96E3 /* NoteListViewModel.swift */,
-				7AB413F92892677C008680C5 /* HomeViewModel.swift */,
-				7AB413FC289268DB008680C5 /* MarkdownEditorView.swift */,
-				7AB414052892787F008680C5 /* iOSPreview.swift */,
-				7A7A4ED52892830B00EAB56F /* MarkdownEditorViewModel.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -397,7 +433,6 @@
 				7AB413FA2892677C008680C5 /* HomeViewModel.swift in Sources */,
 				7AB413FD289268DB008680C5 /* MarkdownEditorView.swift in Sources */,
 				7AB9DD0628916F8400EEBAA3 /* ProfileSettingView.swift in Sources */,
-				7AB93654288AF3A2003F1842 /* ContentView.swift in Sources */,
 				7A7280592892380500CF96E3 /* NoteListViewModel.swift in Sources */,
 				7AB93652288AF3A2003F1842 /* ZhaoCiApp.swift in Sources */,
 			);
@@ -420,7 +455,6 @@
 				7AB413FB2892677C008680C5 /* HomeViewModel.swift in Sources */,
 				7AB413FE289268DB008680C5 /* MarkdownEditorView.swift in Sources */,
 				7AB9DD0728916F8400EEBAA3 /* ProfileSettingView.swift in Sources */,
-				7AB93655288AF3A2003F1842 /* ContentView.swift in Sources */,
 				7A72805A2892380500CF96E3 /* NoteListViewModel.swift in Sources */,
 				7AB93653288AF3A2003F1842 /* ZhaoCiApp.swift in Sources */,
 			);
