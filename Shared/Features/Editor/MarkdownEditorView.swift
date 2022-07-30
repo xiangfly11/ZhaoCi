@@ -23,28 +23,35 @@ struct MarkdownEditorView: View {
     }
     
     var body: some View {
-        VStack {
-            HStack {
-                Text("Markdown Editor")
-                    .font(.title2)
-                    .fontWeight(.medium)
-                Picker("", selection: $selectedType) {
-                    ForEach(MarkdownEditorType.allCases) { type in
-                        Text(type.markdownEditorTypeName)
-                            .tag(type.rawValue)
+        ZStack {
+            Rectangle()
+              .foregroundColor(
+                Color(UIColor.huaQing))
+              .edgesIgnoringSafeArea(.top)
+            VStack {
+                HStack {
+                    Text("Markdown Editor")
+                        .font(.title2)
+                        .fontWeight(.medium)
+                    Picker("", selection: $selectedType) {
+                        ForEach(MarkdownEditorType.allCases) { type in
+                            Text(type.markdownEditorTypeName)
+                                .tag(type.rawValue)
+                        }
                     }
+                    .pickerStyle(SegmentedPickerStyle())
+                    Spacer()
+                }.padding(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 15))
+                GeometryReader { proxy in
+                    relayoutSubviews(height: proxy.size.height)
                 }
-                .pickerStyle(SegmentedPickerStyle())
-                Spacer()
             }
-            GeometryReader { proxy in
-                relayoutSubviews(height: proxy.size.height)
-            }
-        }.padding()
+            
+        }        
     }
     
     init() {
-        UITextView.appearance().backgroundColor = .darkGray
+        UITextView.appearance().backgroundColor = UIColor.yunShuiLan
     }
 }
 
@@ -55,27 +62,22 @@ extension MarkdownEditorView {
                 TextEditor(text: $markdownText)
                     .disableAutocorrection(true)
                     .autocapitalization(.none)
-                    .frame(height: height)
+                    .frame(height: height - 1)
             } else if selectedType == MarkdownEditorType.preview.rawValue {
                 ZStack {
                     Rectangle()
-                      .frame(height: height)
-                      .foregroundColor(.secondary)
+                      .foregroundColor(Color(UIColor.yuDuBai))
                     iOSPreview(html: html)
-                        .frame(height: height)
                 }.frame(height: height)
             } else if selectedType == MarkdownEditorType.split.rawValue {
                 TextEditor(text: $markdownText)
                     .disableAutocorrection(true)
                     .autocapitalization(.none)
                     .frame(height: height / 2)
-                Divider()
                 ZStack {
                     Rectangle()
-                      .frame(height: height / 2)
-                      .foregroundColor(.secondary)
+                      .foregroundColor(Color(UIColor.yuDuBai))
                     iOSPreview(html: html)
-                        .frame(height: height / 2)
                 }.frame(height: height / 2)
             }
         }
