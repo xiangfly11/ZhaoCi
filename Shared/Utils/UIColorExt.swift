@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 import SwiftUI
 
+///常用颜色
 extension UIColor {
     open class var bingShanLan: UIColor {
         return UIColor.colorFromHex(hexValue: 0xa4aca7)
