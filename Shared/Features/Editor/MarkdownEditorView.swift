@@ -16,7 +16,7 @@ struct MarkdownEditorView: View {
 
     @State private var titleText: String = ""
     @State private var contentText: String = ""
-    @State private var selectedType: Int = MarkdownEditorType.editor.rawValue
+    @State private var selectedType: MarkdownEditorType = MarkdownEditorType.editor
     @FocusState private var focusedEditor: TextEditorType?
     var html: String {
         var parser = MarkdownParser()
@@ -30,31 +30,9 @@ struct MarkdownEditorView: View {
     }
     
     var body: some View {
-        ZStack {
-            Rectangle()
-              .foregroundColor(
-                Color(UIColor.huaQing))
-              .edgesIgnoringSafeArea(.top)
-            VStack {
-                HStack {
-                    Text("Markdown Editor")
-                        .font(.title2)
-                        .fontWeight(.medium)
-                    Picker("", selection: $selectedType) {
-                        ForEach(MarkdownEditorType.allCases) { type in
-                            Text(type.markdownEditorTypeName)
-                                .tag(type.rawValue)
-                        }
-                    }
-                    .pickerStyle(SegmentedPickerStyle())
-                    Spacer()
-                }.padding(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 15))
-                GeometryReader { proxy in
-                    relayoutSubviews(height: proxy.size.height)
-                }
-            }
-            
-        }        
+        relayoutSubviews()
+        .navigationBarTitle("", displayMode: .inline)
+        .navigationBarItems(leading: navItmes)
     }
     
     init() {
@@ -63,25 +41,10 @@ struct MarkdownEditorView: View {
 }
 
 extension MarkdownEditorView {
-    func relayoutSubviews(height: CGFloat) -> some View {
+    func relayoutSubviews() -> some View {
         return VStack(alignment: .leading) {
-            if selectedType != MarkdownEditorType.preview.rawValue {
-                TextEditor(text: $titleText)
-                    .disableAutocorrection(true)
-                    .autocapitalization(.none)
-                    .frame(height: 44)
-                    .background(Color(UIColor.white))
-                    .padding()
-                    .focused($focusedEditor, equals: .titleType)
-                    .onSubmit {
-                        focusedEditor = nil
-                    }
-                    .onAppear {
-                        focusedEditor = .titleType
-                    }
-                    .submitLabel(.done)
-            }
-            if selectedType == MarkdownEditorType.editor.rawValue {
+            switch selectedType {
+            case .editor:
                 TextEditor(text: $contentText)
                     .disableAutocorrection(true)
                     .autocapitalization(.none)
@@ -91,22 +54,12 @@ extension MarkdownEditorView {
                         focusedEditor = nil
                     }
                     .submitLabel(.done)
-            } else if selectedType == MarkdownEditorType.preview.rawValue {
-                    iOSPreview(html: html)
-            } else if selectedType == MarkdownEditorType.split.rawValue {
-                TextEditor(text: $contentText)
-                    .disableAutocorrection(true)
-                    .autocapitalization(.none)
-                    .background(Color(UIColor.yunShuiLan))
-                    .focused($focusedEditor, equals: .contentType)
-                    .onSubmit {
-                        focusedEditor = nil
-                    }
-                    .submitLabel(.done)
-                    iOSPreview(html: html)
-                    
+            case .preview:
+                iOSPreview(html: html)
             }
         }
+        .padding(.top)
+        .background(.white)
     }
 }
 
@@ -137,8 +90,72 @@ extension MarkdownEditorView {
     }
 }
 
+extension MarkdownEditorView {
+    var navItmes: some View {
+        HStack(alignment: .center, spacing: 20) {
+            
+            Button {
+                
+            } label: {
+                Text("完成")
+                    .foregroundColor(.green)
+                    .bold()
+            }
+            
+            Button {
+                
+            } label: {
+                Image(systemName: "arrow.uturn.backward.circle.fill")
+                    .tint(.gray)
+            }
+            
+            Button {
+                
+            } label: {
+                Image(systemName: "arrow.uturn.forward.circle.fill")
+                    .tint(.gray)
+            }
+
+            Button {
+                
+            } label: {
+               Image(systemName: "square.and.arrow.up")
+                    .tint(.green)
+            }
+            
+            switch self.selectedType {
+            case .preview:
+                Button {
+                    self.selectedType = .editor
+                } label: {
+                    Image(systemName: "eye.slash")
+                        .tint(.gray)
+                }
+            case .editor:
+                Button {
+                    self.selectedType = .preview
+                } label: {
+                    Image(systemName: "eye")
+                        .tint(.green)
+                }
+            }
+
+            Button {
+                
+            } label: {
+                Text("更多")
+                    .foregroundColor(.green)
+                    .bold()
+            }
+
+        }
+    }
+}
+
 struct MarkdownEditorView_Previews: PreviewProvider {
     static var previews: some View {
-        MarkdownEditorView()
+        NavigationView {
+            MarkdownEditorView()
+        }
     }
 }

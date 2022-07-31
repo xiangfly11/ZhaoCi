@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct ProfileSettingView: View {
-    
+    @State var test: String = ""
     init() {
         
     }
     var body: some View {
         VStack {
-          
+          TextEditor(text: $test)
         }
+        .background(.red)
     }
 }
 

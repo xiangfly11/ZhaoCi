@@ -12,7 +12,6 @@ enum MarkdownEditorType: Int, Identifiable, CaseIterable {
     
     case editor = 0
     case preview = 1
-    case split = 2
     
     var markdownEditorTypeName: String {
         switch self {
@@ -20,8 +19,6 @@ enum MarkdownEditorType: Int, Identifiable, CaseIterable {
             return "Editor"
         case .preview:
             return "Preview"
-        case .split:
-            return "Split"
         }
     }
 }
