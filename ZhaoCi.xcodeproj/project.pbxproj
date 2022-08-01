@@ -87,7 +87,7 @@
 		7AB674FC2897C05A009F1AE5 /* LXGWWenKaiMono-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LXGWWenKaiMono-Bold.ttf"; sourceTree = "<group>"; };
 		7AB674FF2897C0AA009F1AE5 /* ZhaoCi--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ZhaoCi--iOS--Info.plist"; sourceTree = "<group>"; };
 		7AB675012897C170009F1AE5 /* FontExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExt.swift; sourceTree = "<group>"; };
-		7AB675142897D25D009F1AE5 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		7AB675142897D25D009F1AE5 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		7AB9362A288AF39C003F1842 /* ZhaoCiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZhaoCiApp.swift; sourceTree = "<group>"; };
 		7AB9362C288AF3A1003F1842 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AB93631288AF3A1003F1842 /* 朝辞.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "朝辞.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,7 +151,6 @@
 				8C926663E80CE059E74C3F77 /* Pods-ZhaoCi (iOS).debug.xcconfig */,
 				4DB3380E797C72A310438747 /* Pods-ZhaoCi (iOS).release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -431,7 +430,7 @@
 			);
 			mainGroup = 7AB93624288AF39C003F1842;
 			packageReferences = (
-				7AB413FF289277A7008680C5 /* XCRemoteSwiftPackageReference "ink.git" */,
+				7AB413FF289277A7008680C5 /* XCRemoteSwiftPackageReference "ink" */,
 			);
 			productRefGroup = 7AB93632288AF3A1003F1842 /* Products */;
 			projectDirPath = "";
@@ -967,7 +966,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		7AB413FF289277A7008680C5 /* XCRemoteSwiftPackageReference "ink.git" */ = {
+		7AB413FF289277A7008680C5 /* XCRemoteSwiftPackageReference "ink" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/johnsundell/ink.git";
 			requirement = {
@@ -980,12 +979,12 @@
 /* Begin XCSwiftPackageProductDependency section */
 		7AB41400289277A7008680C5 /* Ink */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7AB413FF289277A7008680C5 /* XCRemoteSwiftPackageReference "ink.git" */;
+			package = 7AB413FF289277A7008680C5 /* XCRemoteSwiftPackageReference "ink" */;
 			productName = Ink;
 		};
 		7AB41403289277C8008680C5 /* Ink */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7AB413FF289277A7008680C5 /* XCRemoteSwiftPackageReference "ink.git" */;
+			package = 7AB413FF289277A7008680C5 /* XCRemoteSwiftPackageReference "ink" */;
 			productName = Ink;
 		};
 /* End XCSwiftPackageProductDependency section */
