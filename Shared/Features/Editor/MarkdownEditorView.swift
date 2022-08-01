@@ -151,6 +151,7 @@ extension MarkdownEditorView {
             }
 
         }
+        .padding(EdgeInsets(top: 0, leading: 25, bottom: 0, trailing: 25))
     }
 }
 
