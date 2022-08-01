@@ -34,9 +34,6 @@ struct HomeView: View {
                     .frame(height: 88, alignment: .top)
                     .shadow(color: Color.black.opacity(0.1), radius: 4, x: 0, y: -1)
                     .overlay(bottomBar)
-                    .alert("点击了新增按钮", isPresented: $plusDidClick) {
-                        Button("确定", role: .cancel) { }
-                    }
             }
             .background(Color("Background"))
             .edgesIgnoringSafeArea(.bottom)
@@ -65,7 +62,7 @@ struct HomeView: View {
                                 .font(.body.bold())
                                 .frame(width: 44, height: 29)
                             Text(tabItem.text)
-                                .font(.caption2)
+                                .font(.WenKaiMonoBold(size: 12))
                                 .lineLimit(1)
                         }
                     } else {
