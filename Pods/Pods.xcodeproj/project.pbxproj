@@ -1,0 +1,1742 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		034F31854A8E3DBAF1CE09F97BEEAF6C /* UITableView+Mixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79461EAF9EE23371FB008ABEB5914A32 /* UITableView+Mixed.swift */; };
+		03742D58C2406DA7DF36BF462F400570 /* UIView+IBInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF7EC4AF4265D84E911DF6B0E14DB5A /* UIView+IBInspectable.swift */; };
+		03B255AAEB49685A00E1AE5F0AF09AE7 /* ocean.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 398DBDE0F78F8C6063E464C2257067E3 /* ocean.min.css */; };
+		0594B9A09B2813154BBECBE6877B3448 /* UISlider+Mixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA852B7791A58DA573175F1FAEE156B3 /* UISlider+Mixed.swift */; };
+		05ADD5A9B400B3D4259E83B6BFD0EC6D /* footnotes.c in Sources */ = {isa = PBXBuildFile; fileRef = 218B595E9CBBBCBEBE86B405EB89E48E /* footnotes.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		06C1183156FC76940F5200F6E4FEA690 /* shades-of-purple.min.css in Resources */ = {isa = PBXBuildFile; fileRef = DE285F5121D2E70E74CCEEB0F08AEF67 /* shades-of-purple.min.css */; };
+		076563DBAFD66C308CA1F933BAF8133F /* xt256.min.css in Resources */ = {isa = PBXBuildFile; fileRef = C6BC09D8EF944CEF477BAA922DAAB0E4 /* xt256.min.css */; };
+		09D2A567D5516F7AC62E771AFD525C85 /* render.h in Headers */ = {isa = PBXBuildFile; fileRef = FFA3B4B284F5722D8838946BB63DA21A /* render.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A093E6B76F8E57393CE2C4A86048741 /* libcmark_gfm.h in Headers */ = {isa = PBXBuildFile; fileRef = 308CC5B44DCBDF508762FDAA8EFD1E57 /* libcmark_gfm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CE7B4C29944CA41CD2F2FFCF39B8AD4 /* cmark_ctype.h in Headers */ = {isa = PBXBuildFile; fileRef = C3E029442D8E13992D40BACCB8421C33 /* cmark_ctype.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E33021E99C415C72CB944D8DC1549D4 /* darkula.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 24DF2B9B4638EC54DEA436FCA2B4257A /* darkula.min.css */; };
+		0EF787C1507A18DFAEDF6D53EF100A35 /* html.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A3E30A86828B8D367D8656A339773A /* html.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F225C17DAB6D278B5BFE83436C45EE1 /* tomorrow-night-eighties.min.css in Resources */ = {isa = PBXBuildFile; fileRef = FF34FEFCE0510C90EAE839FC5D5B6405 /* tomorrow-night-eighties.min.css */; };
+		10851F5B345E3AA93AA1E15CDC08BF29 /* railscasts.min.css in Resources */ = {isa = PBXBuildFile; fileRef = CF2B9CD58223FA8DBB65192DB1ADBDF5 /* railscasts.min.css */; };
+		121365D6476B5C66560642FECA06F714 /* androidstudio.min.css in Resources */ = {isa = PBXBuildFile; fileRef = BCC59908DE60A370423EA502DB416016 /* androidstudio.min.css */; };
+		126315EB2A0BAC86B21AF863498DFEBC /* iterator.c in Sources */ = {isa = PBXBuildFile; fileRef = ED78E31EDCF751E07FCA010FA90816E8 /* iterator.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		12AD31706D0C44E3DCCF336D2030E579 /* qtcreator_dark.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 0D616282C1FBA40CDBFDC078C8CA93E2 /* qtcreator_dark.min.css */; };
+		12C45ECB984F5C2387AD4EFD89D00E1B /* UIBarButtonItem+Mixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1051415251C3DD39A84D61AD857183 /* UIBarButtonItem+Mixed.swift */; };
+		12F9A41395688220C054499DA226AB39 /* atelier-forest-light.min.css in Resources */ = {isa = PBXBuildFile; fileRef = E4C68F43A3841D8140CF1BA5667F75DC /* atelier-forest-light.min.css */; };
+		144ECC6300636FCD010D67610487BE51 /* CodeAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6AFDA6BF0791BD53129E6EB83E978E /* CodeAttributedString.swift */; };
+		197650FBA6124795D49D4553A9794526 /* utf8.h in Headers */ = {isa = PBXBuildFile; fileRef = D5A09869B7CB6FDDAFC972D6E98EA105 /* utf8.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B82AFE87ABE9E660367AAFE286D13D4 /* node.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C21354B2581ADF4BD3CF1BE9F637D48 /* node.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1BD08A9FF9376B5B3820B696AD89164E /* UIToolbar+Mixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD9972FA72482C2422E1FA67F6F55CD /* UIToolbar+Mixed.swift */; };
+		1C8D0237FC2E86F409F502E2D4A34C6D /* magula.min.css in Resources */ = {isa = PBXBuildFile; fileRef = D85EC496258C415E8F247E7E195067CF /* magula.min.css */; };
+		1EEA01FA75C3C0AE51CA4D9538427A32 /* paraiso-light.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 5A4080EC70FDB39A1351E3F6953B6530 /* paraiso-light.min.css */; };
+		2191DF9A03A3C6EBE52678CCBEE6DBF9 /* Shims.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1363C4A9C92F89D853F360F318194256 /* Shims.swift */; };
+		22231E15BB4AAD3B8D6B79EB508F86E4 /* dracula.min.css in Resources */ = {isa = PBXBuildFile; fileRef = E67039FCF2267C728CB6941B66720E31 /* dracula.min.css */; };
+		24E108319519DBC18234F7FA98C062E6 /* xcode.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 37A990F25694216928EA9668F070DA1C /* xcode.min.css */; };
+		24E4E094EF5E958ADD31E97631CDC9A4 /* map.c in Sources */ = {isa = PBXBuildFile; fileRef = EE9ABC085AB898D4149A8C79CA6761A6 /* map.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		27C95BD3D89F2288F1B86F4F53B5AFCF /* gruvbox-light.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 7030F290EFE2AD02B4C25AE95D531C61 /* gruvbox-light.min.css */; };
+		28CE4CD3BFA302AEA2451E7F53E04251 /* UINavigationBar+MixedBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2C0C121377E0A11CE3D9099E269A51 /* UINavigationBar+MixedBarStyle.swift */; };
+		2A039AC3CDAE6D22F3F4FFB2903598D1 /* inlines.h in Headers */ = {isa = PBXBuildFile; fileRef = AE11B8783ABA0CC8C892E875A248B624 /* inlines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B2BED7319316EC9D8F6436F7B99B655 /* cmark-gfm_export.h in Headers */ = {isa = PBXBuildFile; fileRef = 905A42FEEEA1C5718E1CF2606D7781FD /* cmark-gfm_export.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F79965FF3838088A86BF00CD3E81EB1 /* Dictionary+AttributedStringKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D65D626BD980C691C812A8C6A02BF1 /* Dictionary+AttributedStringKeys.swift */; };
+		30671EE75A775C267983A10DF5DA5D3B /* UIProgressView+Mixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD6C4235800EC98D92223D618553B07 /* UIProgressView+Mixed.swift */; };
+		3069CC2986172DE76CBC28F9FA97A828 /* rainbow.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 6627202B8400F3C77606CCAEAE5004A9 /* rainbow.min.css */; };
+		3370576764427514C3D98FC36FE5EC2C /* parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1089C054D4E69B5B50BB0079319F98C7 /* parser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33777EA5F505B88921DDD811C1071CC9 /* inlines.c in Sources */ = {isa = PBXBuildFile; fileRef = 5E9F78609FC81577DE59D0B1A80F0830 /* inlines.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		35B97E615703201685B87157281B739C /* NSObject+Mixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19953F48C4FFB7D7FBE4AF26DF164F91 /* NSObject+Mixed.swift */; };
+		36E3398A00B5D6B85FAE87BF52661380 /* kimbie.dark.min.css in Resources */ = {isa = PBXBuildFile; fileRef = B93F6A07B50C40824C92EC021998BDB8 /* kimbie.dark.min.css */; };
+		3796A4F06D9144EB8ACBF6C728DBCE88 /* plugin.h in Headers */ = {isa = PBXBuildFile; fileRef = BBEC88FB4BD3423B56E4825D6E0519CF /* plugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C42F0756F5EFE55C493B41F8EB374AF /* render.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B90FB41E311204B508F21F237DDFF60 /* render.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3CA9A1625798792A77EFA25E0006D2DB /* far.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 811727C40AE0D4BB7DD0E585F7AC322A /* far.min.css */; };
+		3CAAA77E1AEAAA5975F793D137AC86F1 /* gml.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 9A846272F7447132FE015AA809AEFBC2 /* gml.min.css */; };
+		3ED1EA77CFE3840ED054850BFA06596B /* github.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 82C5097198F4A14C9DB04B278948EC80 /* github.min.css */; };
+		41F18BB385A8AA950D2211A53E4DB10B /* tasklist.h in Headers */ = {isa = PBXBuildFile; fileRef = E6326258420A2EF0948001D1F9002A6F /* tasklist.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4362DBF5B76301208FE14720E17F471C /* autolink.h in Headers */ = {isa = PBXBuildFile; fileRef = 51CB68A5426D3389D507A9606122DC82 /* autolink.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46BC9150EF05FD3B458C8C98242AFA33 /* codepen-embed.min.css in Resources */ = {isa = PBXBuildFile; fileRef = D0E59A06E6092A8B8D1EF3326025F22F /* codepen-embed.min.css */; };
+		47CD0060DDDE1F1E95F3C230BA6D6676 /* chunk.h in Headers */ = {isa = PBXBuildFile; fileRef = 15E7FA907092E5BC9B354092F41C4605 /* chunk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		480FCCE7679932E5E6668A79EC5B5631 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E2013D2AD9FDF38D4EECAD7BDB25FB /* Theme.swift */; };
+		4823FC384A19368FD5DF9E3E4327C5D8 /* NightNight-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BA4FD1356F25375E3282EB9A84BF49C7 /* NightNight-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49B64345312A7331B3A21C50EBAD3B53 /* CALayer+Mixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = C742F8BCB99DD8739A4C592621A781F9 /* CALayer+Mixed.swift */; };
+		49DBCBA78B12448F45BBBBA873E86CD8 /* brown-paper.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 5DDDD83E43211B218C8B05FA963AC7A4 /* brown-paper.min.css */; };
+		4A2CA2F412BAFF13980B82579DAEC5A1 /* atelier-lakeside-light.min.css in Resources */ = {isa = PBXBuildFile; fileRef = CEAF37066C444E20E9C99D145BBF1FF9 /* atelier-lakeside-light.min.css */; };
+		4AEF6705D835DAF58445DF787191C50A /* node.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CB444954D1708E1AA0EA13EA46B791C /* node.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B3CA40B882F5DF74570B6835FD7520D /* atelier-heath-light.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 97E8166A61AA9B22BEB51D51BDDB3C91 /* atelier-heath-light.min.css */; };
+		4C5034203F2FB58C4BEA553E69F8AE94 /* tagfilter.c in Sources */ = {isa = PBXBuildFile; fileRef = E270618CE5F4483978FEEE2B135D547B /* tagfilter.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4E25D44BCDF3550B938F4A1AA31E3378 /* idea.min.css in Resources */ = {isa = PBXBuildFile; fileRef = F79058CCAE175E5FFB80FA7A3A77126A /* idea.min.css */; };
+		4E654A1AF4FB433FA8E833B5CDA7C513 /* map.h in Headers */ = {isa = PBXBuildFile; fileRef = 49D66949C8790543EAC292142B58FBC9 /* map.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E70140A1D197ECC63FF1C05B346A578 /* syntax_extension.h in Headers */ = {isa = PBXBuildFile; fileRef = B195B2A64058B0EF31986F6C0A0A8672 /* syntax_extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EC95F000D7A65ADB8A7944280D87C1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		4F7D3EE2B6A947777A2F656BCBD7B613 /* references.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C3B71E6233DB19F84E9E863FC10BBA1 /* references.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		511C9EC7C4880064ED90C7EABC02E379 /* libcmark_gfm-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 586499F9AA4A552276B6442D596FE6E9 /* libcmark_gfm-dummy.m */; };
+		53D1205BE21A58405844788BCD602B39 /* blocks.c in Sources */ = {isa = PBXBuildFile; fileRef = 05C8128EFEA4E9D38426525B67E576F4 /* blocks.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		54C23D49EEDFF419F05C6475B673A4F2 /* ascetic.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 1F77A0E875DCB1677BE486DE9571F583 /* ascetic.min.css */; };
+		554884047F7043D40A10A9BC39DF3639 /* autolink.c in Sources */ = {isa = PBXBuildFile; fileRef = 36569857F2530A0084FBE2E0B1B9830E /* autolink.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5933A97A4A728870A1AD3245F7075052 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		59C9C3A477C35652B8731FBEAAF59E1C /* darcula.min.css in Resources */ = {isa = PBXBuildFile; fileRef = BE46AC5AECA1AB2848BC41A0FF48AF9E /* darcula.min.css */; };
+		5B1A459FA7EA61D0F11791ABCCF16CD3 /* a11y-dark.min.css in Resources */ = {isa = PBXBuildFile; fileRef = B9122D2707731D5AC4CE3B5225E41E18 /* a11y-dark.min.css */; };
+		5B416EC85E1E7355BBC799E161973B50 /* tomorrow-night-bright.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 36F4C69C85771F21AE03581FA6A907DD /* tomorrow-night-bright.min.css */; };
+		5B5161FF6C92793F60B7BF1FB62EED44 /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 03040A46C4370F1BE13C64FD45B47ED4 /* buffer.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5C649B3A620A9D80AA65B21AD99AE048 /* atelier-estuary-dark.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 9FFBB3614D82F3F74415D969D369F085 /* atelier-estuary-dark.min.css */; };
+		5CF9438652D5AFD6E3B703736B4C2826 /* NSObject+Customize.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23BE9EE37CCCB5D17939FE1EE4D734 /* NSObject+Customize.swift */; };
+		5E60B2DFC6B512B66A919E20A1147F61 /* atelier-dune-light.min.css in Resources */ = {isa = PBXBuildFile; fileRef = F92CE2DBE111FC18DE491C5CBF5CA1E7 /* atelier-dune-light.min.css */; };
+		5EF233DAC34A9AA450F265F17D785327 /* dark.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 493546F33F5904B3CBA82A960AD54190 /* dark.min.css */; };
+		5F4436B1DC25B6AABF239DC0A3D6C10B /* atelier-seaside-dark.min.css in Resources */ = {isa = PBXBuildFile; fileRef = CBAC7A3AACE7E3A54704C2358291D5D5 /* atelier-seaside-dark.min.css */; };
+		5FB5E67492A9CE177EB7ADBD4297C3E4 /* atelier-savanna-dark.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 45FE876802883DE99D1187E55EA2608D /* atelier-savanna-dark.min.css */; };
+		60436DA4FD45C4C164EF347144A5EE90 /* UINavigationBar+Mixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B7EEB9EB99DEDF1013E17FBF457B0D /* UINavigationBar+Mixed.swift */; };
+		610EAF2CEDF25811A99562A24CD6AE12 /* UINavigationBar+MixedTitleTextAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E96B0B4D750060C3813073DC7CF3EC3 /* UINavigationBar+MixedTitleTextAttributes.swift */; };
+		61E490564A27F5661775C91F9D36600B /* UIButton+Mixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E446AB8BE8191FAB84017E22EAAAF864 /* UIButton+Mixed.swift */; };
+		623CE6692A2066826D00D1D64351C511 /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C9B8499E08863E213BB6DA81F6445F7 /* buffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6749D48F09D4FA40FE54404AF6FD4950 /* UITextField+Mixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF2DC3807517C25C11B569FBE32BA1A /* UITextField+Mixed.swift */; };
+		6BBFFBA949D32020B65C27913E267417 /* UISearchBar+Mixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE21ACDC476CBE7008F946B43BEEB885 /* UISearchBar+Mixed.swift */; };
+		6C7234067A083098990F50670A722446 /* monokai-sublime.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 912FCCAD5CA1EF4E3C88A1B09EBC557A /* monokai-sublime.min.css */; };
+		6D7771C9C88D74A0AD79364B3687E3CF /* paraiso-dark.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 04FB80EE043A216D79798EA78D285956 /* paraiso-dark.min.css */; };
+		6DB2DC305FD597C1C9CE78DB7FF019F0 /* arena.c in Sources */ = {isa = PBXBuildFile; fileRef = 6CB037A14EDF5FADA679E5F6C67E8ACD /* arena.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6E7849D468A73E7DB38A7BD3DC1EFD9A /* table.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B2FD15CC33FEAEAE7707ED948004089 /* table.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6E985B70A4CD922093F702765BF8607B /* iterator.h in Headers */ = {isa = PBXBuildFile; fileRef = 28BA08950AA19A099E5883BB1758BCB6 /* iterator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		712702ACCB8B10432E667106E2D9FCB3 /* vs.min.css in Resources */ = {isa = PBXBuildFile; fileRef = FB28601E459EE5A79FF8EB34660482FC /* vs.min.css */; };
+		71A60E21024769727F4093A934D7056A /* plaintext.c in Sources */ = {isa = PBXBuildFile; fileRef = 26EFCCCC58927AF7F3ADEF7F5A3D2784 /* plaintext.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		724345FE1AA71AA3174B37BB4EDB72B2 /* NightNight-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 64121E31383B2603952CCC424C640693 /* NightNight-dummy.m */; };
+		725F142BFCECF54A9F9B95F34307FD02 /* Pods-ZhaoCi (iOS)-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DBE6A24CE149EF55533009F6DDCC497 /* Pods-ZhaoCi (iOS)-dummy.m */; };
+		728F75EC40FAA315204786687EBF890C /* arduino-light.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 3212E8FB7244262B9985DF201092FE4B /* arduino-light.min.css */; };
+		73C6EF0595C7FB9A22E2689E292B99C2 /* HTMLUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8D4EFDDEECB722651B6854FC67A4BE /* HTMLUtils.swift */; };
+		751C32F442C75718B27884EEA4F84E3C /* cmark_ctype.c in Sources */ = {isa = PBXBuildFile; fileRef = 579F59214556A2E98B3FE4661C45FF6D /* cmark_ctype.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		75C12198B6CCF168C26E86798B013C20 /* solarized-light.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 8054F00439EBD4C47B10F66AADEE7EAE /* solarized-light.min.css */; };
+		7670C125850A58C3FAEE2A0457D9916F /* cmark-gfm_version.h in Headers */ = {isa = PBXBuildFile; fileRef = 666FAC2B2EF60F7CDE96FF1A521BCB01 /* cmark-gfm_version.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76841957AD1FD8BAF9604725465035FA /* linked_list.c in Sources */ = {isa = PBXBuildFile; fileRef = 6815AA8206B9122783B44058B7168196 /* linked_list.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7817E4D815D210F6436E11D9ED952BCD /* MixedResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5626D2A5542E7F068022504ECF043A9 /* MixedResource.swift */; };
+		78CBEE4E08C3AF85264FC0EE436C2C5A /* solarized-dark.min.css in Resources */ = {isa = PBXBuildFile; fileRef = DC0EDC63DBC704292DBFFC76BD042101 /* solarized-dark.min.css */; };
+		7A2C15FC5C484817C019D81E81DF71F5 /* color-brewer.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 126D303B2C6A1954066C4138BB05C53A /* color-brewer.min.css */; };
+		7D0EAF18AE7D1A8405E5CF39B9DDD100 /* qtcreator_light.min.css in Resources */ = {isa = PBXBuildFile; fileRef = E68039FFEAEA2FA6E69A0C81A85A696F /* qtcreator_light.min.css */; };
+		7FF23DCF4F831EE141CF530238C9F04E /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9653CEDB0DFFBE8556B4C5690625558 /* UIColor+RGB.swift */; };
+		8134C455DED03AB009AEE349624D6B61 /* registry.c in Sources */ = {isa = PBXBuildFile; fileRef = E4FE5198077FDC0103731C9DB049FF65 /* registry.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8308FE132E04AA2E5C9147CF6F616C6B /* monokai.min.css in Resources */ = {isa = PBXBuildFile; fileRef = EA2EDB2F93BA3D48D3CE20815C6CEC01 /* monokai.min.css */; };
+		831FA7B967203BE7BFAA2C734E869AD2 /* houdini_href_e.c in Sources */ = {isa = PBXBuildFile; fileRef = DFB558226C514A1DCDAE4985AC9E628C /* houdini_href_e.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		86CF5F097D99D95B0BDCFA014D43BF11 /* atelier-lakeside-dark.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 527E27AB91D04FAFC9767C0D38BA26CF /* atelier-lakeside-dark.min.css */; };
+		887503D47FC980DCB26C99B5F01689F9 /* commonmark.c in Sources */ = {isa = PBXBuildFile; fileRef = F282C0F7B315D800B2D4766FB1DB145F /* commonmark.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8E0499E0C61A37B92BC8941DFE68168B /* tomorrow-night-blue.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 55AD51CE0497255B2F88B82AC1B07142 /* tomorrow-night-blue.min.css */; };
+		8E3853A69003550380003FBF1665208F /* houdini_html_u.c in Sources */ = {isa = PBXBuildFile; fileRef = AA2A4E675766DFE196DB894AC9779265 /* houdini_html_u.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8E3EE9C0727BE58BD5BB7E4FC8FAE36A /* atelier-cave-light.min.css in Resources */ = {isa = PBXBuildFile; fileRef = CFE96540E45B2B090B95266B47205A8E /* atelier-cave-light.min.css */; };
+		8EA6FF29B07885F704A5F1827D4C5732 /* atelier-dune-dark.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 401EEC6B00C582E03CE1C23D60D1468B /* atelier-dune-dark.min.css */; };
+		9505E1A4EC2135DC0F1F229D95ACD910 /* man.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B53AFC2763AB1EF536FB58F589719FB /* man.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9940340D045FFE12ECE4C7C04E8F203C /* foundation.min.css in Resources */ = {isa = PBXBuildFile; fileRef = E51557AB868FC946E9151A0BF0182C15 /* foundation.min.css */; };
+		99C8D5AC919BBA091806D3C720B1AE59 /* NNMutableAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BCE235F551415C91AF109F4A6A08BE /* NNMutableAttributedString.swift */; };
+		9A5777A95BB8F2D6692EE1E19D33E719 /* hopscotch.min.css in Resources */ = {isa = PBXBuildFile; fileRef = F81A1513A469A76CAA315D66788A10F6 /* hopscotch.min.css */; };
+		9AB5883F9BF8A6DEBA2CE87C1D9B8134 /* houdini.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E0B311E65776EB673CE638FB509EDB8 /* houdini.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ADF8E89123FF9F180E65225E861D2AB /* UIPageControl+Mixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C3BF6640B389EB5D1FAC9FA6987086 /* UIPageControl+Mixed.swift */; };
+		9B4CEA850868751241818459D15AFAF3 /* Pods-ZhaoCi (iOS)-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C05C3D58F9940A902E55512D48117F63 /* Pods-ZhaoCi (iOS)-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F53451FD23DDEEFB3483B5274765703 /* ir-black.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 9C2CCDA6A5F7F48FD6645ACB2FA6D7F3 /* ir-black.min.css */; };
+		9FADDACF26DEB4EF395A5E9DC551C0C4 /* docco.min.css in Resources */ = {isa = PBXBuildFile; fileRef = C1605C771D42E9F88939E2FBE6C1E365 /* docco.min.css */; };
+		9FDECB83A768F4090464036F2D00C51B /* vs2015.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 48A77E46E68B34E4CAE28D25DE1A5003 /* vs2015.min.css */; };
+		A01E3ED039CAAFC8690EDD95EB63161E /* Highlightr-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B136FD59D3ABB9D80BB66FF2ECDBA41 /* Highlightr-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A19F4BDD0541DF1A6CB9892B7D7972E4 /* xml.c in Sources */ = {isa = PBXBuildFile; fileRef = E0604F2E052671696202203004A359FC /* xml.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A2A0C5D673AB3A34096513001D40A431 /* default.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 9924F9AF3C22964326712942FA0C289A /* default.min.css */; };
+		A432764CE499E68A8095963DA151713B /* latex.c in Sources */ = {isa = PBXBuildFile; fileRef = D49AD21AF299D545995B7E8F74E81FDF /* latex.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A57714C950F8E140199A1A78120CE869 /* AttributeNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893300B94DF6A2496A6107C2A77FEACA /* AttributeNames.swift */; };
+		A5800948809634C871637FA9B9A354D5 /* atom-one-dark-reasonable.min.css in Resources */ = {isa = PBXBuildFile; fileRef = E5EF68369804BE3760173E1305514644 /* atom-one-dark-reasonable.min.css */; };
+		A6130521E97A535D272E92BA34E7EB4C /* cmark-gfm.h in Headers */ = {isa = PBXBuildFile; fileRef = F9FCAD85AD85ECC3CB64DAAA23A89508 /* cmark-gfm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8C92EC80E6EE5C305ADB2DB6D19245E /* UISwitch+Mixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A02D5224AD85E9A9DFE9C308D53EA6 /* UISwitch+Mixed.swift */; };
+		A93A3219D170E2DA836C6C29740DC9C1 /* googlecode.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 1BA9DEAE9271D6E32ABB535CEF290019 /* googlecode.min.css */; };
+		A945065002A6D283168052EF8EB5E03D /* mono-blue.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 92ECC6B9FE9FE2D2C948B6E491CC7064 /* mono-blue.min.css */; };
+		ABE7EC24FAEB66737DA21B9F0E516BA6 /* UILabel+Mixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C2CB899065B02B3DCDCD881545DE4C /* UILabel+Mixed.swift */; };
+		AC1EB396107EEC895DC156600C57B6B3 /* UITabBar+Mixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B0F7396A2B94B97C8C9E6BFED683E6 /* UITabBar+Mixed.swift */; };
+		AC21A7931E406A3635E71BE84D6C5D87 /* atelier-savanna-light.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 44148935626F148D7F8B72128050BDBE /* atelier-savanna-light.min.css */; };
+		AC8D8341C355C9B469A5B0B6004BAC40 /* UIView+Mixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250A0379DBA2272354F8C1B35168E648 /* UIView+Mixed.swift */; };
+		AEDA75827DD5AD86AD61973F681257F0 /* an-old-hope.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 8CCDD8822A47E4D508459DFEA6EEE913 /* an-old-hope.min.css */; };
+		B2564657E3E9B10E38B4DBDF5F229FC0 /* zenburn.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 144568F62115B65F2640A56623487C0A /* zenburn.min.css */; };
+		B4D6C5B9E1B68731B8BA60FBBEADE504 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		B5F904C301F00B862F90EC213B89A994 /* ext_scanners.h in Headers */ = {isa = PBXBuildFile; fileRef = CEC4D3DAD6A1C0616B19298963429A1B /* ext_scanners.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB8D49AC92065DC8BCEE8F37C763CEA1 /* isbl-editor-light.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 01C181680DD1B880ADAB1D561BA15A51 /* isbl-editor-light.min.css */; };
+		BD5125F09042755C2A54FA38FEE3D938 /* scanners.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BA5E0C15381AE0718E5FFF0E113E382 /* scanners.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		BE5C3EB6A145353ED664B3B0D11E41F0 /* atelier-forest-dark.min.css in Resources */ = {isa = PBXBuildFile; fileRef = F0CDA35B08EA45124FB9966D0D972238 /* atelier-forest-dark.min.css */; };
+		C0EBCB38E23EE652A0989A07393538A0 /* ext_scanners.c in Sources */ = {isa = PBXBuildFile; fileRef = DAED7CD9F0AE46C01E4C4D821394FB37 /* ext_scanners.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C29CDF7221C2CE058496C7AD1F5F2A27 /* atelier-plateau-dark.min.css in Resources */ = {isa = PBXBuildFile; fileRef = FCEB8A2FCD0EFDD66B5AB6C8AE17F059 /* atelier-plateau-dark.min.css */; };
+		C347AB8C404AC16247E7FD7C6E23554F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		C3E3CEABD335F8F937C9141B6B6D6504 /* highlight.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 1337D4AC80F4864B349FA45E34D59571 /* highlight.min.js */; };
+		C51EDA5F22D1EA317CEEC394B1799026 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		C5AD5B3DB02EEFE5008AC2D4B72F4ECD /* pojoaque.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 52178B452123DE565B20BB17C1FFACDC /* pojoaque.min.css */; };
+		C6365E11D45479EDFCDD17B5AB57BE53 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		C74CF1B5E5DE4D7BFC32C60E326199BB /* isbl-editor-dark.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 103F64123EA6DD53888EE5A7215F3F69 /* isbl-editor-dark.min.css */; };
+		C7860449D604C046EFE9A066D9FA35B5 /* purebasic.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 51E016666BDFEB5B13CDE1A89179E648 /* purebasic.min.css */; };
+		C93957F3EA427F0224C224C414EBCF9A /* arta.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 58427C616F09D442C9C71229DBB661C9 /* arta.min.css */; };
+		CB738EE37597EE5DA3505DB7CD62308B /* atelier-cave-dark.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 9A0DC689CB3FEF1D99E0DC0C587C1772 /* atelier-cave-dark.min.css */; };
+		CBAC59B7171D03DAEE697C10E3F23DFE /* core-extensions.c in Sources */ = {isa = PBXBuildFile; fileRef = 06D770F369769FF0B297A63658D6DE0A /* core-extensions.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CD4C0F963C226997D4F3BA8768E38BCD /* atom-one-light.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 43AAEF031BEF41321DE387E08FE170AD /* atom-one-light.min.css */; };
+		D015F95C5A6C1756C86B784A96CC7AD5 /* Highlightr-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48968425A5AB47E801C63EB7EA8BFEA7 /* Highlightr-dummy.m */; };
+		D30166EF50BE2D87CD69472021520537 /* routeros.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 3547DFFF7D5C4E90E83A672C53CE8FF9 /* routeros.min.css */; };
+		D3D6A6FD1A3A15C79C765063DF3AF1B2 /* UIImageView+Mixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A1A13A8F80DCF1C7143E2EED9103E6 /* UIImageView+Mixed.swift */; };
+		D4FAFC6A312C0B2E92F1AE07FC00B952 /* footnotes.h in Headers */ = {isa = PBXBuildFile; fileRef = BA91E49072C190FA55611D89184A8364 /* footnotes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D776AEB1FF5E54C04DA6AD7FB74A915C /* agate.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 75DEE2B05232BFE1B2168B948294B0AB /* agate.min.css */; };
+		D7822E243D8C205FB0A880713346A767 /* houdini_html_e.c in Sources */ = {isa = PBXBuildFile; fileRef = 92F1EECCDB3F1F2FE7A13CCE42971B73 /* houdini_html_e.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D8B3BA388969B9458A4AECA52C314026 /* scanners.h in Headers */ = {isa = PBXBuildFile; fileRef = C151FE2DD2CC7BA280084D2C4CDED197 /* scanners.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D90D5F663E80AA51B51FBF35D6D02C70 /* tomorrow.min.css in Resources */ = {isa = PBXBuildFile; fileRef = C23546B4A6E70B216040280B3EEFE446 /* tomorrow.min.css */; };
+		D92234FC026A2B14668894DCBD6453A1 /* atelier-heath-dark.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 4543CFC7099980142AFCF80369D2633E /* atelier-heath-dark.min.css */; };
+		D9FC96665AF64A3AF319896A18977F9E /* utf8.c in Sources */ = {isa = PBXBuildFile; fileRef = 1D18942D90CFF0BA648B690BEB43B051 /* utf8.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		DAB95499626A7B843966AF07BD098642 /* cmark-gfm-extension_api.h in Headers */ = {isa = PBXBuildFile; fileRef = D9BF4FCC8A4F870368A1811CCCC3B0BD /* cmark-gfm-extension_api.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBE62538701D62599909F857414AE30E /* atelier-plateau-light.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 31628AEB7DF7F769556B1310CC27E5C4 /* atelier-plateau-light.min.css */; };
+		DD055A2C6336CF8C4B96D29A72F6730A /* cmark-gfm-core-extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = B9B8BA3DBF7CC64D80BC5DA717B13381 /* cmark-gfm-core-extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEEB5B4971DF71C8D135F0D918A189F0 /* UITextView+Mixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7517217C6763D4B2D8DB16F5C9046798 /* UITextView+Mixed.swift */; };
+		DF8404CA4D588F34BD49E7F28953A9FB /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CF393EDC7C96E4D3C3695E84F2A014F /* config.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0B0AC7ABA376A59BE28B26C614CDA6A /* syntax_extension.c in Sources */ = {isa = PBXBuildFile; fileRef = 5222F385FE80647582D4C820E6CD6313 /* syntax_extension.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E208D49CC1EFB6888D26B83136E1AB73 /* grayscale.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 1FDA59E1E98BE7FFDDCAF276D359D03D /* grayscale.min.css */; };
+		E25620F50155B9A13C63B216D81BB523 /* kimbie.light.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 73D00F6055C2B187B096CA7F4917DE39 /* kimbie.light.min.css */; };
+		E345FC78B1420ABC77DBCB8C4849E12E /* cmark-gfm-extensions_export.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B0384A463C6E6FA7A208ECB0D1F5E6 /* cmark-gfm-extensions_export.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E373753D4B11ED168C0A83911B8D8092 /* tasklist.c in Sources */ = {isa = PBXBuildFile; fileRef = 980940B44BE7E36426A43A9DD8BF9683 /* tasklist.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E45FE8E6BD42552C78815539299EBEF2 /* html.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F7A066E98E8D72A77E87C32EA4981D5 /* html.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E48660D46132FDB937CA6DE5403B8D43 /* github-gist.min.css in Resources */ = {isa = PBXBuildFile; fileRef = EF5E3C34C2BCADFA0FF090E01DBD6CC3 /* github-gist.min.css */; };
+		E4D6C0861D7267B6BD99E4A7A193D8CA /* UIPopoverPresentationController+Mixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24649445DCA449B12F1AE172621717ED /* UIPopoverPresentationController+Mixed.swift */; };
+		E56F1A4969C5AD1503393F4C44871C93 /* obsidian.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 86C5046798D4D654961117A39C49ADA4 /* obsidian.min.css */; };
+		E623B7AA4C2EC678F9257FC760EDBE4F /* strikethrough.h in Headers */ = {isa = PBXBuildFile; fileRef = DEB439111724A612AFF6057B6C543A49 /* strikethrough.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7B0025FAF44F72B4A2037631E387FD1 /* gruvbox-dark.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 21DFF907B8C9991BD0ED7823773C8D52 /* gruvbox-dark.min.css */; };
+		E7B161C14BAEA7D1B796B5C7D2AED8C4 /* atelier-sulphurpool-light.min.css in Resources */ = {isa = PBXBuildFile; fileRef = B5C4A078338F45859428FF7B7BDFDF9D /* atelier-sulphurpool-light.min.css */; };
+		E837FF5E4EDE1765E49D50BB022199BA /* hybrid.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 98DDE1CC6F81DA29F13230A5CC500316 /* hybrid.min.css */; };
+		E9CA2D7934ABBE8DEC6A106143A1B7DD /* NightNight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B44263606DD930D69649F67947D5546 /* NightNight.swift */; };
+		EA5E3F6C83B36B0930D90D4F08AA7D95 /* sunburst.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 0F28036442FAFE42DF26AA0B0166C60B /* sunburst.min.css */; };
+		EAEFFF213543CA8730E562C81FFBD320 /* cmark.c in Sources */ = {isa = PBXBuildFile; fileRef = 47829E8A1BBD7E872E4602C099039471 /* cmark.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		EB141495EB508FE44C896C8B16DED65A /* atelier-sulphurpool-dark.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 240B265AF76E1D4FAB1657AAE45B1058 /* atelier-sulphurpool-dark.min.css */; };
+		ED508CBC9CFED321E9F4497AC0FF9B38 /* lightfair.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 70FFACB3379A29393530C549F0BED010 /* lightfair.min.css */; };
+		EE971ED41CA1AFF02053609FEDEBEE76 /* Highlightr.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F21ABBD6F9AB8B49B8BD8C75E4942 /* Highlightr.swift */; };
+		F087E837F53FFFC73EBB4ADC7D0C6954 /* school-book.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 277859304CCF14C7C15FA25B34F1A673 /* school-book.min.css */; };
+		F3323D1E8113D15A59D18A3D57F4F500 /* strikethrough.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B92CE26B502834C9504308B1C65098B /* strikethrough.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F35AB59FC57AC069CC920FFDA069900C /* atelier-seaside-light.min.css in Resources */ = {isa = PBXBuildFile; fileRef = FEEDBDB04E7B4BFEB36665CD8D47A779 /* atelier-seaside-light.min.css */; };
+		F3750ACB8E366F8B4E5521E6760B25FE /* atom-one-dark.min.css in Resources */ = {isa = PBXBuildFile; fileRef = C2D561890C95E25BF5A5748CCF087EF8 /* atom-one-dark.min.css */; };
+		F38F6F1A3E01B01A096458AA459DD8AD /* registry.h in Headers */ = {isa = PBXBuildFile; fileRef = CEFFDA6D266643CD31C652AE68512DCE /* registry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3C157A72C34E9FF8568669116A0446B /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583D8F09A442250503A84F60C4C108AF /* Keys.swift */; };
+		F42797451EA3931DC8ECBEF5032068A4 /* tomorrow-night.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 5890677E5B9EADA86143B638E4931391 /* tomorrow-night.min.css */; };
+		F53F83F89331995C53919AE1FFC30090 /* atelier-estuary-light.min.css in Resources */ = {isa = PBXBuildFile; fileRef = F51789B4CB979AEECAC39AA4887BA382 /* atelier-estuary-light.min.css */; };
+		F891BEE52A9EA8413C652FC0CE2DD8F4 /* references.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CB167DBEDF5914F2185918AA0337072 /* references.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F951C17D1825FB9C139C9ED86760305A /* libcmark_gfm-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 79D3CCBD607B34F39C92749508FCFBA9 /* libcmark_gfm-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA409616BC309E4800FB41B90FBC0D75 /* table.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D12E42CBA8663718A37A02495009632 /* table.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA4C92CAF5CC1E6CE3B29ED9FF080407 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7B412AC98A8947CA1988EC6B4DA823 /* NotificationManager.swift */; };
+		FB0B2A95B497411AE53057527D7A3903 /* nord.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 551C5968D068D23FC0AADE41277F51C2 /* nord.min.css */; };
+		FB7E80770EF637056E103A5BC8D7ADA1 /* a11y-light.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 751A7BAEA29CBC5E8ABFF9F10787A1BD /* a11y-light.min.css */; };
+		FBD50FD35416F69ABC0F411BFCDB876F /* tagfilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 86D0CB38DA90231D602027723E67F671 /* tagfilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBE06EDA32D1147769B8820F4B0F540D /* plugin.c in Sources */ = {isa = PBXBuildFile; fileRef = FD387CEAB12932474625603D832AA517 /* plugin.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B8374B4CC92890B20861EE98334A626 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99AA28030FD8D12D33D7CDC66C9EA18B;
+			remoteInfo = NightNight;
+		};
+		B2265DD63C036BD2E938ABA50465EABC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0DFE582E64AE7298C59241B7B610B04;
+			remoteInfo = Highlightr;
+		};
+		B6ED40DB4ED196C338F53B3C4F51CC8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6BA5C244B7A82E8941E99031770A235;
+			remoteInfo = libcmark_gfm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01C181680DD1B880ADAB1D561BA15A51 /* isbl-editor-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "isbl-editor-light.min.css"; path = "Pod/Assets/styles/isbl-editor-light.min.css"; sourceTree = "<group>"; };
+		01DD96FE0E996884D8840C6D9A2C3CCA /* Highlightr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Highlightr.release.xcconfig; sourceTree = "<group>"; };
+		03040A46C4370F1BE13C64FD45B47ED4 /* buffer.c */ = {isa = PBXFileReference; includeInIndex = 1; name = buffer.c; path = Sources/libcmark_gfm/buffer.c; sourceTree = "<group>"; };
+		04FB80EE043A216D79798EA78D285956 /* paraiso-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "paraiso-dark.min.css"; path = "Pod/Assets/styles/paraiso-dark.min.css"; sourceTree = "<group>"; };
+		05C8128EFEA4E9D38426525B67E576F4 /* blocks.c */ = {isa = PBXFileReference; includeInIndex = 1; name = blocks.c; path = Sources/libcmark_gfm/blocks.c; sourceTree = "<group>"; };
+		06D770F369769FF0B297A63658D6DE0A /* core-extensions.c */ = {isa = PBXFileReference; includeInIndex = 1; name = "core-extensions.c"; path = "Sources/libcmark_gfm/core-extensions.c"; sourceTree = "<group>"; };
+		0B44263606DD930D69649F67947D5546 /* NightNight.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NightNight.swift; path = NightNight/Classes/NightNight.swift; sourceTree = "<group>"; };
+		0CB444954D1708E1AA0EA13EA46B791C /* node.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = node.h; path = Sources/libcmark_gfm/include/node.h; sourceTree = "<group>"; };
+		0D1051415251C3DD39A84D61AD857183 /* UIBarButtonItem+Mixed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIBarButtonItem+Mixed.swift"; path = "NightNight/Classes/UIKit/UIBarButtonItem+Mixed.swift"; sourceTree = "<group>"; };
+		0D616282C1FBA40CDBFDC078C8CA93E2 /* qtcreator_dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = qtcreator_dark.min.css; path = Pod/Assets/styles/qtcreator_dark.min.css; sourceTree = "<group>"; };
+		0DD9972FA72482C2422E1FA67F6F55CD /* UIToolbar+Mixed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIToolbar+Mixed.swift"; path = "NightNight/Classes/UIKit/UIToolbar+Mixed.swift"; sourceTree = "<group>"; };
+		0F28036442FAFE42DF26AA0B0166C60B /* sunburst.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = sunburst.min.css; path = Pod/Assets/styles/sunburst.min.css; sourceTree = "<group>"; };
+		0F7A066E98E8D72A77E87C32EA4981D5 /* html.c */ = {isa = PBXFileReference; includeInIndex = 1; name = html.c; path = Sources/libcmark_gfm/html.c; sourceTree = "<group>"; };
+		103F64123EA6DD53888EE5A7215F3F69 /* isbl-editor-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "isbl-editor-dark.min.css"; path = "Pod/Assets/styles/isbl-editor-dark.min.css"; sourceTree = "<group>"; };
+		1089C054D4E69B5B50BB0079319F98C7 /* parser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = parser.h; path = Sources/libcmark_gfm/include/parser.h; sourceTree = "<group>"; };
+		126D303B2C6A1954066C4138BB05C53A /* color-brewer.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "color-brewer.min.css"; path = "Pod/Assets/styles/color-brewer.min.css"; sourceTree = "<group>"; };
+		1337D4AC80F4864B349FA45E34D59571 /* highlight.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = highlight.min.js; path = Pod/Assets/Highlighter/highlight.min.js; sourceTree = "<group>"; };
+		1363C4A9C92F89D853F360F318194256 /* Shims.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shims.swift; path = Pod/Classes/Shims.swift; sourceTree = "<group>"; };
+		144568F62115B65F2640A56623487C0A /* zenburn.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = zenburn.min.css; path = Pod/Assets/styles/zenburn.min.css; sourceTree = "<group>"; };
+		15E7FA907092E5BC9B354092F41C4605 /* chunk.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = chunk.h; path = Sources/libcmark_gfm/include/chunk.h; sourceTree = "<group>"; };
+		18C2CB899065B02B3DCDCD881545DE4C /* UILabel+Mixed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILabel+Mixed.swift"; path = "NightNight/Classes/UIKit/UILabel+Mixed.swift"; sourceTree = "<group>"; };
+		19953F48C4FFB7D7FBE4AF26DF164F91 /* NSObject+Mixed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+Mixed.swift"; path = "NightNight/Classes/NSObject+Mixed.swift"; sourceTree = "<group>"; };
+		1BA5E0C15381AE0718E5FFF0E113E382 /* scanners.c */ = {isa = PBXFileReference; includeInIndex = 1; name = scanners.c; path = Sources/libcmark_gfm/scanners.c; sourceTree = "<group>"; };
+		1BA9DEAE9271D6E32ABB535CEF290019 /* googlecode.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = googlecode.min.css; path = Pod/Assets/styles/googlecode.min.css; sourceTree = "<group>"; };
+		1CB167DBEDF5914F2185918AA0337072 /* references.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = references.h; path = Sources/libcmark_gfm/include/references.h; sourceTree = "<group>"; };
+		1D18942D90CFF0BA648B690BEB43B051 /* utf8.c */ = {isa = PBXFileReference; includeInIndex = 1; name = utf8.c; path = Sources/libcmark_gfm/utf8.c; sourceTree = "<group>"; };
+		1F77A0E875DCB1677BE486DE9571F583 /* ascetic.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = ascetic.min.css; path = Pod/Assets/styles/ascetic.min.css; sourceTree = "<group>"; };
+		1FDA59E1E98BE7FFDDCAF276D359D03D /* grayscale.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = grayscale.min.css; path = Pod/Assets/styles/grayscale.min.css; sourceTree = "<group>"; };
+		1FF607E91CC84645E144AEFD0B1364B0 /* Pods-ZhaoCi (iOS) */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ZhaoCi (iOS)"; path = Pods_ZhaoCi__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		218B595E9CBBBCBEBE86B405EB89E48E /* footnotes.c */ = {isa = PBXFileReference; includeInIndex = 1; name = footnotes.c; path = Sources/libcmark_gfm/footnotes.c; sourceTree = "<group>"; };
+		21DFF907B8C9991BD0ED7823773C8D52 /* gruvbox-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "gruvbox-dark.min.css"; path = "Pod/Assets/styles/gruvbox-dark.min.css"; sourceTree = "<group>"; };
+		240B265AF76E1D4FAB1657AAE45B1058 /* atelier-sulphurpool-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-sulphurpool-dark.min.css"; path = "Pod/Assets/styles/atelier-sulphurpool-dark.min.css"; sourceTree = "<group>"; };
+		24649445DCA449B12F1AE172621717ED /* UIPopoverPresentationController+Mixed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIPopoverPresentationController+Mixed.swift"; path = "NightNight/Classes/UIKit/UIPopoverPresentationController+Mixed.swift"; sourceTree = "<group>"; };
+		24DF2B9B4638EC54DEA436FCA2B4257A /* darkula.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = darkula.min.css; path = Pod/Assets/styles/darkula.min.css; sourceTree = "<group>"; };
+		250A0379DBA2272354F8C1B35168E648 /* UIView+Mixed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Mixed.swift"; path = "NightNight/Classes/UIKit/UIView+Mixed.swift"; sourceTree = "<group>"; };
+		26EFCCCC58927AF7F3ADEF7F5A3D2784 /* plaintext.c */ = {isa = PBXFileReference; includeInIndex = 1; name = plaintext.c; path = Sources/libcmark_gfm/plaintext.c; sourceTree = "<group>"; };
+		277859304CCF14C7C15FA25B34F1A673 /* school-book.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "school-book.min.css"; path = "Pod/Assets/styles/school-book.min.css"; sourceTree = "<group>"; };
+		28BA08950AA19A099E5883BB1758BCB6 /* iterator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = iterator.h; path = Sources/libcmark_gfm/include/iterator.h; sourceTree = "<group>"; };
+		2A2C0C121377E0A11CE3D9099E269A51 /* UINavigationBar+MixedBarStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINavigationBar+MixedBarStyle.swift"; path = "NightNight/Classes/UINavigationBar+MixedBarStyle.swift"; sourceTree = "<group>"; };
+		2B2A480C32F3BBA36E4F88BE95A29045 /* NightNight */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NightNight; path = NightNight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C9B8499E08863E213BB6DA81F6445F7 /* buffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = buffer.h; path = Sources/libcmark_gfm/include/buffer.h; sourceTree = "<group>"; };
+		308CC5B44DCBDF508762FDAA8EFD1E57 /* libcmark_gfm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = libcmark_gfm.h; path = Sources/libcmark_gfm/include/libcmark_gfm.h; sourceTree = "<group>"; };
+		31628AEB7DF7F769556B1310CC27E5C4 /* atelier-plateau-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-plateau-light.min.css"; path = "Pod/Assets/styles/atelier-plateau-light.min.css"; sourceTree = "<group>"; };
+		3212E8FB7244262B9985DF201092FE4B /* arduino-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "arduino-light.min.css"; path = "Pod/Assets/styles/arduino-light.min.css"; sourceTree = "<group>"; };
+		3547DFFF7D5C4E90E83A672C53CE8FF9 /* routeros.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = routeros.min.css; path = Pod/Assets/styles/routeros.min.css; sourceTree = "<group>"; };
+		36569857F2530A0084FBE2E0B1B9830E /* autolink.c */ = {isa = PBXFileReference; includeInIndex = 1; name = autolink.c; path = Sources/libcmark_gfm/autolink.c; sourceTree = "<group>"; };
+		36F4C69C85771F21AE03581FA6A907DD /* tomorrow-night-bright.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "tomorrow-night-bright.min.css"; path = "Pod/Assets/styles/tomorrow-night-bright.min.css"; sourceTree = "<group>"; };
+		37A990F25694216928EA9668F070DA1C /* xcode.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = xcode.min.css; path = Pod/Assets/styles/xcode.min.css; sourceTree = "<group>"; };
+		398DBDE0F78F8C6063E464C2257067E3 /* ocean.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = ocean.min.css; path = Pod/Assets/styles/ocean.min.css; sourceTree = "<group>"; };
+		3AA89618454E88B0254EEB39D6D2BC30 /* Highlightr.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Highlightr.modulemap; sourceTree = "<group>"; };
+		3C21354B2581ADF4BD3CF1BE9F637D48 /* node.c */ = {isa = PBXFileReference; includeInIndex = 1; name = node.c; path = Sources/libcmark_gfm/node.c; sourceTree = "<group>"; };
+		401EEC6B00C582E03CE1C23D60D1468B /* atelier-dune-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-dune-dark.min.css"; path = "Pod/Assets/styles/atelier-dune-dark.min.css"; sourceTree = "<group>"; };
+		42A3E30A86828B8D367D8656A339773A /* html.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = html.h; path = Sources/libcmark_gfm/include/html.h; sourceTree = "<group>"; };
+		43AAEF031BEF41321DE387E08FE170AD /* atom-one-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atom-one-light.min.css"; path = "Pod/Assets/styles/atom-one-light.min.css"; sourceTree = "<group>"; };
+		44148935626F148D7F8B72128050BDBE /* atelier-savanna-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-savanna-light.min.css"; path = "Pod/Assets/styles/atelier-savanna-light.min.css"; sourceTree = "<group>"; };
+		4543CFC7099980142AFCF80369D2633E /* atelier-heath-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-heath-dark.min.css"; path = "Pod/Assets/styles/atelier-heath-dark.min.css"; sourceTree = "<group>"; };
+		45FE876802883DE99D1187E55EA2608D /* atelier-savanna-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-savanna-dark.min.css"; path = "Pod/Assets/styles/atelier-savanna-dark.min.css"; sourceTree = "<group>"; };
+		47829E8A1BBD7E872E4602C099039471 /* cmark.c */ = {isa = PBXFileReference; includeInIndex = 1; name = cmark.c; path = Sources/libcmark_gfm/cmark.c; sourceTree = "<group>"; };
+		48968425A5AB47E801C63EB7EA8BFEA7 /* Highlightr-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Highlightr-dummy.m"; sourceTree = "<group>"; };
+		48A77E46E68B34E4CAE28D25DE1A5003 /* vs2015.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = vs2015.min.css; path = Pod/Assets/styles/vs2015.min.css; sourceTree = "<group>"; };
+		48BC7195FFB7AB8250478CC3B8305199 /* NightNight-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NightNight-Info.plist"; sourceTree = "<group>"; };
+		493546F33F5904B3CBA82A960AD54190 /* dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = dark.min.css; path = Pod/Assets/styles/dark.min.css; sourceTree = "<group>"; };
+		49D66949C8790543EAC292142B58FBC9 /* map.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = map.h; path = Sources/libcmark_gfm/include/map.h; sourceTree = "<group>"; };
+		4B136FD59D3ABB9D80BB66FF2ECDBA41 /* Highlightr-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Highlightr-umbrella.h"; sourceTree = "<group>"; };
+		4DE248F4E923C9CB5E5F5A9B4B82124F /* Pods-ZhaoCi (iOS)-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZhaoCi (iOS)-Info.plist"; sourceTree = "<group>"; };
+		51CB68A5426D3389D507A9606122DC82 /* autolink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = autolink.h; path = Sources/libcmark_gfm/include/autolink.h; sourceTree = "<group>"; };
+		51E016666BDFEB5B13CDE1A89179E648 /* purebasic.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = purebasic.min.css; path = Pod/Assets/styles/purebasic.min.css; sourceTree = "<group>"; };
+		52178B452123DE565B20BB17C1FFACDC /* pojoaque.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = pojoaque.min.css; path = Pod/Assets/styles/pojoaque.min.css; sourceTree = "<group>"; };
+		5222F385FE80647582D4C820E6CD6313 /* syntax_extension.c */ = {isa = PBXFileReference; includeInIndex = 1; name = syntax_extension.c; path = Sources/libcmark_gfm/syntax_extension.c; sourceTree = "<group>"; };
+		527E27AB91D04FAFC9767C0D38BA26CF /* atelier-lakeside-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-lakeside-dark.min.css"; path = "Pod/Assets/styles/atelier-lakeside-dark.min.css"; sourceTree = "<group>"; };
+		551C5968D068D23FC0AADE41277F51C2 /* nord.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = nord.min.css; path = Pod/Assets/styles/nord.min.css; sourceTree = "<group>"; };
+		55AD51CE0497255B2F88B82AC1B07142 /* tomorrow-night-blue.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "tomorrow-night-blue.min.css"; path = "Pod/Assets/styles/tomorrow-night-blue.min.css"; sourceTree = "<group>"; };
+		579F59214556A2E98B3FE4661C45FF6D /* cmark_ctype.c */ = {isa = PBXFileReference; includeInIndex = 1; name = cmark_ctype.c; path = Sources/libcmark_gfm/cmark_ctype.c; sourceTree = "<group>"; };
+		583D8F09A442250503A84F60C4C108AF /* Keys.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keys.swift; path = NightNight/Classes/Keys.swift; sourceTree = "<group>"; };
+		58427C616F09D442C9C71229DBB661C9 /* arta.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = arta.min.css; path = Pod/Assets/styles/arta.min.css; sourceTree = "<group>"; };
+		586499F9AA4A552276B6442D596FE6E9 /* libcmark_gfm-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "libcmark_gfm-dummy.m"; sourceTree = "<group>"; };
+		5890677E5B9EADA86143B638E4931391 /* tomorrow-night.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "tomorrow-night.min.css"; path = "Pod/Assets/styles/tomorrow-night.min.css"; sourceTree = "<group>"; };
+		5A4080EC70FDB39A1351E3F6953B6530 /* paraiso-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "paraiso-light.min.css"; path = "Pod/Assets/styles/paraiso-light.min.css"; sourceTree = "<group>"; };
+		5AEF2DA1918F8FA9085A4F53468DD305 /* libcmark_gfm-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "libcmark_gfm-Info.plist"; sourceTree = "<group>"; };
+		5C3B71E6233DB19F84E9E863FC10BBA1 /* references.c */ = {isa = PBXFileReference; includeInIndex = 1; name = references.c; path = Sources/libcmark_gfm/references.c; sourceTree = "<group>"; };
+		5CF393EDC7C96E4D3C3695E84F2A014F /* config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = config.h; path = Sources/libcmark_gfm/include/config.h; sourceTree = "<group>"; };
+		5DDDD83E43211B218C8B05FA963AC7A4 /* brown-paper.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "brown-paper.min.css"; path = "Pod/Assets/styles/brown-paper.min.css"; sourceTree = "<group>"; };
+		5E9F78609FC81577DE59D0B1A80F0830 /* inlines.c */ = {isa = PBXFileReference; includeInIndex = 1; name = inlines.c; path = Sources/libcmark_gfm/inlines.c; sourceTree = "<group>"; };
+		64121E31383B2603952CCC424C640693 /* NightNight-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NightNight-dummy.m"; sourceTree = "<group>"; };
+		6627202B8400F3C77606CCAEAE5004A9 /* rainbow.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = rainbow.min.css; path = Pod/Assets/styles/rainbow.min.css; sourceTree = "<group>"; };
+		666FAC2B2EF60F7CDE96FF1A521BCB01 /* cmark-gfm_version.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "cmark-gfm_version.h"; path = "Sources/libcmark_gfm/include/cmark-gfm_version.h"; sourceTree = "<group>"; };
+		6815AA8206B9122783B44058B7168196 /* linked_list.c */ = {isa = PBXFileReference; includeInIndex = 1; name = linked_list.c; path = Sources/libcmark_gfm/linked_list.c; sourceTree = "<group>"; };
+		6CB037A14EDF5FADA679E5F6C67E8ACD /* arena.c */ = {isa = PBXFileReference; includeInIndex = 1; name = arena.c; path = Sources/libcmark_gfm/arena.c; sourceTree = "<group>"; };
+		6E022C64D5FD4989FFA1D7314E8C9EB6 /* libcmark_gfm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = libcmark_gfm.release.xcconfig; sourceTree = "<group>"; };
+		6E0B311E65776EB673CE638FB509EDB8 /* houdini.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = houdini.h; path = Sources/libcmark_gfm/include/houdini.h; sourceTree = "<group>"; };
+		7030F290EFE2AD02B4C25AE95D531C61 /* gruvbox-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "gruvbox-light.min.css"; path = "Pod/Assets/styles/gruvbox-light.min.css"; sourceTree = "<group>"; };
+		70FFACB3379A29393530C549F0BED010 /* lightfair.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = lightfair.min.css; path = Pod/Assets/styles/lightfair.min.css; sourceTree = "<group>"; };
+		72E2013D2AD9FDF38D4EECAD7BDB25FB /* Theme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Theme.swift; path = Pod/Classes/Theme.swift; sourceTree = "<group>"; };
+		73D00F6055C2B187B096CA7F4917DE39 /* kimbie.light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = kimbie.light.min.css; path = Pod/Assets/styles/kimbie.light.min.css; sourceTree = "<group>"; };
+		7517217C6763D4B2D8DB16F5C9046798 /* UITextView+Mixed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextView+Mixed.swift"; path = "NightNight/Classes/UIKit/UITextView+Mixed.swift"; sourceTree = "<group>"; };
+		751A7BAEA29CBC5E8ABFF9F10787A1BD /* a11y-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "a11y-light.min.css"; path = "Pod/Assets/styles/a11y-light.min.css"; sourceTree = "<group>"; };
+		7582B80620FE25B16A221E1B7DDED222 /* libcmark_gfm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = libcmark_gfm.debug.xcconfig; sourceTree = "<group>"; };
+		75B0F7396A2B94B97C8C9E6BFED683E6 /* UITabBar+Mixed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITabBar+Mixed.swift"; path = "NightNight/Classes/UIKit/UITabBar+Mixed.swift"; sourceTree = "<group>"; };
+		75DEE2B05232BFE1B2168B948294B0AB /* agate.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = agate.min.css; path = Pod/Assets/styles/agate.min.css; sourceTree = "<group>"; };
+		77BCE235F551415C91AF109F4A6A08BE /* NNMutableAttributedString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NNMutableAttributedString.swift; path = NightNight/Classes/NNMutableAttributedString.swift; sourceTree = "<group>"; };
+		79461EAF9EE23371FB008ABEB5914A32 /* UITableView+Mixed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+Mixed.swift"; path = "NightNight/Classes/UIKit/UITableView+Mixed.swift"; sourceTree = "<group>"; };
+		79D3CCBD607B34F39C92749508FCFBA9 /* libcmark_gfm-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "libcmark_gfm-umbrella.h"; sourceTree = "<group>"; };
+		7B2FD15CC33FEAEAE7707ED948004089 /* table.c */ = {isa = PBXFileReference; includeInIndex = 1; name = table.c; path = Sources/libcmark_gfm/table.c; sourceTree = "<group>"; };
+		7B90FB41E311204B508F21F237DDFF60 /* render.c */ = {isa = PBXFileReference; includeInIndex = 1; name = render.c; path = Sources/libcmark_gfm/render.c; sourceTree = "<group>"; };
+		7DB3C8BAA3D78E532F17CD75C7EC3704 /* Highlightr */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Highlightr; path = Highlightr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E7980E4866D1FD80C072F05E5BC8114 /* Pods-ZhaoCi (iOS).modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZhaoCi (iOS).modulemap"; sourceTree = "<group>"; };
+		8054F00439EBD4C47B10F66AADEE7EAE /* solarized-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "solarized-light.min.css"; path = "Pod/Assets/styles/solarized-light.min.css"; sourceTree = "<group>"; };
+		811727C40AE0D4BB7DD0E585F7AC322A /* far.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = far.min.css; path = Pod/Assets/styles/far.min.css; sourceTree = "<group>"; };
+		82C5097198F4A14C9DB04B278948EC80 /* github.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = github.min.css; path = Pod/Assets/styles/github.min.css; sourceTree = "<group>"; };
+		86C5046798D4D654961117A39C49ADA4 /* obsidian.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = obsidian.min.css; path = Pod/Assets/styles/obsidian.min.css; sourceTree = "<group>"; };
+		86D0CB38DA90231D602027723E67F671 /* tagfilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tagfilter.h; path = Sources/libcmark_gfm/include/tagfilter.h; sourceTree = "<group>"; };
+		8904ECAF5D21CDB4D1002CFCC7BA27C0 /* Pods-ZhaoCi (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZhaoCi (iOS).debug.xcconfig"; sourceTree = "<group>"; };
+		893300B94DF6A2496A6107C2A77FEACA /* AttributeNames.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AttributeNames.swift; path = NightNight/Classes/AttributeNames.swift; sourceTree = "<group>"; };
+		8B53AFC2763AB1EF536FB58F589719FB /* man.c */ = {isa = PBXFileReference; includeInIndex = 1; name = man.c; path = Sources/libcmark_gfm/man.c; sourceTree = "<group>"; };
+		8B92CE26B502834C9504308B1C65098B /* strikethrough.c */ = {isa = PBXFileReference; includeInIndex = 1; name = strikethrough.c; path = Sources/libcmark_gfm/strikethrough.c; sourceTree = "<group>"; };
+		8CCDD8822A47E4D508459DFEA6EEE913 /* an-old-hope.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "an-old-hope.min.css"; path = "Pod/Assets/styles/an-old-hope.min.css"; sourceTree = "<group>"; };
+		8D8D4EFDDEECB722651B6854FC67A4BE /* HTMLUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTMLUtils.swift; path = Pod/Classes/HTMLUtils.swift; sourceTree = "<group>"; };
+		905A42FEEEA1C5718E1CF2606D7781FD /* cmark-gfm_export.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "cmark-gfm_export.h"; path = "Sources/libcmark_gfm/include/cmark-gfm_export.h"; sourceTree = "<group>"; };
+		912FCCAD5CA1EF4E3C88A1B09EBC557A /* monokai-sublime.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "monokai-sublime.min.css"; path = "Pod/Assets/styles/monokai-sublime.min.css"; sourceTree = "<group>"; };
+		91F32F4CAEDB8B1238B2414843B96609 /* Highlightr-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Highlightr-prefix.pch"; sourceTree = "<group>"; };
+		92B7EEB9EB99DEDF1013E17FBF457B0D /* UINavigationBar+Mixed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINavigationBar+Mixed.swift"; path = "NightNight/Classes/UIKit/UINavigationBar+Mixed.swift"; sourceTree = "<group>"; };
+		92ECC6B9FE9FE2D2C948B6E491CC7064 /* mono-blue.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "mono-blue.min.css"; path = "Pod/Assets/styles/mono-blue.min.css"; sourceTree = "<group>"; };
+		92F1EECCDB3F1F2FE7A13CCE42971B73 /* houdini_html_e.c */ = {isa = PBXFileReference; includeInIndex = 1; name = houdini_html_e.c; path = Sources/libcmark_gfm/houdini_html_e.c; sourceTree = "<group>"; };
+		94A1A13A8F80DCF1C7143E2EED9103E6 /* UIImageView+Mixed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+Mixed.swift"; path = "NightNight/Classes/UIImageView+Mixed.swift"; sourceTree = "<group>"; };
+		97E8166A61AA9B22BEB51D51BDDB3C91 /* atelier-heath-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-heath-light.min.css"; path = "Pod/Assets/styles/atelier-heath-light.min.css"; sourceTree = "<group>"; };
+		980940B44BE7E36426A43A9DD8BF9683 /* tasklist.c */ = {isa = PBXFileReference; includeInIndex = 1; name = tasklist.c; path = Sources/libcmark_gfm/tasklist.c; sourceTree = "<group>"; };
+		98DDE1CC6F81DA29F13230A5CC500316 /* hybrid.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = hybrid.min.css; path = Pod/Assets/styles/hybrid.min.css; sourceTree = "<group>"; };
+		9924F9AF3C22964326712942FA0C289A /* default.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = default.min.css; path = Pod/Assets/styles/default.min.css; sourceTree = "<group>"; };
+		9A0DC689CB3FEF1D99E0DC0C587C1772 /* atelier-cave-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-cave-dark.min.css"; path = "Pod/Assets/styles/atelier-cave-dark.min.css"; sourceTree = "<group>"; };
+		9A846272F7447132FE015AA809AEFBC2 /* gml.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = gml.min.css; path = Pod/Assets/styles/gml.min.css; sourceTree = "<group>"; };
+		9BD6C4235800EC98D92223D618553B07 /* UIProgressView+Mixed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIProgressView+Mixed.swift"; path = "NightNight/Classes/UIKit/UIProgressView+Mixed.swift"; sourceTree = "<group>"; };
+		9BF7EC4AF4265D84E911DF6B0E14DB5A /* UIView+IBInspectable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+IBInspectable.swift"; path = "NightNight/Classes/UIView+IBInspectable.swift"; sourceTree = "<group>"; };
+		9C2CCDA6A5F7F48FD6645ACB2FA6D7F3 /* ir-black.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "ir-black.min.css"; path = "Pod/Assets/styles/ir-black.min.css"; sourceTree = "<group>"; };
+		9D12E42CBA8663718A37A02495009632 /* table.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = table.h; path = Sources/libcmark_gfm/include/table.h; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DBE6A24CE149EF55533009F6DDCC497 /* Pods-ZhaoCi (iOS)-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZhaoCi (iOS)-dummy.m"; sourceTree = "<group>"; };
+		9E96B0B4D750060C3813073DC7CF3EC3 /* UINavigationBar+MixedTitleTextAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINavigationBar+MixedTitleTextAttributes.swift"; path = "NightNight/Classes/UINavigationBar+MixedTitleTextAttributes.swift"; sourceTree = "<group>"; };
+		9FFBB3614D82F3F74415D969D369F085 /* atelier-estuary-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-estuary-dark.min.css"; path = "Pod/Assets/styles/atelier-estuary-dark.min.css"; sourceTree = "<group>"; };
+		A4D65D626BD980C691C812A8C6A02BF1 /* Dictionary+AttributedStringKeys.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dictionary+AttributedStringKeys.swift"; path = "NightNight/Classes/Dictionary+AttributedStringKeys.swift"; sourceTree = "<group>"; };
+		A53F21ABBD6F9AB8B49B8BD8C75E4942 /* Highlightr.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Highlightr.swift; path = Pod/Classes/Highlightr.swift; sourceTree = "<group>"; };
+		A8669E2C993A00C08FBD67BB5A8A4B74 /* Pods-ZhaoCi (iOS)-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZhaoCi (iOS)-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AA2A4E675766DFE196DB894AC9779265 /* houdini_html_u.c */ = {isa = PBXFileReference; includeInIndex = 1; name = houdini_html_u.c; path = Sources/libcmark_gfm/houdini_html_u.c; sourceTree = "<group>"; };
+		AA852B7791A58DA573175F1FAEE156B3 /* UISlider+Mixed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UISlider+Mixed.swift"; path = "NightNight/Classes/UIKit/UISlider+Mixed.swift"; sourceTree = "<group>"; };
+		AE11B8783ABA0CC8C892E875A248B624 /* inlines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = inlines.h; path = Sources/libcmark_gfm/include/inlines.h; sourceTree = "<group>"; };
+		B195B2A64058B0EF31986F6C0A0A8672 /* syntax_extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = syntax_extension.h; path = Sources/libcmark_gfm/include/syntax_extension.h; sourceTree = "<group>"; };
+		B5B3DF975E84E20E0530F168C9DB7534 /* NightNight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NightNight.debug.xcconfig; sourceTree = "<group>"; };
+		B5C4A078338F45859428FF7B7BDFDF9D /* atelier-sulphurpool-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-sulphurpool-light.min.css"; path = "Pod/Assets/styles/atelier-sulphurpool-light.min.css"; sourceTree = "<group>"; };
+		B881A6142DC7DBC6097508A0B0E3E61D /* Highlightr-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Highlightr-Info.plist"; sourceTree = "<group>"; };
+		B9122D2707731D5AC4CE3B5225E41E18 /* a11y-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "a11y-dark.min.css"; path = "Pod/Assets/styles/a11y-dark.min.css"; sourceTree = "<group>"; };
+		B93F6A07B50C40824C92EC021998BDB8 /* kimbie.dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = kimbie.dark.min.css; path = Pod/Assets/styles/kimbie.dark.min.css; sourceTree = "<group>"; };
+		B9B8BA3DBF7CC64D80BC5DA717B13381 /* cmark-gfm-core-extensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "cmark-gfm-core-extensions.h"; path = "Sources/libcmark_gfm/include/cmark-gfm-core-extensions.h"; sourceTree = "<group>"; };
+		BA4FD1356F25375E3282EB9A84BF49C7 /* NightNight-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NightNight-umbrella.h"; sourceTree = "<group>"; };
+		BA91E49072C190FA55611D89184A8364 /* footnotes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = footnotes.h; path = Sources/libcmark_gfm/include/footnotes.h; sourceTree = "<group>"; };
+		BBEC88FB4BD3423B56E4825D6E0519CF /* plugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = plugin.h; path = Sources/libcmark_gfm/include/plugin.h; sourceTree = "<group>"; };
+		BCC59908DE60A370423EA502DB416016 /* androidstudio.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = androidstudio.min.css; path = Pod/Assets/styles/androidstudio.min.css; sourceTree = "<group>"; };
+		BE21ACDC476CBE7008F946B43BEEB885 /* UISearchBar+Mixed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UISearchBar+Mixed.swift"; path = "NightNight/Classes/UIKit/UISearchBar+Mixed.swift"; sourceTree = "<group>"; };
+		BE46AC5AECA1AB2848BC41A0FF48AF9E /* darcula.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = darcula.min.css; path = Pod/Assets/styles/darcula.min.css; sourceTree = "<group>"; };
+		BF6AFDA6BF0791BD53129E6EB83E978E /* CodeAttributedString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodeAttributedString.swift; path = Pod/Classes/CodeAttributedString.swift; sourceTree = "<group>"; };
+		BF7B412AC98A8947CA1988EC6B4DA823 /* NotificationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationManager.swift; path = NightNight/Classes/NotificationManager.swift; sourceTree = "<group>"; };
+		BFF2DC3807517C25C11B569FBE32BA1A /* UITextField+Mixed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+Mixed.swift"; path = "NightNight/Classes/UIKit/UITextField+Mixed.swift"; sourceTree = "<group>"; };
+		C05C3D58F9940A902E55512D48117F63 /* Pods-ZhaoCi (iOS)-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZhaoCi (iOS)-umbrella.h"; sourceTree = "<group>"; };
+		C151FE2DD2CC7BA280084D2C4CDED197 /* scanners.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = scanners.h; path = Sources/libcmark_gfm/include/scanners.h; sourceTree = "<group>"; };
+		C1605C771D42E9F88939E2FBE6C1E365 /* docco.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = docco.min.css; path = Pod/Assets/styles/docco.min.css; sourceTree = "<group>"; };
+		C23546B4A6E70B216040280B3EEFE446 /* tomorrow.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = tomorrow.min.css; path = Pod/Assets/styles/tomorrow.min.css; sourceTree = "<group>"; };
+		C2D561890C95E25BF5A5748CCF087EF8 /* atom-one-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atom-one-dark.min.css"; path = "Pod/Assets/styles/atom-one-dark.min.css"; sourceTree = "<group>"; };
+		C3E029442D8E13992D40BACCB8421C33 /* cmark_ctype.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cmark_ctype.h; path = Sources/libcmark_gfm/include/cmark_ctype.h; sourceTree = "<group>"; };
+		C6BC09D8EF944CEF477BAA922DAAB0E4 /* xt256.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = xt256.min.css; path = Pod/Assets/styles/xt256.min.css; sourceTree = "<group>"; };
+		C742F8BCB99DD8739A4C592621A781F9 /* CALayer+Mixed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CALayer+Mixed.swift"; path = "NightNight/Classes/CALayer+Mixed.swift"; sourceTree = "<group>"; };
+		CB4DDF183C1AE25BC53CAFA853E2E582 /* Highlightr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Highlightr.debug.xcconfig; sourceTree = "<group>"; };
+		CBAC7A3AACE7E3A54704C2358291D5D5 /* atelier-seaside-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-seaside-dark.min.css"; path = "Pod/Assets/styles/atelier-seaside-dark.min.css"; sourceTree = "<group>"; };
+		CEAF37066C444E20E9C99D145BBF1FF9 /* atelier-lakeside-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-lakeside-light.min.css"; path = "Pod/Assets/styles/atelier-lakeside-light.min.css"; sourceTree = "<group>"; };
+		CEC4D3DAD6A1C0616B19298963429A1B /* ext_scanners.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ext_scanners.h; path = Sources/libcmark_gfm/include/ext_scanners.h; sourceTree = "<group>"; };
+		CEFFDA6D266643CD31C652AE68512DCE /* registry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = registry.h; path = Sources/libcmark_gfm/include/registry.h; sourceTree = "<group>"; };
+		CF2B9CD58223FA8DBB65192DB1ADBDF5 /* railscasts.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = railscasts.min.css; path = Pod/Assets/styles/railscasts.min.css; sourceTree = "<group>"; };
+		CFE96540E45B2B090B95266B47205A8E /* atelier-cave-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-cave-light.min.css"; path = "Pod/Assets/styles/atelier-cave-light.min.css"; sourceTree = "<group>"; };
+		D0E59A06E6092A8B8D1EF3326025F22F /* codepen-embed.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "codepen-embed.min.css"; path = "Pod/Assets/styles/codepen-embed.min.css"; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D2BBB371F497D18F762910298A3A20E8 /* Pods-ZhaoCi (iOS)-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZhaoCi (iOS)-frameworks.sh"; sourceTree = "<group>"; };
+		D49AD21AF299D545995B7E8F74E81FDF /* latex.c */ = {isa = PBXFileReference; includeInIndex = 1; name = latex.c; path = Sources/libcmark_gfm/latex.c; sourceTree = "<group>"; };
+		D5A09869B7CB6FDDAFC972D6E98EA105 /* utf8.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = utf8.h; path = Sources/libcmark_gfm/include/utf8.h; sourceTree = "<group>"; };
+		D8153EC8C9A615B022B42A551AAD033C /* NightNight.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NightNight.modulemap; sourceTree = "<group>"; };
+		D85EC496258C415E8F247E7E195067CF /* magula.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = magula.min.css; path = Pod/Assets/styles/magula.min.css; sourceTree = "<group>"; };
+		D8DA6E18FFADCD5B518A82866A2ED5C8 /* NightNight-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NightNight-prefix.pch"; sourceTree = "<group>"; };
+		D9BF4FCC8A4F870368A1811CCCC3B0BD /* cmark-gfm-extension_api.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "cmark-gfm-extension_api.h"; path = "Sources/libcmark_gfm/include/cmark-gfm-extension_api.h"; sourceTree = "<group>"; };
+		DAED7CD9F0AE46C01E4C4D821394FB37 /* ext_scanners.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ext_scanners.c; path = Sources/libcmark_gfm/ext_scanners.c; sourceTree = "<group>"; };
+		DC0EDC63DBC704292DBFFC76BD042101 /* solarized-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "solarized-dark.min.css"; path = "Pod/Assets/styles/solarized-dark.min.css"; sourceTree = "<group>"; };
+		DE285F5121D2E70E74CCEEB0F08AEF67 /* shades-of-purple.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "shades-of-purple.min.css"; path = "Pod/Assets/styles/shades-of-purple.min.css"; sourceTree = "<group>"; };
+		DEB439111724A612AFF6057B6C543A49 /* strikethrough.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = strikethrough.h; path = Sources/libcmark_gfm/include/strikethrough.h; sourceTree = "<group>"; };
+		DFB558226C514A1DCDAE4985AC9E628C /* houdini_href_e.c */ = {isa = PBXFileReference; includeInIndex = 1; name = houdini_href_e.c; path = Sources/libcmark_gfm/houdini_href_e.c; sourceTree = "<group>"; };
+		E0604F2E052671696202203004A359FC /* xml.c */ = {isa = PBXFileReference; includeInIndex = 1; name = xml.c; path = Sources/libcmark_gfm/xml.c; sourceTree = "<group>"; };
+		E270618CE5F4483978FEEE2B135D547B /* tagfilter.c */ = {isa = PBXFileReference; includeInIndex = 1; name = tagfilter.c; path = Sources/libcmark_gfm/tagfilter.c; sourceTree = "<group>"; };
+		E446AB8BE8191FAB84017E22EAAAF864 /* UIButton+Mixed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Mixed.swift"; path = "NightNight/Classes/UIButton+Mixed.swift"; sourceTree = "<group>"; };
+		E4C68F43A3841D8140CF1BA5667F75DC /* atelier-forest-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-forest-light.min.css"; path = "Pod/Assets/styles/atelier-forest-light.min.css"; sourceTree = "<group>"; };
+		E4FE5198077FDC0103731C9DB049FF65 /* registry.c */ = {isa = PBXFileReference; includeInIndex = 1; name = registry.c; path = Sources/libcmark_gfm/registry.c; sourceTree = "<group>"; };
+		E51557AB868FC946E9151A0BF0182C15 /* foundation.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = foundation.min.css; path = Pod/Assets/styles/foundation.min.css; sourceTree = "<group>"; };
+		E5626D2A5542E7F068022504ECF043A9 /* MixedResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MixedResource.swift; path = NightNight/Classes/MixedResource.swift; sourceTree = "<group>"; };
+		E5C3BF6640B389EB5D1FAC9FA6987086 /* UIPageControl+Mixed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIPageControl+Mixed.swift"; path = "NightNight/Classes/UIKit/UIPageControl+Mixed.swift"; sourceTree = "<group>"; };
+		E5EF68369804BE3760173E1305514644 /* atom-one-dark-reasonable.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atom-one-dark-reasonable.min.css"; path = "Pod/Assets/styles/atom-one-dark-reasonable.min.css"; sourceTree = "<group>"; };
+		E6326258420A2EF0948001D1F9002A6F /* tasklist.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tasklist.h; path = Sources/libcmark_gfm/include/tasklist.h; sourceTree = "<group>"; };
+		E67039FCF2267C728CB6941B66720E31 /* dracula.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = dracula.min.css; path = Pod/Assets/styles/dracula.min.css; sourceTree = "<group>"; };
+		E68039FFEAEA2FA6E69A0C81A85A696F /* qtcreator_light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = qtcreator_light.min.css; path = Pod/Assets/styles/qtcreator_light.min.css; sourceTree = "<group>"; };
+		E7A02D5224AD85E9A9DFE9C308D53EA6 /* UISwitch+Mixed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UISwitch+Mixed.swift"; path = "NightNight/Classes/UIKit/UISwitch+Mixed.swift"; sourceTree = "<group>"; };
+		E9653CEDB0DFFBE8556B4C5690625558 /* UIColor+RGB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+RGB.swift"; path = "NightNight/Classes/UIColor+RGB.swift"; sourceTree = "<group>"; };
+		E97CE797EFDC6867C1F798DCD624E951 /* libcmark_gfm-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "libcmark_gfm-prefix.pch"; sourceTree = "<group>"; };
+		EA2EDB2F93BA3D48D3CE20815C6CEC01 /* monokai.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = monokai.min.css; path = Pod/Assets/styles/monokai.min.css; sourceTree = "<group>"; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EAD60465D46CC3FA63D29FBC8E93B0B3 /* Pods-ZhaoCi (iOS)-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZhaoCi (iOS)-acknowledgements.plist"; sourceTree = "<group>"; };
+		EBB17373184A99481E9EE0315DA401FC /* Pods-ZhaoCi (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZhaoCi (iOS).release.xcconfig"; sourceTree = "<group>"; };
+		ED78E31EDCF751E07FCA010FA90816E8 /* iterator.c */ = {isa = PBXFileReference; includeInIndex = 1; name = iterator.c; path = Sources/libcmark_gfm/iterator.c; sourceTree = "<group>"; };
+		EE9ABC085AB898D4149A8C79CA6761A6 /* map.c */ = {isa = PBXFileReference; includeInIndex = 1; name = map.c; path = Sources/libcmark_gfm/map.c; sourceTree = "<group>"; };
+		EF5E3C34C2BCADFA0FF090E01DBD6CC3 /* github-gist.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "github-gist.min.css"; path = "Pod/Assets/styles/github-gist.min.css"; sourceTree = "<group>"; };
+		F0CDA35B08EA45124FB9966D0D972238 /* atelier-forest-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-forest-dark.min.css"; path = "Pod/Assets/styles/atelier-forest-dark.min.css"; sourceTree = "<group>"; };
+		F282C0F7B315D800B2D4766FB1DB145F /* commonmark.c */ = {isa = PBXFileReference; includeInIndex = 1; name = commonmark.c; path = Sources/libcmark_gfm/commonmark.c; sourceTree = "<group>"; };
+		F46C636A9A0D66BEFD4B95383F4C3C43 /* libcmark_gfm */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = libcmark_gfm; path = libcmark_gfm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F51789B4CB979AEECAC39AA4887BA382 /* atelier-estuary-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-estuary-light.min.css"; path = "Pod/Assets/styles/atelier-estuary-light.min.css"; sourceTree = "<group>"; };
+		F5B0384A463C6E6FA7A208ECB0D1F5E6 /* cmark-gfm-extensions_export.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "cmark-gfm-extensions_export.h"; path = "Sources/libcmark_gfm/include/cmark-gfm-extensions_export.h"; sourceTree = "<group>"; };
+		F6F748EC129BEEF497A2A6A052128CE4 /* libcmark_gfm.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = libcmark_gfm.modulemap; sourceTree = "<group>"; };
+		F79058CCAE175E5FFB80FA7A3A77126A /* idea.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = idea.min.css; path = Pod/Assets/styles/idea.min.css; sourceTree = "<group>"; };
+		F81A1513A469A76CAA315D66788A10F6 /* hopscotch.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = hopscotch.min.css; path = Pod/Assets/styles/hopscotch.min.css; sourceTree = "<group>"; };
+		F92CE2DBE111FC18DE491C5CBF5CA1E7 /* atelier-dune-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-dune-light.min.css"; path = "Pod/Assets/styles/atelier-dune-light.min.css"; sourceTree = "<group>"; };
+		F9FCAD85AD85ECC3CB64DAAA23A89508 /* cmark-gfm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "cmark-gfm.h"; path = "Sources/libcmark_gfm/include/cmark-gfm.h"; sourceTree = "<group>"; };
+		FA23BE9EE37CCCB5D17939FE1EE4D734 /* NSObject+Customize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+Customize.swift"; path = "NightNight/Classes/NSObject+Customize.swift"; sourceTree = "<group>"; };
+		FB28601E459EE5A79FF8EB34660482FC /* vs.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = vs.min.css; path = Pod/Assets/styles/vs.min.css; sourceTree = "<group>"; };
+		FCEB8A2FCD0EFDD66B5AB6C8AE17F059 /* atelier-plateau-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-plateau-dark.min.css"; path = "Pod/Assets/styles/atelier-plateau-dark.min.css"; sourceTree = "<group>"; };
+		FD387CEAB12932474625603D832AA517 /* plugin.c */ = {isa = PBXFileReference; includeInIndex = 1; name = plugin.c; path = Sources/libcmark_gfm/plugin.c; sourceTree = "<group>"; };
+		FEEDBDB04E7B4BFEB36665CD8D47A779 /* atelier-seaside-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-seaside-light.min.css"; path = "Pod/Assets/styles/atelier-seaside-light.min.css"; sourceTree = "<group>"; };
+		FF34FEFCE0510C90EAE839FC5D5B6405 /* tomorrow-night-eighties.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "tomorrow-night-eighties.min.css"; path = "Pod/Assets/styles/tomorrow-night-eighties.min.css"; sourceTree = "<group>"; };
+		FFA3B4B284F5722D8838946BB63DA21A /* render.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = render.h; path = Sources/libcmark_gfm/include/render.h; sourceTree = "<group>"; };
+		FFE7B2802DEE81000FAFD8B904F8E9DD /* NightNight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NightNight.release.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22384FA938D1A9DB3904A7142A76F478 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5933A97A4A728870A1AD3245F7075052 /* Foundation.framework in Frameworks */,
+				C51EDA5F22D1EA317CEEC394B1799026 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6225A3B92F06C245CFFD562C1C743602 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EC95F000D7A65ADB8A7944280D87C1D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE47D149EA1A4C82C4A0BFE7FCEE8D03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C347AB8C404AC16247E7FD7C6E23554F /* Foundation.framework in Frameworks */,
+				C6365E11D45479EDFCDD17B5AB57BE53 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA50EA620EEC3B68A7DF1B337D1B95FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4D6C5B9E1B68731B8BA60FBBEADE504 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0050444E9AE758FC6B1DB25E9C307665 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B9122D2707731D5AC4CE3B5225E41E18 /* a11y-dark.min.css */,
+				751A7BAEA29CBC5E8ABFF9F10787A1BD /* a11y-light.min.css */,
+				75DEE2B05232BFE1B2168B948294B0AB /* agate.min.css */,
+				8CCDD8822A47E4D508459DFEA6EEE913 /* an-old-hope.min.css */,
+				BCC59908DE60A370423EA502DB416016 /* androidstudio.min.css */,
+				3212E8FB7244262B9985DF201092FE4B /* arduino-light.min.css */,
+				58427C616F09D442C9C71229DBB661C9 /* arta.min.css */,
+				1F77A0E875DCB1677BE486DE9571F583 /* ascetic.min.css */,
+				9A0DC689CB3FEF1D99E0DC0C587C1772 /* atelier-cave-dark.min.css */,
+				CFE96540E45B2B090B95266B47205A8E /* atelier-cave-light.min.css */,
+				401EEC6B00C582E03CE1C23D60D1468B /* atelier-dune-dark.min.css */,
+				F92CE2DBE111FC18DE491C5CBF5CA1E7 /* atelier-dune-light.min.css */,
+				9FFBB3614D82F3F74415D969D369F085 /* atelier-estuary-dark.min.css */,
+				F51789B4CB979AEECAC39AA4887BA382 /* atelier-estuary-light.min.css */,
+				F0CDA35B08EA45124FB9966D0D972238 /* atelier-forest-dark.min.css */,
+				E4C68F43A3841D8140CF1BA5667F75DC /* atelier-forest-light.min.css */,
+				4543CFC7099980142AFCF80369D2633E /* atelier-heath-dark.min.css */,
+				97E8166A61AA9B22BEB51D51BDDB3C91 /* atelier-heath-light.min.css */,
+				527E27AB91D04FAFC9767C0D38BA26CF /* atelier-lakeside-dark.min.css */,
+				CEAF37066C444E20E9C99D145BBF1FF9 /* atelier-lakeside-light.min.css */,
+				FCEB8A2FCD0EFDD66B5AB6C8AE17F059 /* atelier-plateau-dark.min.css */,
+				31628AEB7DF7F769556B1310CC27E5C4 /* atelier-plateau-light.min.css */,
+				45FE876802883DE99D1187E55EA2608D /* atelier-savanna-dark.min.css */,
+				44148935626F148D7F8B72128050BDBE /* atelier-savanna-light.min.css */,
+				CBAC7A3AACE7E3A54704C2358291D5D5 /* atelier-seaside-dark.min.css */,
+				FEEDBDB04E7B4BFEB36665CD8D47A779 /* atelier-seaside-light.min.css */,
+				240B265AF76E1D4FAB1657AAE45B1058 /* atelier-sulphurpool-dark.min.css */,
+				B5C4A078338F45859428FF7B7BDFDF9D /* atelier-sulphurpool-light.min.css */,
+				E5EF68369804BE3760173E1305514644 /* atom-one-dark-reasonable.min.css */,
+				C2D561890C95E25BF5A5748CCF087EF8 /* atom-one-dark.min.css */,
+				43AAEF031BEF41321DE387E08FE170AD /* atom-one-light.min.css */,
+				5DDDD83E43211B218C8B05FA963AC7A4 /* brown-paper.min.css */,
+				D0E59A06E6092A8B8D1EF3326025F22F /* codepen-embed.min.css */,
+				126D303B2C6A1954066C4138BB05C53A /* color-brewer.min.css */,
+				BE46AC5AECA1AB2848BC41A0FF48AF9E /* darcula.min.css */,
+				493546F33F5904B3CBA82A960AD54190 /* dark.min.css */,
+				24DF2B9B4638EC54DEA436FCA2B4257A /* darkula.min.css */,
+				9924F9AF3C22964326712942FA0C289A /* default.min.css */,
+				C1605C771D42E9F88939E2FBE6C1E365 /* docco.min.css */,
+				E67039FCF2267C728CB6941B66720E31 /* dracula.min.css */,
+				811727C40AE0D4BB7DD0E585F7AC322A /* far.min.css */,
+				E51557AB868FC946E9151A0BF0182C15 /* foundation.min.css */,
+				EF5E3C34C2BCADFA0FF090E01DBD6CC3 /* github-gist.min.css */,
+				82C5097198F4A14C9DB04B278948EC80 /* github.min.css */,
+				9A846272F7447132FE015AA809AEFBC2 /* gml.min.css */,
+				1BA9DEAE9271D6E32ABB535CEF290019 /* googlecode.min.css */,
+				1FDA59E1E98BE7FFDDCAF276D359D03D /* grayscale.min.css */,
+				21DFF907B8C9991BD0ED7823773C8D52 /* gruvbox-dark.min.css */,
+				7030F290EFE2AD02B4C25AE95D531C61 /* gruvbox-light.min.css */,
+				1337D4AC80F4864B349FA45E34D59571 /* highlight.min.js */,
+				F81A1513A469A76CAA315D66788A10F6 /* hopscotch.min.css */,
+				98DDE1CC6F81DA29F13230A5CC500316 /* hybrid.min.css */,
+				F79058CCAE175E5FFB80FA7A3A77126A /* idea.min.css */,
+				9C2CCDA6A5F7F48FD6645ACB2FA6D7F3 /* ir-black.min.css */,
+				103F64123EA6DD53888EE5A7215F3F69 /* isbl-editor-dark.min.css */,
+				01C181680DD1B880ADAB1D561BA15A51 /* isbl-editor-light.min.css */,
+				B93F6A07B50C40824C92EC021998BDB8 /* kimbie.dark.min.css */,
+				73D00F6055C2B187B096CA7F4917DE39 /* kimbie.light.min.css */,
+				70FFACB3379A29393530C549F0BED010 /* lightfair.min.css */,
+				D85EC496258C415E8F247E7E195067CF /* magula.min.css */,
+				92ECC6B9FE9FE2D2C948B6E491CC7064 /* mono-blue.min.css */,
+				912FCCAD5CA1EF4E3C88A1B09EBC557A /* monokai-sublime.min.css */,
+				EA2EDB2F93BA3D48D3CE20815C6CEC01 /* monokai.min.css */,
+				551C5968D068D23FC0AADE41277F51C2 /* nord.min.css */,
+				86C5046798D4D654961117A39C49ADA4 /* obsidian.min.css */,
+				398DBDE0F78F8C6063E464C2257067E3 /* ocean.min.css */,
+				04FB80EE043A216D79798EA78D285956 /* paraiso-dark.min.css */,
+				5A4080EC70FDB39A1351E3F6953B6530 /* paraiso-light.min.css */,
+				52178B452123DE565B20BB17C1FFACDC /* pojoaque.min.css */,
+				51E016666BDFEB5B13CDE1A89179E648 /* purebasic.min.css */,
+				0D616282C1FBA40CDBFDC078C8CA93E2 /* qtcreator_dark.min.css */,
+				E68039FFEAEA2FA6E69A0C81A85A696F /* qtcreator_light.min.css */,
+				CF2B9CD58223FA8DBB65192DB1ADBDF5 /* railscasts.min.css */,
+				6627202B8400F3C77606CCAEAE5004A9 /* rainbow.min.css */,
+				3547DFFF7D5C4E90E83A672C53CE8FF9 /* routeros.min.css */,
+				277859304CCF14C7C15FA25B34F1A673 /* school-book.min.css */,
+				DE285F5121D2E70E74CCEEB0F08AEF67 /* shades-of-purple.min.css */,
+				DC0EDC63DBC704292DBFFC76BD042101 /* solarized-dark.min.css */,
+				8054F00439EBD4C47B10F66AADEE7EAE /* solarized-light.min.css */,
+				0F28036442FAFE42DF26AA0B0166C60B /* sunburst.min.css */,
+				55AD51CE0497255B2F88B82AC1B07142 /* tomorrow-night-blue.min.css */,
+				36F4C69C85771F21AE03581FA6A907DD /* tomorrow-night-bright.min.css */,
+				FF34FEFCE0510C90EAE839FC5D5B6405 /* tomorrow-night-eighties.min.css */,
+				5890677E5B9EADA86143B638E4931391 /* tomorrow-night.min.css */,
+				C23546B4A6E70B216040280B3EEFE446 /* tomorrow.min.css */,
+				FB28601E459EE5A79FF8EB34660482FC /* vs.min.css */,
+				48A77E46E68B34E4CAE28D25DE1A5003 /* vs2015.min.css */,
+				37A990F25694216928EA9668F070DA1C /* xcode.min.css */,
+				C6BC09D8EF944CEF477BAA922DAAB0E4 /* xt256.min.css */,
+				144568F62115B65F2640A56623487C0A /* zenburn.min.css */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		02A72CDC6CFEDF6429E4CB9FD1FC59B0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8153EC8C9A615B022B42A551AAD033C /* NightNight.modulemap */,
+				64121E31383B2603952CCC424C640693 /* NightNight-dummy.m */,
+				48BC7195FFB7AB8250478CC3B8305199 /* NightNight-Info.plist */,
+				D8DA6E18FFADCD5B518A82866A2ED5C8 /* NightNight-prefix.pch */,
+				BA4FD1356F25375E3282EB9A84BF49C7 /* NightNight-umbrella.h */,
+				B5B3DF975E84E20E0530F168C9DB7534 /* NightNight.debug.xcconfig */,
+				FFE7B2802DEE81000FAFD8B904F8E9DD /* NightNight.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NightNight";
+			sourceTree = "<group>";
+		};
+		08C1E8866135A392DEF1BFE4499B46BE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3AA89618454E88B0254EEB39D6D2BC30 /* Highlightr.modulemap */,
+				48968425A5AB47E801C63EB7EA8BFEA7 /* Highlightr-dummy.m */,
+				B881A6142DC7DBC6097508A0B0E3E61D /* Highlightr-Info.plist */,
+				91F32F4CAEDB8B1238B2414843B96609 /* Highlightr-prefix.pch */,
+				4B136FD59D3ABB9D80BB66FF2ECDBA41 /* Highlightr-umbrella.h */,
+				CB4DDF183C1AE25BC53CAFA853E2E582 /* Highlightr.debug.xcconfig */,
+				01DD96FE0E996884D8840C6D9A2C3CCA /* Highlightr.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Highlightr";
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		70B5B641CFFBE60314A457AC787EFF44 /* NightNight */ = {
+			isa = PBXGroup;
+			children = (
+				893300B94DF6A2496A6107C2A77FEACA /* AttributeNames.swift */,
+				C742F8BCB99DD8739A4C592621A781F9 /* CALayer+Mixed.swift */,
+				A4D65D626BD980C691C812A8C6A02BF1 /* Dictionary+AttributedStringKeys.swift */,
+				583D8F09A442250503A84F60C4C108AF /* Keys.swift */,
+				E5626D2A5542E7F068022504ECF043A9 /* MixedResource.swift */,
+				0B44263606DD930D69649F67947D5546 /* NightNight.swift */,
+				77BCE235F551415C91AF109F4A6A08BE /* NNMutableAttributedString.swift */,
+				BF7B412AC98A8947CA1988EC6B4DA823 /* NotificationManager.swift */,
+				FA23BE9EE37CCCB5D17939FE1EE4D734 /* NSObject+Customize.swift */,
+				19953F48C4FFB7D7FBE4AF26DF164F91 /* NSObject+Mixed.swift */,
+				0D1051415251C3DD39A84D61AD857183 /* UIBarButtonItem+Mixed.swift */,
+				E446AB8BE8191FAB84017E22EAAAF864 /* UIButton+Mixed.swift */,
+				E9653CEDB0DFFBE8556B4C5690625558 /* UIColor+RGB.swift */,
+				94A1A13A8F80DCF1C7143E2EED9103E6 /* UIImageView+Mixed.swift */,
+				18C2CB899065B02B3DCDCD881545DE4C /* UILabel+Mixed.swift */,
+				92B7EEB9EB99DEDF1013E17FBF457B0D /* UINavigationBar+Mixed.swift */,
+				2A2C0C121377E0A11CE3D9099E269A51 /* UINavigationBar+MixedBarStyle.swift */,
+				9E96B0B4D750060C3813073DC7CF3EC3 /* UINavigationBar+MixedTitleTextAttributes.swift */,
+				E5C3BF6640B389EB5D1FAC9FA6987086 /* UIPageControl+Mixed.swift */,
+				24649445DCA449B12F1AE172621717ED /* UIPopoverPresentationController+Mixed.swift */,
+				9BD6C4235800EC98D92223D618553B07 /* UIProgressView+Mixed.swift */,
+				BE21ACDC476CBE7008F946B43BEEB885 /* UISearchBar+Mixed.swift */,
+				AA852B7791A58DA573175F1FAEE156B3 /* UISlider+Mixed.swift */,
+				E7A02D5224AD85E9A9DFE9C308D53EA6 /* UISwitch+Mixed.swift */,
+				75B0F7396A2B94B97C8C9E6BFED683E6 /* UITabBar+Mixed.swift */,
+				79461EAF9EE23371FB008ABEB5914A32 /* UITableView+Mixed.swift */,
+				BFF2DC3807517C25C11B569FBE32BA1A /* UITextField+Mixed.swift */,
+				7517217C6763D4B2D8DB16F5C9046798 /* UITextView+Mixed.swift */,
+				0DD9972FA72482C2422E1FA67F6F55CD /* UIToolbar+Mixed.swift */,
+				9BF7EC4AF4265D84E911DF6B0E14DB5A /* UIView+IBInspectable.swift */,
+				250A0379DBA2272354F8C1B35168E648 /* UIView+Mixed.swift */,
+				02A72CDC6CFEDF6429E4CB9FD1FC59B0 /* Support Files */,
+			);
+			name = NightNight;
+			path = NightNight;
+			sourceTree = "<group>";
+		};
+		749AC15C1906031593FE623E26B5B57C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7DB3C8BAA3D78E532F17CD75C7EC3704 /* Highlightr */,
+				F46C636A9A0D66BEFD4B95383F4C3C43 /* libcmark_gfm */,
+				2B2A480C32F3BBA36E4F88BE95A29045 /* NightNight */,
+				1FF607E91CC84645E144AEFD0B1364B0 /* Pods-ZhaoCi (iOS) */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		805C42457551E0F0AA87BC61DA5561F8 /* Highlightr */ = {
+			isa = PBXGroup;
+			children = (
+				BF6AFDA6BF0791BD53129E6EB83E978E /* CodeAttributedString.swift */,
+				A53F21ABBD6F9AB8B49B8BD8C75E4942 /* Highlightr.swift */,
+				8D8D4EFDDEECB722651B6854FC67A4BE /* HTMLUtils.swift */,
+				1363C4A9C92F89D853F360F318194256 /* Shims.swift */,
+				72E2013D2AD9FDF38D4EECAD7BDB25FB /* Theme.swift */,
+				0050444E9AE758FC6B1DB25E9C307665 /* Resources */,
+				08C1E8866135A392DEF1BFE4499B46BE /* Support Files */,
+			);
+			name = Highlightr;
+			path = Highlightr;
+			sourceTree = "<group>";
+		};
+		B9ED0C5E5180362B3C109E535EC316B4 /* libcmark_gfm */ = {
+			isa = PBXGroup;
+			children = (
+				6CB037A14EDF5FADA679E5F6C67E8ACD /* arena.c */,
+				36569857F2530A0084FBE2E0B1B9830E /* autolink.c */,
+				51CB68A5426D3389D507A9606122DC82 /* autolink.h */,
+				05C8128EFEA4E9D38426525B67E576F4 /* blocks.c */,
+				03040A46C4370F1BE13C64FD45B47ED4 /* buffer.c */,
+				2C9B8499E08863E213BB6DA81F6445F7 /* buffer.h */,
+				15E7FA907092E5BC9B354092F41C4605 /* chunk.h */,
+				47829E8A1BBD7E872E4602C099039471 /* cmark.c */,
+				F9FCAD85AD85ECC3CB64DAAA23A89508 /* cmark-gfm.h */,
+				B9B8BA3DBF7CC64D80BC5DA717B13381 /* cmark-gfm-core-extensions.h */,
+				D9BF4FCC8A4F870368A1811CCCC3B0BD /* cmark-gfm-extension_api.h */,
+				F5B0384A463C6E6FA7A208ECB0D1F5E6 /* cmark-gfm-extensions_export.h */,
+				905A42FEEEA1C5718E1CF2606D7781FD /* cmark-gfm_export.h */,
+				666FAC2B2EF60F7CDE96FF1A521BCB01 /* cmark-gfm_version.h */,
+				579F59214556A2E98B3FE4661C45FF6D /* cmark_ctype.c */,
+				C3E029442D8E13992D40BACCB8421C33 /* cmark_ctype.h */,
+				F282C0F7B315D800B2D4766FB1DB145F /* commonmark.c */,
+				5CF393EDC7C96E4D3C3695E84F2A014F /* config.h */,
+				06D770F369769FF0B297A63658D6DE0A /* core-extensions.c */,
+				DAED7CD9F0AE46C01E4C4D821394FB37 /* ext_scanners.c */,
+				CEC4D3DAD6A1C0616B19298963429A1B /* ext_scanners.h */,
+				218B595E9CBBBCBEBE86B405EB89E48E /* footnotes.c */,
+				BA91E49072C190FA55611D89184A8364 /* footnotes.h */,
+				6E0B311E65776EB673CE638FB509EDB8 /* houdini.h */,
+				DFB558226C514A1DCDAE4985AC9E628C /* houdini_href_e.c */,
+				92F1EECCDB3F1F2FE7A13CCE42971B73 /* houdini_html_e.c */,
+				AA2A4E675766DFE196DB894AC9779265 /* houdini_html_u.c */,
+				0F7A066E98E8D72A77E87C32EA4981D5 /* html.c */,
+				42A3E30A86828B8D367D8656A339773A /* html.h */,
+				5E9F78609FC81577DE59D0B1A80F0830 /* inlines.c */,
+				AE11B8783ABA0CC8C892E875A248B624 /* inlines.h */,
+				ED78E31EDCF751E07FCA010FA90816E8 /* iterator.c */,
+				28BA08950AA19A099E5883BB1758BCB6 /* iterator.h */,
+				D49AD21AF299D545995B7E8F74E81FDF /* latex.c */,
+				308CC5B44DCBDF508762FDAA8EFD1E57 /* libcmark_gfm.h */,
+				6815AA8206B9122783B44058B7168196 /* linked_list.c */,
+				8B53AFC2763AB1EF536FB58F589719FB /* man.c */,
+				EE9ABC085AB898D4149A8C79CA6761A6 /* map.c */,
+				49D66949C8790543EAC292142B58FBC9 /* map.h */,
+				3C21354B2581ADF4BD3CF1BE9F637D48 /* node.c */,
+				0CB444954D1708E1AA0EA13EA46B791C /* node.h */,
+				1089C054D4E69B5B50BB0079319F98C7 /* parser.h */,
+				26EFCCCC58927AF7F3ADEF7F5A3D2784 /* plaintext.c */,
+				FD387CEAB12932474625603D832AA517 /* plugin.c */,
+				BBEC88FB4BD3423B56E4825D6E0519CF /* plugin.h */,
+				5C3B71E6233DB19F84E9E863FC10BBA1 /* references.c */,
+				1CB167DBEDF5914F2185918AA0337072 /* references.h */,
+				E4FE5198077FDC0103731C9DB049FF65 /* registry.c */,
+				CEFFDA6D266643CD31C652AE68512DCE /* registry.h */,
+				7B90FB41E311204B508F21F237DDFF60 /* render.c */,
+				FFA3B4B284F5722D8838946BB63DA21A /* render.h */,
+				1BA5E0C15381AE0718E5FFF0E113E382 /* scanners.c */,
+				C151FE2DD2CC7BA280084D2C4CDED197 /* scanners.h */,
+				8B92CE26B502834C9504308B1C65098B /* strikethrough.c */,
+				DEB439111724A612AFF6057B6C543A49 /* strikethrough.h */,
+				5222F385FE80647582D4C820E6CD6313 /* syntax_extension.c */,
+				B195B2A64058B0EF31986F6C0A0A8672 /* syntax_extension.h */,
+				7B2FD15CC33FEAEAE7707ED948004089 /* table.c */,
+				9D12E42CBA8663718A37A02495009632 /* table.h */,
+				E270618CE5F4483978FEEE2B135D547B /* tagfilter.c */,
+				86D0CB38DA90231D602027723E67F671 /* tagfilter.h */,
+				980940B44BE7E36426A43A9DD8BF9683 /* tasklist.c */,
+				E6326258420A2EF0948001D1F9002A6F /* tasklist.h */,
+				1D18942D90CFF0BA648B690BEB43B051 /* utf8.c */,
+				D5A09869B7CB6FDDAFC972D6E98EA105 /* utf8.h */,
+				E0604F2E052671696202203004A359FC /* xml.c */,
+				D807ABF52A9F1654BACDD024FD82295F /* Support Files */,
+			);
+			name = libcmark_gfm;
+			path = libcmark_gfm;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				D8C701535E45A192FCF42B095F1BFB03 /* Pods */,
+				749AC15C1906031593FE623E26B5B57C /* Products */,
+				DB350CF0D0E811D539FCE0D1B974034E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D4FAE6C9575D15BF7DE9481BBE45F0C4 /* Pods-ZhaoCi (iOS) */ = {
+			isa = PBXGroup;
+			children = (
+				7E7980E4866D1FD80C072F05E5BC8114 /* Pods-ZhaoCi (iOS).modulemap */,
+				A8669E2C993A00C08FBD67BB5A8A4B74 /* Pods-ZhaoCi (iOS)-acknowledgements.markdown */,
+				EAD60465D46CC3FA63D29FBC8E93B0B3 /* Pods-ZhaoCi (iOS)-acknowledgements.plist */,
+				9DBE6A24CE149EF55533009F6DDCC497 /* Pods-ZhaoCi (iOS)-dummy.m */,
+				D2BBB371F497D18F762910298A3A20E8 /* Pods-ZhaoCi (iOS)-frameworks.sh */,
+				4DE248F4E923C9CB5E5F5A9B4B82124F /* Pods-ZhaoCi (iOS)-Info.plist */,
+				C05C3D58F9940A902E55512D48117F63 /* Pods-ZhaoCi (iOS)-umbrella.h */,
+				8904ECAF5D21CDB4D1002CFCC7BA27C0 /* Pods-ZhaoCi (iOS).debug.xcconfig */,
+				EBB17373184A99481E9EE0315DA401FC /* Pods-ZhaoCi (iOS).release.xcconfig */,
+			);
+			name = "Pods-ZhaoCi (iOS)";
+			path = "Target Support Files/Pods-ZhaoCi (iOS)";
+			sourceTree = "<group>";
+		};
+		D807ABF52A9F1654BACDD024FD82295F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6F748EC129BEEF497A2A6A052128CE4 /* libcmark_gfm.modulemap */,
+				586499F9AA4A552276B6442D596FE6E9 /* libcmark_gfm-dummy.m */,
+				5AEF2DA1918F8FA9085A4F53468DD305 /* libcmark_gfm-Info.plist */,
+				E97CE797EFDC6867C1F798DCD624E951 /* libcmark_gfm-prefix.pch */,
+				79D3CCBD607B34F39C92749508FCFBA9 /* libcmark_gfm-umbrella.h */,
+				7582B80620FE25B16A221E1B7DDED222 /* libcmark_gfm.debug.xcconfig */,
+				6E022C64D5FD4989FFA1D7314E8C9EB6 /* libcmark_gfm.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/libcmark_gfm";
+			sourceTree = "<group>";
+		};
+		D8C701535E45A192FCF42B095F1BFB03 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				805C42457551E0F0AA87BC61DA5561F8 /* Highlightr */,
+				B9ED0C5E5180362B3C109E535EC316B4 /* libcmark_gfm */,
+				70B5B641CFFBE60314A457AC787EFF44 /* NightNight */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DB350CF0D0E811D539FCE0D1B974034E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4FAE6C9575D15BF7DE9481BBE45F0C4 /* Pods-ZhaoCi (iOS) */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B3A83EB1EDC5A070D2AA2FB69BA64DA0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B4CEA850868751241818459D15AFAF3 /* Pods-ZhaoCi (iOS)-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBCC94475C747DAE168A45C542DCD994 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4362DBF5B76301208FE14720E17F471C /* autolink.h in Headers */,
+				623CE6692A2066826D00D1D64351C511 /* buffer.h in Headers */,
+				47CD0060DDDE1F1E95F3C230BA6D6676 /* chunk.h in Headers */,
+				A6130521E97A535D272E92BA34E7EB4C /* cmark-gfm.h in Headers */,
+				DD055A2C6336CF8C4B96D29A72F6730A /* cmark-gfm-core-extensions.h in Headers */,
+				DAB95499626A7B843966AF07BD098642 /* cmark-gfm-extension_api.h in Headers */,
+				E345FC78B1420ABC77DBCB8C4849E12E /* cmark-gfm-extensions_export.h in Headers */,
+				2B2BED7319316EC9D8F6436F7B99B655 /* cmark-gfm_export.h in Headers */,
+				7670C125850A58C3FAEE2A0457D9916F /* cmark-gfm_version.h in Headers */,
+				0CE7B4C29944CA41CD2F2FFCF39B8AD4 /* cmark_ctype.h in Headers */,
+				DF8404CA4D588F34BD49E7F28953A9FB /* config.h in Headers */,
+				B5F904C301F00B862F90EC213B89A994 /* ext_scanners.h in Headers */,
+				D4FAFC6A312C0B2E92F1AE07FC00B952 /* footnotes.h in Headers */,
+				9AB5883F9BF8A6DEBA2CE87C1D9B8134 /* houdini.h in Headers */,
+				0EF787C1507A18DFAEDF6D53EF100A35 /* html.h in Headers */,
+				2A039AC3CDAE6D22F3F4FFB2903598D1 /* inlines.h in Headers */,
+				6E985B70A4CD922093F702765BF8607B /* iterator.h in Headers */,
+				0A093E6B76F8E57393CE2C4A86048741 /* libcmark_gfm.h in Headers */,
+				F951C17D1825FB9C139C9ED86760305A /* libcmark_gfm-umbrella.h in Headers */,
+				4E654A1AF4FB433FA8E833B5CDA7C513 /* map.h in Headers */,
+				4AEF6705D835DAF58445DF787191C50A /* node.h in Headers */,
+				3370576764427514C3D98FC36FE5EC2C /* parser.h in Headers */,
+				3796A4F06D9144EB8ACBF6C728DBCE88 /* plugin.h in Headers */,
+				F891BEE52A9EA8413C652FC0CE2DD8F4 /* references.h in Headers */,
+				F38F6F1A3E01B01A096458AA459DD8AD /* registry.h in Headers */,
+				09D2A567D5516F7AC62E771AFD525C85 /* render.h in Headers */,
+				D8B3BA388969B9458A4AECA52C314026 /* scanners.h in Headers */,
+				E623B7AA4C2EC678F9257FC760EDBE4F /* strikethrough.h in Headers */,
+				4E70140A1D197ECC63FF1C05B346A578 /* syntax_extension.h in Headers */,
+				FA409616BC309E4800FB41B90FBC0D75 /* table.h in Headers */,
+				FBD50FD35416F69ABC0F411BFCDB876F /* tagfilter.h in Headers */,
+				41F18BB385A8AA950D2211A53E4DB10B /* tasklist.h in Headers */,
+				197650FBA6124795D49D4553A9794526 /* utf8.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4B8EF184793AF868D94883529E09E0D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A01E3ED039CAAFC8690EDD95EB63161E /* Highlightr-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F992C0A9323ACCA5F8AB500F282E17D9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4823FC384A19368FD5DF9E3E4327C5D8 /* NightNight-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		99AA28030FD8D12D33D7CDC66C9EA18B /* NightNight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C2FF31748DEB76F36997D89310732FC /* Build configuration list for PBXNativeTarget "NightNight" */;
+			buildPhases = (
+				F992C0A9323ACCA5F8AB500F282E17D9 /* Headers */,
+				DBA914EA9638AC467B24B0D11DC3F7C5 /* Sources */,
+				AE47D149EA1A4C82C4A0BFE7FCEE8D03 /* Frameworks */,
+				A640803FD63854033676483F6EF3D0AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NightNight;
+			productName = NightNight;
+			productReference = 2B2A480C32F3BBA36E4F88BE95A29045 /* NightNight */;
+			productType = "com.apple.product-type.framework";
+		};
+		A40501B96AEBAEB5282B10ECEBD4B931 /* Pods-ZhaoCi (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C8C0ED4176FFD558E75DD06EE0855C6 /* Build configuration list for PBXNativeTarget "Pods-ZhaoCi (iOS)" */;
+			buildPhases = (
+				B3A83EB1EDC5A070D2AA2FB69BA64DA0 /* Headers */,
+				392E13638D5FB6CE0C0129B5FDC41E52 /* Sources */,
+				6225A3B92F06C245CFFD562C1C743602 /* Frameworks */,
+				1AC151D381BAF29DC66F0CD06904852A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BDB10F784A0429ABBA0A9FF70FD8654 /* PBXTargetDependency */,
+				8C28BA2CEFCBFD5A5252565B38633759 /* PBXTargetDependency */,
+				713304880CF498A56713A24C1E47DFAD /* PBXTargetDependency */,
+			);
+			name = "Pods-ZhaoCi (iOS)";
+			productName = Pods_ZhaoCi__iOS_;
+			productReference = 1FF607E91CC84645E144AEFD0B1364B0 /* Pods-ZhaoCi (iOS) */;
+			productType = "com.apple.product-type.framework";
+		};
+		B0DFE582E64AE7298C59241B7B610B04 /* Highlightr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84AE2DEE587A78705D285DB74A1C14AC /* Build configuration list for PBXNativeTarget "Highlightr" */;
+			buildPhases = (
+				D4B8EF184793AF868D94883529E09E0D /* Headers */,
+				570C6F87E4F8B9AD5A710F5C5906EDD1 /* Sources */,
+				22384FA938D1A9DB3904A7142A76F478 /* Frameworks */,
+				498157825047E3BEA0F96995F07A43BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Highlightr;
+			productName = Highlightr;
+			productReference = 7DB3C8BAA3D78E532F17CD75C7EC3704 /* Highlightr */;
+			productType = "com.apple.product-type.framework";
+		};
+		F6BA5C244B7A82E8941E99031770A235 /* libcmark_gfm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13BA1CD5ED7F14E5F477DE9D20807BCC /* Build configuration list for PBXNativeTarget "libcmark_gfm" */;
+			buildPhases = (
+				CBCC94475C747DAE168A45C542DCD994 /* Headers */,
+				8D7F965D5ABF9EFF963F56EED5B5BBC4 /* Sources */,
+				BA50EA620EEC3B68A7DF1B337D1B95FA /* Frameworks */,
+				7B3449BCE10BCFCA63D0421765C675E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libcmark_gfm;
+			productName = libcmark_gfm;
+			productReference = F46C636A9A0D66BEFD4B95383F4C3C43 /* libcmark_gfm */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 749AC15C1906031593FE623E26B5B57C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B0DFE582E64AE7298C59241B7B610B04 /* Highlightr */,
+				F6BA5C244B7A82E8941E99031770A235 /* libcmark_gfm */,
+				99AA28030FD8D12D33D7CDC66C9EA18B /* NightNight */,
+				A40501B96AEBAEB5282B10ECEBD4B931 /* Pods-ZhaoCi (iOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1AC151D381BAF29DC66F0CD06904852A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		498157825047E3BEA0F96995F07A43BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B1A459FA7EA61D0F11791ABCCF16CD3 /* a11y-dark.min.css in Resources */,
+				FB7E80770EF637056E103A5BC8D7ADA1 /* a11y-light.min.css in Resources */,
+				D776AEB1FF5E54C04DA6AD7FB74A915C /* agate.min.css in Resources */,
+				AEDA75827DD5AD86AD61973F681257F0 /* an-old-hope.min.css in Resources */,
+				121365D6476B5C66560642FECA06F714 /* androidstudio.min.css in Resources */,
+				728F75EC40FAA315204786687EBF890C /* arduino-light.min.css in Resources */,
+				C93957F3EA427F0224C224C414EBCF9A /* arta.min.css in Resources */,
+				54C23D49EEDFF419F05C6475B673A4F2 /* ascetic.min.css in Resources */,
+				CB738EE37597EE5DA3505DB7CD62308B /* atelier-cave-dark.min.css in Resources */,
+				8E3EE9C0727BE58BD5BB7E4FC8FAE36A /* atelier-cave-light.min.css in Resources */,
+				8EA6FF29B07885F704A5F1827D4C5732 /* atelier-dune-dark.min.css in Resources */,
+				5E60B2DFC6B512B66A919E20A1147F61 /* atelier-dune-light.min.css in Resources */,
+				5C649B3A620A9D80AA65B21AD99AE048 /* atelier-estuary-dark.min.css in Resources */,
+				F53F83F89331995C53919AE1FFC30090 /* atelier-estuary-light.min.css in Resources */,
+				BE5C3EB6A145353ED664B3B0D11E41F0 /* atelier-forest-dark.min.css in Resources */,
+				12F9A41395688220C054499DA226AB39 /* atelier-forest-light.min.css in Resources */,
+				D92234FC026A2B14668894DCBD6453A1 /* atelier-heath-dark.min.css in Resources */,
+				4B3CA40B882F5DF74570B6835FD7520D /* atelier-heath-light.min.css in Resources */,
+				86CF5F097D99D95B0BDCFA014D43BF11 /* atelier-lakeside-dark.min.css in Resources */,
+				4A2CA2F412BAFF13980B82579DAEC5A1 /* atelier-lakeside-light.min.css in Resources */,
+				C29CDF7221C2CE058496C7AD1F5F2A27 /* atelier-plateau-dark.min.css in Resources */,
+				DBE62538701D62599909F857414AE30E /* atelier-plateau-light.min.css in Resources */,
+				5FB5E67492A9CE177EB7ADBD4297C3E4 /* atelier-savanna-dark.min.css in Resources */,
+				AC21A7931E406A3635E71BE84D6C5D87 /* atelier-savanna-light.min.css in Resources */,
+				5F4436B1DC25B6AABF239DC0A3D6C10B /* atelier-seaside-dark.min.css in Resources */,
+				F35AB59FC57AC069CC920FFDA069900C /* atelier-seaside-light.min.css in Resources */,
+				EB141495EB508FE44C896C8B16DED65A /* atelier-sulphurpool-dark.min.css in Resources */,
+				E7B161C14BAEA7D1B796B5C7D2AED8C4 /* atelier-sulphurpool-light.min.css in Resources */,
+				A5800948809634C871637FA9B9A354D5 /* atom-one-dark-reasonable.min.css in Resources */,
+				F3750ACB8E366F8B4E5521E6760B25FE /* atom-one-dark.min.css in Resources */,
+				CD4C0F963C226997D4F3BA8768E38BCD /* atom-one-light.min.css in Resources */,
+				49DBCBA78B12448F45BBBBA873E86CD8 /* brown-paper.min.css in Resources */,
+				46BC9150EF05FD3B458C8C98242AFA33 /* codepen-embed.min.css in Resources */,
+				7A2C15FC5C484817C019D81E81DF71F5 /* color-brewer.min.css in Resources */,
+				59C9C3A477C35652B8731FBEAAF59E1C /* darcula.min.css in Resources */,
+				5EF233DAC34A9AA450F265F17D785327 /* dark.min.css in Resources */,
+				0E33021E99C415C72CB944D8DC1549D4 /* darkula.min.css in Resources */,
+				A2A0C5D673AB3A34096513001D40A431 /* default.min.css in Resources */,
+				9FADDACF26DEB4EF395A5E9DC551C0C4 /* docco.min.css in Resources */,
+				22231E15BB4AAD3B8D6B79EB508F86E4 /* dracula.min.css in Resources */,
+				3CA9A1625798792A77EFA25E0006D2DB /* far.min.css in Resources */,
+				9940340D045FFE12ECE4C7C04E8F203C /* foundation.min.css in Resources */,
+				E48660D46132FDB937CA6DE5403B8D43 /* github-gist.min.css in Resources */,
+				3ED1EA77CFE3840ED054850BFA06596B /* github.min.css in Resources */,
+				3CAAA77E1AEAAA5975F793D137AC86F1 /* gml.min.css in Resources */,
+				A93A3219D170E2DA836C6C29740DC9C1 /* googlecode.min.css in Resources */,
+				E208D49CC1EFB6888D26B83136E1AB73 /* grayscale.min.css in Resources */,
+				E7B0025FAF44F72B4A2037631E387FD1 /* gruvbox-dark.min.css in Resources */,
+				27C95BD3D89F2288F1B86F4F53B5AFCF /* gruvbox-light.min.css in Resources */,
+				C3E3CEABD335F8F937C9141B6B6D6504 /* highlight.min.js in Resources */,
+				9A5777A95BB8F2D6692EE1E19D33E719 /* hopscotch.min.css in Resources */,
+				E837FF5E4EDE1765E49D50BB022199BA /* hybrid.min.css in Resources */,
+				4E25D44BCDF3550B938F4A1AA31E3378 /* idea.min.css in Resources */,
+				9F53451FD23DDEEFB3483B5274765703 /* ir-black.min.css in Resources */,
+				C74CF1B5E5DE4D7BFC32C60E326199BB /* isbl-editor-dark.min.css in Resources */,
+				BB8D49AC92065DC8BCEE8F37C763CEA1 /* isbl-editor-light.min.css in Resources */,
+				36E3398A00B5D6B85FAE87BF52661380 /* kimbie.dark.min.css in Resources */,
+				E25620F50155B9A13C63B216D81BB523 /* kimbie.light.min.css in Resources */,
+				ED508CBC9CFED321E9F4497AC0FF9B38 /* lightfair.min.css in Resources */,
+				1C8D0237FC2E86F409F502E2D4A34C6D /* magula.min.css in Resources */,
+				A945065002A6D283168052EF8EB5E03D /* mono-blue.min.css in Resources */,
+				6C7234067A083098990F50670A722446 /* monokai-sublime.min.css in Resources */,
+				8308FE132E04AA2E5C9147CF6F616C6B /* monokai.min.css in Resources */,
+				FB0B2A95B497411AE53057527D7A3903 /* nord.min.css in Resources */,
+				E56F1A4969C5AD1503393F4C44871C93 /* obsidian.min.css in Resources */,
+				03B255AAEB49685A00E1AE5F0AF09AE7 /* ocean.min.css in Resources */,
+				6D7771C9C88D74A0AD79364B3687E3CF /* paraiso-dark.min.css in Resources */,
+				1EEA01FA75C3C0AE51CA4D9538427A32 /* paraiso-light.min.css in Resources */,
+				C5AD5B3DB02EEFE5008AC2D4B72F4ECD /* pojoaque.min.css in Resources */,
+				C7860449D604C046EFE9A066D9FA35B5 /* purebasic.min.css in Resources */,
+				12AD31706D0C44E3DCCF336D2030E579 /* qtcreator_dark.min.css in Resources */,
+				7D0EAF18AE7D1A8405E5CF39B9DDD100 /* qtcreator_light.min.css in Resources */,
+				10851F5B345E3AA93AA1E15CDC08BF29 /* railscasts.min.css in Resources */,
+				3069CC2986172DE76CBC28F9FA97A828 /* rainbow.min.css in Resources */,
+				D30166EF50BE2D87CD69472021520537 /* routeros.min.css in Resources */,
+				F087E837F53FFFC73EBB4ADC7D0C6954 /* school-book.min.css in Resources */,
+				06C1183156FC76940F5200F6E4FEA690 /* shades-of-purple.min.css in Resources */,
+				78CBEE4E08C3AF85264FC0EE436C2C5A /* solarized-dark.min.css in Resources */,
+				75C12198B6CCF168C26E86798B013C20 /* solarized-light.min.css in Resources */,
+				EA5E3F6C83B36B0930D90D4F08AA7D95 /* sunburst.min.css in Resources */,
+				8E0499E0C61A37B92BC8941DFE68168B /* tomorrow-night-blue.min.css in Resources */,
+				5B416EC85E1E7355BBC799E161973B50 /* tomorrow-night-bright.min.css in Resources */,
+				0F225C17DAB6D278B5BFE83436C45EE1 /* tomorrow-night-eighties.min.css in Resources */,
+				F42797451EA3931DC8ECBEF5032068A4 /* tomorrow-night.min.css in Resources */,
+				D90D5F663E80AA51B51FBF35D6D02C70 /* tomorrow.min.css in Resources */,
+				712702ACCB8B10432E667106E2D9FCB3 /* vs.min.css in Resources */,
+				9FDECB83A768F4090464036F2D00C51B /* vs2015.min.css in Resources */,
+				24E108319519DBC18234F7FA98C062E6 /* xcode.min.css in Resources */,
+				076563DBAFD66C308CA1F933BAF8133F /* xt256.min.css in Resources */,
+				B2564657E3E9B10E38B4DBDF5F229FC0 /* zenburn.min.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B3449BCE10BCFCA63D0421765C675E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A640803FD63854033676483F6EF3D0AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		392E13638D5FB6CE0C0129B5FDC41E52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				725F142BFCECF54A9F9B95F34307FD02 /* Pods-ZhaoCi (iOS)-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		570C6F87E4F8B9AD5A710F5C5906EDD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				144ECC6300636FCD010D67610487BE51 /* CodeAttributedString.swift in Sources */,
+				EE971ED41CA1AFF02053609FEDEBEE76 /* Highlightr.swift in Sources */,
+				D015F95C5A6C1756C86B784A96CC7AD5 /* Highlightr-dummy.m in Sources */,
+				73C6EF0595C7FB9A22E2689E292B99C2 /* HTMLUtils.swift in Sources */,
+				2191DF9A03A3C6EBE52678CCBEE6DBF9 /* Shims.swift in Sources */,
+				480FCCE7679932E5E6668A79EC5B5631 /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D7F965D5ABF9EFF963F56EED5B5BBC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DB2DC305FD597C1C9CE78DB7FF019F0 /* arena.c in Sources */,
+				554884047F7043D40A10A9BC39DF3639 /* autolink.c in Sources */,
+				53D1205BE21A58405844788BCD602B39 /* blocks.c in Sources */,
+				5B5161FF6C92793F60B7BF1FB62EED44 /* buffer.c in Sources */,
+				EAEFFF213543CA8730E562C81FFBD320 /* cmark.c in Sources */,
+				751C32F442C75718B27884EEA4F84E3C /* cmark_ctype.c in Sources */,
+				887503D47FC980DCB26C99B5F01689F9 /* commonmark.c in Sources */,
+				CBAC59B7171D03DAEE697C10E3F23DFE /* core-extensions.c in Sources */,
+				C0EBCB38E23EE652A0989A07393538A0 /* ext_scanners.c in Sources */,
+				05ADD5A9B400B3D4259E83B6BFD0EC6D /* footnotes.c in Sources */,
+				831FA7B967203BE7BFAA2C734E869AD2 /* houdini_href_e.c in Sources */,
+				D7822E243D8C205FB0A880713346A767 /* houdini_html_e.c in Sources */,
+				8E3853A69003550380003FBF1665208F /* houdini_html_u.c in Sources */,
+				E45FE8E6BD42552C78815539299EBEF2 /* html.c in Sources */,
+				33777EA5F505B88921DDD811C1071CC9 /* inlines.c in Sources */,
+				126315EB2A0BAC86B21AF863498DFEBC /* iterator.c in Sources */,
+				A432764CE499E68A8095963DA151713B /* latex.c in Sources */,
+				511C9EC7C4880064ED90C7EABC02E379 /* libcmark_gfm-dummy.m in Sources */,
+				76841957AD1FD8BAF9604725465035FA /* linked_list.c in Sources */,
+				9505E1A4EC2135DC0F1F229D95ACD910 /* man.c in Sources */,
+				24E4E094EF5E958ADD31E97631CDC9A4 /* map.c in Sources */,
+				1B82AFE87ABE9E660367AAFE286D13D4 /* node.c in Sources */,
+				71A60E21024769727F4093A934D7056A /* plaintext.c in Sources */,
+				FBE06EDA32D1147769B8820F4B0F540D /* plugin.c in Sources */,
+				4F7D3EE2B6A947777A2F656BCBD7B613 /* references.c in Sources */,
+				8134C455DED03AB009AEE349624D6B61 /* registry.c in Sources */,
+				3C42F0756F5EFE55C493B41F8EB374AF /* render.c in Sources */,
+				BD5125F09042755C2A54FA38FEE3D938 /* scanners.c in Sources */,
+				F3323D1E8113D15A59D18A3D57F4F500 /* strikethrough.c in Sources */,
+				E0B0AC7ABA376A59BE28B26C614CDA6A /* syntax_extension.c in Sources */,
+				6E7849D468A73E7DB38A7BD3DC1EFD9A /* table.c in Sources */,
+				4C5034203F2FB58C4BEA553E69F8AE94 /* tagfilter.c in Sources */,
+				E373753D4B11ED168C0A83911B8D8092 /* tasklist.c in Sources */,
+				D9FC96665AF64A3AF319896A18977F9E /* utf8.c in Sources */,
+				A19F4BDD0541DF1A6CB9892B7D7972E4 /* xml.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBA914EA9638AC467B24B0D11DC3F7C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A57714C950F8E140199A1A78120CE869 /* AttributeNames.swift in Sources */,
+				49B64345312A7331B3A21C50EBAD3B53 /* CALayer+Mixed.swift in Sources */,
+				2F79965FF3838088A86BF00CD3E81EB1 /* Dictionary+AttributedStringKeys.swift in Sources */,
+				F3C157A72C34E9FF8568669116A0446B /* Keys.swift in Sources */,
+				7817E4D815D210F6436E11D9ED952BCD /* MixedResource.swift in Sources */,
+				E9CA2D7934ABBE8DEC6A106143A1B7DD /* NightNight.swift in Sources */,
+				724345FE1AA71AA3174B37BB4EDB72B2 /* NightNight-dummy.m in Sources */,
+				99C8D5AC919BBA091806D3C720B1AE59 /* NNMutableAttributedString.swift in Sources */,
+				FA4C92CAF5CC1E6CE3B29ED9FF080407 /* NotificationManager.swift in Sources */,
+				5CF9438652D5AFD6E3B703736B4C2826 /* NSObject+Customize.swift in Sources */,
+				35B97E615703201685B87157281B739C /* NSObject+Mixed.swift in Sources */,
+				12C45ECB984F5C2387AD4EFD89D00E1B /* UIBarButtonItem+Mixed.swift in Sources */,
+				61E490564A27F5661775C91F9D36600B /* UIButton+Mixed.swift in Sources */,
+				7FF23DCF4F831EE141CF530238C9F04E /* UIColor+RGB.swift in Sources */,
+				D3D6A6FD1A3A15C79C765063DF3AF1B2 /* UIImageView+Mixed.swift in Sources */,
+				ABE7EC24FAEB66737DA21B9F0E516BA6 /* UILabel+Mixed.swift in Sources */,
+				60436DA4FD45C4C164EF347144A5EE90 /* UINavigationBar+Mixed.swift in Sources */,
+				28CE4CD3BFA302AEA2451E7F53E04251 /* UINavigationBar+MixedBarStyle.swift in Sources */,
+				610EAF2CEDF25811A99562A24CD6AE12 /* UINavigationBar+MixedTitleTextAttributes.swift in Sources */,
+				9ADF8E89123FF9F180E65225E861D2AB /* UIPageControl+Mixed.swift in Sources */,
+				E4D6C0861D7267B6BD99E4A7A193D8CA /* UIPopoverPresentationController+Mixed.swift in Sources */,
+				30671EE75A775C267983A10DF5DA5D3B /* UIProgressView+Mixed.swift in Sources */,
+				6BBFFBA949D32020B65C27913E267417 /* UISearchBar+Mixed.swift in Sources */,
+				0594B9A09B2813154BBECBE6877B3448 /* UISlider+Mixed.swift in Sources */,
+				A8C92EC80E6EE5C305ADB2DB6D19245E /* UISwitch+Mixed.swift in Sources */,
+				AC1EB396107EEC895DC156600C57B6B3 /* UITabBar+Mixed.swift in Sources */,
+				034F31854A8E3DBAF1CE09F97BEEAF6C /* UITableView+Mixed.swift in Sources */,
+				6749D48F09D4FA40FE54404AF6FD4950 /* UITextField+Mixed.swift in Sources */,
+				DEEB5B4971DF71C8D135F0D918A189F0 /* UITextView+Mixed.swift in Sources */,
+				1BD08A9FF9376B5B3820B696AD89164E /* UIToolbar+Mixed.swift in Sources */,
+				03742D58C2406DA7DF36BF462F400570 /* UIView+IBInspectable.swift in Sources */,
+				AC8D8341C355C9B469A5B0B6004BAC40 /* UIView+Mixed.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6BDB10F784A0429ABBA0A9FF70FD8654 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Highlightr;
+			target = B0DFE582E64AE7298C59241B7B610B04 /* Highlightr */;
+			targetProxy = B2265DD63C036BD2E938ABA50465EABC /* PBXContainerItemProxy */;
+		};
+		713304880CF498A56713A24C1E47DFAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libcmark_gfm;
+			target = F6BA5C244B7A82E8941E99031770A235 /* libcmark_gfm */;
+			targetProxy = B6ED40DB4ED196C338F53B3C4F51CC8B /* PBXContainerItemProxy */;
+		};
+		8C28BA2CEFCBFD5A5252565B38633759 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NightNight;
+			target = 99AA28030FD8D12D33D7CDC66C9EA18B /* NightNight */;
+			targetProxy = 1B8374B4CC92890B20861EE98334A626 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3E7F8F206844DABB4242037CA020A1A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8904ECAF5D21CDB4D1002CFCC7BA27C0 /* Pods-ZhaoCi (iOS).debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ZhaoCi (iOS)/Pods-ZhaoCi (iOS)-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZhaoCi (iOS)/Pods-ZhaoCi (iOS).modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		427733EDE5EB2F6ADC630B63DB736D18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFE7B2802DEE81000FAFD8B904F8E9DD /* NightNight.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NightNight/NightNight-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NightNight/NightNight-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NightNight/NightNight.modulemap";
+				PRODUCT_MODULE_NAME = NightNight;
+				PRODUCT_NAME = NightNight;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8332C7F33472AF362C996E9133729B32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E022C64D5FD4989FFA1D7314E8C9EB6 /* libcmark_gfm.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/libcmark_gfm/libcmark_gfm-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/libcmark_gfm/libcmark_gfm-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/libcmark_gfm/libcmark_gfm.modulemap";
+				PRODUCT_MODULE_NAME = libcmark_gfm;
+				PRODUCT_NAME = libcmark_gfm;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8D889F3CB45E6204CCDEE6110629F5E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01DD96FE0E996884D8840C6D9A2C3CCA /* Highlightr.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Highlightr/Highlightr-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Highlightr/Highlightr-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Highlightr/Highlightr.modulemap";
+				PRODUCT_MODULE_NAME = Highlightr;
+				PRODUCT_NAME = Highlightr;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9553C89E183877A5CB2F3C6801BEC129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A2DD79F4F4585C590C5BEC2E211B133B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5B3DF975E84E20E0530F168C9DB7534 /* NightNight.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NightNight/NightNight-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NightNight/NightNight-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NightNight/NightNight.modulemap";
+				PRODUCT_MODULE_NAME = NightNight;
+				PRODUCT_NAME = NightNight;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BEE37B9E19FC89891F817F45238EB5BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB4DDF183C1AE25BC53CAFA853E2E582 /* Highlightr.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Highlightr/Highlightr-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Highlightr/Highlightr-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Highlightr/Highlightr.modulemap";
+				PRODUCT_MODULE_NAME = Highlightr;
+				PRODUCT_NAME = Highlightr;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C1834244B31D8D574F35448E5890FA40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7582B80620FE25B16A221E1B7DDED222 /* libcmark_gfm.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/libcmark_gfm/libcmark_gfm-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/libcmark_gfm/libcmark_gfm-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/libcmark_gfm/libcmark_gfm.modulemap";
+				PRODUCT_MODULE_NAME = libcmark_gfm;
+				PRODUCT_NAME = libcmark_gfm;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CC604D7922B137789DAB2A23562C8EC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBB17373184A99481E9EE0315DA401FC /* Pods-ZhaoCi (iOS).release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ZhaoCi (iOS)/Pods-ZhaoCi (iOS)-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZhaoCi (iOS)/Pods-ZhaoCi (iOS).modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13BA1CD5ED7F14E5F477DE9D20807BCC /* Build configuration list for PBXNativeTarget "libcmark_gfm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1834244B31D8D574F35448E5890FA40 /* Debug */,
+				8332C7F33472AF362C996E9133729B32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */,
+				9553C89E183877A5CB2F3C6801BEC129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C8C0ED4176FFD558E75DD06EE0855C6 /* Build configuration list for PBXNativeTarget "Pods-ZhaoCi (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E7F8F206844DABB4242037CA020A1A5 /* Debug */,
+				CC604D7922B137789DAB2A23562C8EC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C2FF31748DEB76F36997D89310732FC /* Build configuration list for PBXNativeTarget "NightNight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2DD79F4F4585C590C5BEC2E211B133B /* Debug */,
+				427733EDE5EB2F6ADC630B63DB736D18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84AE2DEE587A78705D285DB74A1C14AC /* Build configuration list for PBXNativeTarget "Highlightr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEE37B9E19FC89891F817F45238EB5BB /* Debug */,
+				8D889F3CB45E6204CCDEE6110629F5E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

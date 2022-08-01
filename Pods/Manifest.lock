@@ -1,0 +1,40 @@
+PODS:
+  - Highlightr (2.1.0)
+  - libcmark_gfm (0.29.4)
+  - NightNight (0.5.0)
+
+DEPENDENCIES:
+  - Highlightr (from `https://github.com/raspu/Highlightr.git`, branch `master`)
+  - libcmark_gfm (from `https://github.com/KristopherGBaker/libcmark_gfm.git`, branch `master`)
+  - NightNight (from `https://github.com/draveness/NightNight.git`, branch `master`)
+
+EXTERNAL SOURCES:
+  Highlightr:
+    :branch: master
+    :git: https://github.com/raspu/Highlightr.git
+  libcmark_gfm:
+    :branch: master
+    :git: https://github.com/KristopherGBaker/libcmark_gfm.git
+  NightNight:
+    :branch: master
+    :git: https://github.com/draveness/NightNight.git
+
+CHECKOUT OPTIONS:
+  Highlightr:
+    :commit: 048188df13e145657554a53a24882df5461fc96a
+    :git: https://github.com/raspu/Highlightr.git
+  libcmark_gfm:
+    :commit: 3e8c4238a4657a12411c82aa1e43a89930c9881f
+    :git: https://github.com/KristopherGBaker/libcmark_gfm.git
+  NightNight:
+    :commit: e8f61919566f81b4a5d1f5b78503fa6bc7199ffd
+    :git: https://github.com/draveness/NightNight.git
+
+SPEC CHECKSUMS:
+  Highlightr: 683f05d5223cade533a78528a35c9f06e4caddf8
+  libcmark_gfm: aed11fc48515bec53902b0fd4cddcbd42b5e94c2
+  NightNight: 0997dd0caebb0c400a48fe4b21d04696db7e3961
+
+PODFILE CHECKSUM: b4244a7a2bbd2062697b14f98f9c620d8b2af87d
+
+COCOAPODS: 1.11.2
