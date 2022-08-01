@@ -22,14 +22,6 @@ struct NoteListView: View {
             }
             .pickerStyle(SegmentedPickerStyle())
             .padding(paddingEdgeInset)
-            
-            HStack {
-                Text("\(ListType.listName(index: selectedIndex))")
-                    .font(.title)
-                    .fontWeight(.medium)
-                    .padding(.leading, 10)
-                Spacer()
-            }
            
             List {
                 
