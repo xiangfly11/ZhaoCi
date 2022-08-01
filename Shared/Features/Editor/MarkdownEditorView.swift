@@ -101,7 +101,7 @@ extension MarkdownEditorView {
             } label: {
                 Text("完成")
                     .foregroundColor(.green)
-                    .bold()
+                    .font(.WenKaiMonoBold(size: 18))
             }
             
             Button {
@@ -147,7 +147,7 @@ extension MarkdownEditorView {
             } label: {
                 Text("更多")
                     .foregroundColor(.green)
-                    .bold()
+                    .font(.WenKaiMonoBold(size: 18))
             }
 
         }
