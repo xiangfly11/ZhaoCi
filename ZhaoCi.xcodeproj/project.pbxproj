@@ -31,6 +31,10 @@
 		7AB675032897C170009F1AE5 /* FontExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB675012897C170009F1AE5 /* FontExt.swift */; };
 		7AB675152897D25D009F1AE5 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 7AB675142897D25D009F1AE5 /* Podfile */; };
 		7AB675162897D25D009F1AE5 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 7AB675142897D25D009F1AE5 /* Podfile */; };
+		7AB6751928980622009F1AE5 /* LXGWWenKaiLite-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AB6751728980622009F1AE5 /* LXGWWenKaiLite-Regular.ttf */; };
+		7AB6751A28980622009F1AE5 /* LXGWWenKaiLite-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AB6751728980622009F1AE5 /* LXGWWenKaiLite-Regular.ttf */; };
+		7AB6751B28980622009F1AE5 /* LXGWWenKaiLite-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AB6751828980622009F1AE5 /* LXGWWenKaiLite-Bold.ttf */; };
+		7AB6751C28980622009F1AE5 /* LXGWWenKaiLite-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AB6751828980622009F1AE5 /* LXGWWenKaiLite-Bold.ttf */; };
 		7AB93643288AF3A2003F1842 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB93642288AF3A2003F1842 /* Tests_iOS.swift */; };
 		7AB93645288AF3A2003F1842 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB93644288AF3A2003F1842 /* Tests_iOSLaunchTests.swift */; };
 		7AB9364F288AF3A2003F1842 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB9364E288AF3A2003F1842 /* Tests_macOS.swift */; };
@@ -88,6 +92,8 @@
 		7AB674FF2897C0AA009F1AE5 /* ZhaoCi--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ZhaoCi--iOS--Info.plist"; sourceTree = "<group>"; };
 		7AB675012897C170009F1AE5 /* FontExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExt.swift; sourceTree = "<group>"; };
 		7AB675142897D25D009F1AE5 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7AB6751728980622009F1AE5 /* LXGWWenKaiLite-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LXGWWenKaiLite-Regular.ttf"; sourceTree = "<group>"; };
+		7AB6751828980622009F1AE5 /* LXGWWenKaiLite-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LXGWWenKaiLite-Bold.ttf"; sourceTree = "<group>"; };
 		7AB9362A288AF39C003F1842 /* ZhaoCiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZhaoCiApp.swift; sourceTree = "<group>"; };
 		7AB9362C288AF3A1003F1842 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AB93631288AF3A1003F1842 /* 朝辞.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "朝辞.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -244,6 +250,8 @@
 			isa = PBXGroup;
 			children = (
 				7AB674FC2897C05A009F1AE5 /* LXGWWenKaiMono-Bold.ttf */,
+				7AB6751828980622009F1AE5 /* LXGWWenKaiLite-Bold.ttf */,
+				7AB6751728980622009F1AE5 /* LXGWWenKaiLite-Regular.ttf */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -449,6 +457,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AB6751928980622009F1AE5 /* LXGWWenKaiLite-Regular.ttf in Resources */,
+				7AB6751B28980622009F1AE5 /* LXGWWenKaiLite-Bold.ttf in Resources */,
 				7AB675152897D25D009F1AE5 /* Podfile in Resources */,
 				7AB93656288AF3A2003F1842 /* Assets.xcassets in Resources */,
 				7AB674FD2897C05A009F1AE5 /* LXGWWenKaiMono-Bold.ttf in Resources */,
@@ -459,6 +469,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AB6751A28980622009F1AE5 /* LXGWWenKaiLite-Regular.ttf in Resources */,
+				7AB6751C28980622009F1AE5 /* LXGWWenKaiLite-Bold.ttf in Resources */,
 				7AB675162897D25D009F1AE5 /* Podfile in Resources */,
 				7AB93657288AF3A2003F1842 /* Assets.xcassets in Resources */,
 				7AB674FE2897C05A009F1AE5 /* LXGWWenKaiMono-Bold.ttf in Resources */,
