@@ -18,6 +18,7 @@ struct MarkdownEditorView: View {
     @State private var contentText: String = ""
     @State private var selectedType: MarkdownEditorType = MarkdownEditorType.editor
     @FocusState private var focusedEditor: TextEditorType?
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     var html: String {
         var parser = MarkdownParser()
         let modifier = Modifier(target: .codeBlocks) { html, markdown in
@@ -33,6 +34,7 @@ struct MarkdownEditorView: View {
         relayoutSubviews()
         .navigationBarTitle("", displayMode: .inline)
         .navigationBarItems(leading: navItmes)
+        .navigationBarBackButtonHidden(true)
     }
     
     init() {
@@ -95,7 +97,7 @@ extension MarkdownEditorView {
         HStack(alignment: .center, spacing: 20) {
             
             Button {
-                
+                self.presentationMode.wrappedValue.dismiss()
             } label: {
                 Text("完成")
                     .foregroundColor(.green)
