@@ -176,11 +176,13 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/HighlightedTextEditor/HighlightedTextEditor.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Highlightr/Highlightr.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/NightNight/NightNight.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/libcmark_gfm/libcmark_gfm.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/HighlightedTextEditor/HighlightedTextEditor.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Highlightr/Highlightr.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/NightNight/NightNight.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/libcmark_gfm/libcmark_gfm.framework"
