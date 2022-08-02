@@ -1,12 +1,18 @@
 PODS:
+  - HighlightedTextEditor (2.0.2)
   - Highlightr (2.1.0)
   - libcmark_gfm (0.29.4)
   - NightNight (0.5.0)
 
 DEPENDENCIES:
+  - HighlightedTextEditor
   - Highlightr (from `https://github.com/raspu/Highlightr.git`, branch `master`)
   - libcmark_gfm (from `https://github.com/KristopherGBaker/libcmark_gfm.git`, branch `master`)
   - NightNight (from `https://github.com/draveness/NightNight.git`, branch `master`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - HighlightedTextEditor
 
 EXTERNAL SOURCES:
   Highlightr:
@@ -31,10 +37,11 @@ CHECKOUT OPTIONS:
     :git: https://github.com/draveness/NightNight.git
 
 SPEC CHECKSUMS:
+  HighlightedTextEditor: c71301c0352cd772e8e9528edb5c6329d0d89590
   Highlightr: 683f05d5223cade533a78528a35c9f06e4caddf8
   libcmark_gfm: aed11fc48515bec53902b0fd4cddcbd42b5e94c2
   NightNight: 0997dd0caebb0c400a48fe4b21d04696db7e3961
 
-PODFILE CHECKSUM: b4244a7a2bbd2062697b14f98f9c620d8b2af87d
+PODFILE CHECKSUM: b5da89bf3ea29a76da49f6c65de7baaf8ea98b10
 
 COCOAPODS: 1.11.2
