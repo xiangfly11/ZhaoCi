@@ -8,12 +8,12 @@
 import SwiftUI
 import Ink
 
-struct MarkdownEditorView: View {
-    enum TextEditorType: Hashable {
-        case titleType
-        case contentType
-    }
+enum TextEditorType: Hashable {
+    case titleType
+    case contentType
+}
 
+struct MarkdownEditorView: View {
     @State private var titleText: String = ""
     @State private var contentText: String = ""
     @State private var selectedType: MarkdownEditorType = MarkdownEditorType.editor
@@ -47,15 +47,7 @@ extension MarkdownEditorView {
         return VStack(alignment: .leading) {
             switch selectedType {
             case .editor:
-                TextEditor(text: $contentText)
-                    .disableAutocorrection(true)
-                    .autocapitalization(.none)
-                    .background(Color(UIColor.yunShuiLan))
-                    .focused($focusedEditor, equals: .contentType)
-                    .onSubmit {
-                        focusedEditor = nil
-                    }
-                    .submitLabel(.done)
+                MarkdownTextView(markdownText: $contentText)
             case .preview:
                 iOSPreview(html: html)
             }

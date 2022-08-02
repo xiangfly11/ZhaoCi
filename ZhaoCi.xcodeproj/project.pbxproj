@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A1DD1B12899104F00C3C7A2 /* MarkdownTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DD1B02899104F00C3C7A2 /* MarkdownTextView.swift */; };
+		7A1DD1B22899104F00C3C7A2 /* MarkdownTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DD1B02899104F00C3C7A2 /* MarkdownTextView.swift */; };
 		7A72805628922C7F00CF96E3 /* ProfileSettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A72805528922C7F00CF96E3 /* ProfileSettingViewModel.swift */; };
 		7A72805728922C7F00CF96E3 /* ProfileSettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A72805528922C7F00CF96E3 /* ProfileSettingViewModel.swift */; };
 		7A7280592892380500CF96E3 /* NoteListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7280582892380500CF96E3 /* NoteListViewModel.swift */; };
@@ -79,6 +81,7 @@
 
 /* Begin PBXFileReference section */
 		4DB3380E797C72A310438747 /* Pods-ZhaoCi (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhaoCi (iOS).release.xcconfig"; path = "Target Support Files/Pods-ZhaoCi (iOS)/Pods-ZhaoCi (iOS).release.xcconfig"; sourceTree = "<group>"; };
+		7A1DD1B02899104F00C3C7A2 /* MarkdownTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownTextView.swift; sourceTree = "<group>"; };
 		7A72805528922C7F00CF96E3 /* ProfileSettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingViewModel.swift; sourceTree = "<group>"; };
 		7A7280582892380500CF96E3 /* NoteListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListViewModel.swift; sourceTree = "<group>"; };
 		7A7A4ED52892830B00EAB56F /* MarkdownEditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownEditorViewModel.swift; sourceTree = "<group>"; };
@@ -221,6 +224,7 @@
 				7AB413FC289268DB008680C5 /* MarkdownEditorView.swift */,
 				7AB414052892787F008680C5 /* iOSPreview.swift */,
 				7A7A4ED52892830B00EAB56F /* MarkdownEditorViewModel.swift */,
+				7A1DD1B02899104F00C3C7A2 /* MarkdownTextView.swift */,
 			);
 			path = Editor;
 			sourceTree = "<group>";
@@ -553,6 +557,7 @@
 				7AB9DD0028912C0600EEBAA3 /* TabItemView.swift in Sources */,
 				7A7A4EDD2894F8B800EAB56F /* UIColorExt.swift in Sources */,
 				7AB413FA2892677C008680C5 /* HomeViewModel.swift in Sources */,
+				7A1DD1B12899104F00C3C7A2 /* MarkdownTextView.swift in Sources */,
 				7AB413FD289268DB008680C5 /* MarkdownEditorView.swift in Sources */,
 				7AB675022897C170009F1AE5 /* FontExt.swift in Sources */,
 				7AB9DD0628916F8400EEBAA3 /* ProfileSettingView.swift in Sources */,
@@ -568,6 +573,7 @@
 				7AB675032897C170009F1AE5 /* FontExt.swift in Sources */,
 				7AB9DCF828912B3400EEBAA3 /* HomeView.swift in Sources */,
 				7AB9DD0A2891759000EEBAA3 /* AvatarView.swift in Sources */,
+				7A1DD1B22899104F00C3C7A2 /* MarkdownTextView.swift in Sources */,
 				7AB414072892787F008680C5 /* iOSPreview.swift in Sources */,
 				7AB9DCFB28912B9500EEBAA3 /* SettingsView.swift in Sources */,
 				7A72805728922C7F00CF96E3 /* ProfileSettingViewModel.swift in Sources */,
