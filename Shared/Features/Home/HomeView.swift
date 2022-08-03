@@ -35,7 +35,6 @@ struct HomeView: View {
                     .shadow(color: Color.black.opacity(0.1), radius: 4, x: 0, y: -1)
                     .overlay(bottomBar)
             }
-            .background(Color("Background"))
             .edgesIgnoringSafeArea(.bottom)
             .navigationBarTitle("")
             .navigationBarHidden(true)
