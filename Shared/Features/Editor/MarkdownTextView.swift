@@ -12,17 +12,8 @@ struct MarkdownTextView: View {
     @Binding var markdownText: String
     @FocusState var focusedEditor: TextEditorType?
     var body: some View {
-//        TextEditor(text: $markdownText)
-//            .disableAutocorrection(true)
-//            .autocapitalization(.none)
-//            .background(Color(UIColor.yunShuiLan))
-//            .focused($focusedEditor, equals: .contentType)
-//            .onSubmit {
-//                focusedEditor = nil
-//            }
-//            .submitLabel(.done)
-        
         HighlightedTextEditor(text: $markdownText, highlightRules: .customMarkdownRules)
+            .configMarkdownToolbar()
             .disableAutocorrection(true)
             .autocapitalization(.none)
             .background(Color(UIColor.yunShuiLan))

@@ -29,6 +29,16 @@
 		7AB41404289277C8008680C5 /* Ink in Frameworks */ = {isa = PBXBuildFile; productRef = 7AB41403289277C8008680C5 /* Ink */; };
 		7AB414062892787F008680C5 /* iOSPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB414052892787F008680C5 /* iOSPreview.swift */; };
 		7AB414072892787F008680C5 /* iOSPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB414052892787F008680C5 /* iOSPreview.swift */; };
+		7AB47922289A5EBA000811B0 /* HighlightedTextEditorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB47921289A5EBA000811B0 /* HighlightedTextEditorExt.swift */; };
+		7AB47923289A5EBA000811B0 /* HighlightedTextEditorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB47921289A5EBA000811B0 /* HighlightedTextEditorExt.swift */; };
+		7AB47925289A6743000811B0 /* MarkdownInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB47924289A6743000811B0 /* MarkdownInputAccessoryView.swift */; };
+		7AB47926289A6743000811B0 /* MarkdownInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB47924289A6743000811B0 /* MarkdownInputAccessoryView.swift */; };
+		7AB47929289A67FA000811B0 /* InputToolBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB47928289A67FA000811B0 /* InputToolBarItem.swift */; };
+		7AB4792A289A67FA000811B0 /* InputToolBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB47928289A67FA000811B0 /* InputToolBarItem.swift */; };
+		7AB4792C289A8E7C000811B0 /* CMRichTextViewOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB4792B289A8E7C000811B0 /* CMRichTextViewOptions.swift */; };
+		7AB4792D289A8E7C000811B0 /* CMRichTextViewOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB4792B289A8E7C000811B0 /* CMRichTextViewOptions.swift */; };
+		7AB4792F289A8EEA000811B0 /* CMToolBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB4792E289A8EEA000811B0 /* CMToolBarItem.swift */; };
+		7AB47930289A8EEA000811B0 /* CMToolBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB4792E289A8EEA000811B0 /* CMToolBarItem.swift */; };
 		7AB674FD2897C05A009F1AE5 /* LXGWWenKaiMono-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AB674FC2897C05A009F1AE5 /* LXGWWenKaiMono-Bold.ttf */; };
 		7AB674FE2897C05A009F1AE5 /* LXGWWenKaiMono-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AB674FC2897C05A009F1AE5 /* LXGWWenKaiMono-Bold.ttf */; };
 		7AB675022897C170009F1AE5 /* FontExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB675012897C170009F1AE5 /* FontExt.swift */; };
@@ -94,6 +104,11 @@
 		7AB413F92892677C008680C5 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		7AB413FC289268DB008680C5 /* MarkdownEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownEditorView.swift; sourceTree = "<group>"; };
 		7AB414052892787F008680C5 /* iOSPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSPreview.swift; sourceTree = "<group>"; };
+		7AB47921289A5EBA000811B0 /* HighlightedTextEditorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightedTextEditorExt.swift; sourceTree = "<group>"; };
+		7AB47924289A6743000811B0 /* MarkdownInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownInputAccessoryView.swift; sourceTree = "<group>"; };
+		7AB47928289A67FA000811B0 /* InputToolBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputToolBarItem.swift; sourceTree = "<group>"; };
+		7AB4792B289A8E7C000811B0 /* CMRichTextViewOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMRichTextViewOptions.swift; sourceTree = "<group>"; };
+		7AB4792E289A8EEA000811B0 /* CMToolBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMToolBarItem.swift; sourceTree = "<group>"; };
 		7AB674FC2897C05A009F1AE5 /* LXGWWenKaiMono-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LXGWWenKaiMono-Bold.ttf"; sourceTree = "<group>"; };
 		7AB674FF2897C0AA009F1AE5 /* ZhaoCi--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ZhaoCi--iOS--Info.plist"; sourceTree = "<group>"; };
 		7AB675012897C170009F1AE5 /* FontExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExt.swift; sourceTree = "<group>"; };
@@ -169,10 +184,12 @@
 		7A7A4ED82893B54B00EAB56F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				7AB47927289A677C000811B0 /* InputAccessoryView */,
 				7AB9DD022891395200EEBAA3 /* BorderedViewModifiy.swift */,
 				7A7A4EDC2894F8B800EAB56F /* UIColorExt.swift */,
 				7AB675012897C170009F1AE5 /* FontExt.swift */,
 				7A1DD1B9289A1EB100C3C7A2 /* CustomMarkdownRules.swift */,
+				7AB47921289A5EBA000811B0 /* HighlightedTextEditorExt.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -200,6 +217,17 @@
 				9353338DCC2C3535A43F5069 /* Pods_ZhaoCi__iOS_.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7AB47927289A677C000811B0 /* InputAccessoryView */ = {
+			isa = PBXGroup;
+			children = (
+				7AB4792B289A8E7C000811B0 /* CMRichTextViewOptions.swift */,
+				7AB47924289A6743000811B0 /* MarkdownInputAccessoryView.swift */,
+				7AB47928289A67FA000811B0 /* InputToolBarItem.swift */,
+				7AB4792E289A8EEA000811B0 /* CMToolBarItem.swift */,
+			);
+			path = InputAccessoryView;
 			sourceTree = "<group>";
 		};
 		7AB5E4602895029E0043F43B /* Features */ = {
@@ -548,10 +576,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AB4792F289A8EEA000811B0 /* CMToolBarItem.swift in Sources */,
 				7AB9DCF728912B3400EEBAA3 /* HomeView.swift in Sources */,
 				7AB399C42895A14C008B047C /* Tab.swift in Sources */,
 				7AB9DD092891759000EEBAA3 /* AvatarView.swift in Sources */,
 				7AB414062892787F008680C5 /* iOSPreview.swift in Sources */,
+				7AB47925289A6743000811B0 /* MarkdownInputAccessoryView.swift in Sources */,
+				7AB47922289A5EBA000811B0 /* HighlightedTextEditorExt.swift in Sources */,
 				7AB9DCFA28912B9500EEBAA3 /* SettingsView.swift in Sources */,
 				7A1DD1BA289A1EB100C3C7A2 /* CustomMarkdownRules.swift in Sources */,
 				7A72805628922C7F00CF96E3 /* ProfileSettingViewModel.swift in Sources */,
@@ -562,12 +593,14 @@
 				7AB9DD0028912C0600EEBAA3 /* TabItemView.swift in Sources */,
 				7A7A4EDD2894F8B800EAB56F /* UIColorExt.swift in Sources */,
 				7AB413FA2892677C008680C5 /* HomeViewModel.swift in Sources */,
+				7AB4792C289A8E7C000811B0 /* CMRichTextViewOptions.swift in Sources */,
 				7A1DD1B12899104F00C3C7A2 /* MarkdownTextView.swift in Sources */,
 				7AB413FD289268DB008680C5 /* MarkdownEditorView.swift in Sources */,
 				7AB675022897C170009F1AE5 /* FontExt.swift in Sources */,
 				7AB9DD0628916F8400EEBAA3 /* ProfileSettingView.swift in Sources */,
 				7A7280592892380500CF96E3 /* NoteListViewModel.swift in Sources */,
 				7AB93652288AF3A2003F1842 /* ZhaoCiApp.swift in Sources */,
+				7AB47929289A67FA000811B0 /* InputToolBarItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,8 +608,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AB4792A289A67FA000811B0 /* InputToolBarItem.swift in Sources */,
 				7AB675032897C170009F1AE5 /* FontExt.swift in Sources */,
 				7AB9DCF828912B3400EEBAA3 /* HomeView.swift in Sources */,
+				7AB47930289A8EEA000811B0 /* CMToolBarItem.swift in Sources */,
 				7AB9DD0A2891759000EEBAA3 /* AvatarView.swift in Sources */,
 				7A1DD1BB289A1EB100C3C7A2 /* CustomMarkdownRules.swift in Sources */,
 				7A1DD1B22899104F00C3C7A2 /* MarkdownTextView.swift in Sources */,
@@ -584,10 +619,13 @@
 				7AB9DCFB28912B9500EEBAA3 /* SettingsView.swift in Sources */,
 				7A72805728922C7F00CF96E3 /* ProfileSettingViewModel.swift in Sources */,
 				7A7A4ED72892830B00EAB56F /* MarkdownEditorViewModel.swift in Sources */,
+				7AB4792D289A8E7C000811B0 /* CMRichTextViewOptions.swift in Sources */,
+				7AB47923289A5EBA000811B0 /* HighlightedTextEditorExt.swift in Sources */,
 				7AB9DD042891395200EEBAA3 /* BorderedViewModifiy.swift in Sources */,
 				7AB9DCFE28912BAF00EEBAA3 /* NoteListView.swift in Sources */,
 				7AB9DD0128912C0600EEBAA3 /* TabItemView.swift in Sources */,
 				7A7A4EDE2894F8B800EAB56F /* UIColorExt.swift in Sources */,
+				7AB47926289A6743000811B0 /* MarkdownInputAccessoryView.swift in Sources */,
 				7AB413FB2892677C008680C5 /* HomeViewModel.swift in Sources */,
 				7AB413FE289268DB008680C5 /* MarkdownEditorView.swift in Sources */,
 				7AB9DD0728916F8400EEBAA3 /* ProfileSettingView.swift in Sources */,
