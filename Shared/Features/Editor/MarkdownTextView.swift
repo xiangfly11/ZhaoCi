@@ -22,7 +22,7 @@ struct MarkdownTextView: View {
 //            }
 //            .submitLabel(.done)
         
-        HighlightedTextEditor(text: $markdownText, highlightRules: .markdown)
+        HighlightedTextEditor(text: $markdownText, highlightRules: .customMarkdownRules)
             .disableAutocorrection(true)
             .autocapitalization(.none)
             .background(Color(UIColor.yunShuiLan))

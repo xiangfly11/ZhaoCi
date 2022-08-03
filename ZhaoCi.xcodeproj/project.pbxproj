@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7A1DD1B12899104F00C3C7A2 /* MarkdownTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DD1B02899104F00C3C7A2 /* MarkdownTextView.swift */; };
 		7A1DD1B22899104F00C3C7A2 /* MarkdownTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DD1B02899104F00C3C7A2 /* MarkdownTextView.swift */; };
+		7A1DD1BA289A1EB100C3C7A2 /* CustomMarkdownRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DD1B9289A1EB100C3C7A2 /* CustomMarkdownRules.swift */; };
+		7A1DD1BB289A1EB100C3C7A2 /* CustomMarkdownRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DD1B9289A1EB100C3C7A2 /* CustomMarkdownRules.swift */; };
 		7A72805628922C7F00CF96E3 /* ProfileSettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A72805528922C7F00CF96E3 /* ProfileSettingViewModel.swift */; };
 		7A72805728922C7F00CF96E3 /* ProfileSettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A72805528922C7F00CF96E3 /* ProfileSettingViewModel.swift */; };
 		7A7280592892380500CF96E3 /* NoteListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7280582892380500CF96E3 /* NoteListViewModel.swift */; };
@@ -82,6 +84,7 @@
 /* Begin PBXFileReference section */
 		4DB3380E797C72A310438747 /* Pods-ZhaoCi (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhaoCi (iOS).release.xcconfig"; path = "Target Support Files/Pods-ZhaoCi (iOS)/Pods-ZhaoCi (iOS).release.xcconfig"; sourceTree = "<group>"; };
 		7A1DD1B02899104F00C3C7A2 /* MarkdownTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownTextView.swift; sourceTree = "<group>"; };
+		7A1DD1B9289A1EB100C3C7A2 /* CustomMarkdownRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMarkdownRules.swift; sourceTree = "<group>"; };
 		7A72805528922C7F00CF96E3 /* ProfileSettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingViewModel.swift; sourceTree = "<group>"; };
 		7A7280582892380500CF96E3 /* NoteListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListViewModel.swift; sourceTree = "<group>"; };
 		7A7A4ED52892830B00EAB56F /* MarkdownEditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownEditorViewModel.swift; sourceTree = "<group>"; };
@@ -169,6 +172,7 @@
 				7AB9DD022891395200EEBAA3 /* BorderedViewModifiy.swift */,
 				7A7A4EDC2894F8B800EAB56F /* UIColorExt.swift */,
 				7AB675012897C170009F1AE5 /* FontExt.swift */,
+				7A1DD1B9289A1EB100C3C7A2 /* CustomMarkdownRules.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -549,6 +553,7 @@
 				7AB9DD092891759000EEBAA3 /* AvatarView.swift in Sources */,
 				7AB414062892787F008680C5 /* iOSPreview.swift in Sources */,
 				7AB9DCFA28912B9500EEBAA3 /* SettingsView.swift in Sources */,
+				7A1DD1BA289A1EB100C3C7A2 /* CustomMarkdownRules.swift in Sources */,
 				7A72805628922C7F00CF96E3 /* ProfileSettingViewModel.swift in Sources */,
 				7A7A4ED62892830B00EAB56F /* MarkdownEditorViewModel.swift in Sources */,
 				7AB9DD032891395200EEBAA3 /* BorderedViewModifiy.swift in Sources */,
@@ -573,6 +578,7 @@
 				7AB675032897C170009F1AE5 /* FontExt.swift in Sources */,
 				7AB9DCF828912B3400EEBAA3 /* HomeView.swift in Sources */,
 				7AB9DD0A2891759000EEBAA3 /* AvatarView.swift in Sources */,
+				7A1DD1BB289A1EB100C3C7A2 /* CustomMarkdownRules.swift in Sources */,
 				7A1DD1B22899104F00C3C7A2 /* MarkdownTextView.swift in Sources */,
 				7AB414072892787F008680C5 /* iOSPreview.swift in Sources */,
 				7AB9DCFB28912B9500EEBAA3 /* SettingsView.swift in Sources */,
