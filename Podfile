@@ -13,4 +13,5 @@ target 'ZhaoCi (iOS)' do
     pod 'Highlightr', :git => 'https://github.com/raspu/Highlightr.git', :branch => 'master'
     pod 'libcmark_gfm', :git => 'https://github.com/KristopherGBaker/libcmark_gfm.git', :branch => 'master'
     pod 'NightNight', :git => 'https://github.com/draveness/NightNight.git', :branch => 'master'
+    pod 'SnapKit'
 end

@@ -2,4 +2,5 @@ ${PODS_ROOT}/Target Support Files/Pods-ZhaoCi (iOS)/Pods-ZhaoCi (iOS)-frameworks
 ${BUILT_PRODUCTS_DIR}/HighlightedTextEditor/HighlightedTextEditor.framework
 ${BUILT_PRODUCTS_DIR}/Highlightr/Highlightr.framework
 ${BUILT_PRODUCTS_DIR}/NightNight/NightNight.framework
+${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
 ${BUILT_PRODUCTS_DIR}/libcmark_gfm/libcmark_gfm.framework
