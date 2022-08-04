@@ -14,6 +14,7 @@ struct MarkdownTextView: View {
     var body: some View {
         HighlightedTextEditor(text: $markdownText, highlightRules: .customMarkdownRules)
             .configMarkdownToolbar()
+            .onTextChange()
             .disableAutocorrection(true)
             .autocapitalization(.none)
             .background(Color(UIColor.yunShuiLan))

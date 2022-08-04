@@ -19,6 +19,8 @@ struct MarkdownEditorView: View {
     @State private var selectedType: MarkdownEditorType = MarkdownEditorType.editor
     @FocusState private var focusedEditor: TextEditorType?
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @State private var forward: Bool = false
+    @State private var backward: Bool = false
     var html: String {
         var parser = MarkdownParser()
         let modifier = Modifier(target: .codeBlocks) { html, markdown in
@@ -87,9 +89,9 @@ extension MarkdownEditorView {
 extension MarkdownEditorView {
     var navItmes: some View {
         HStack(alignment: .center, spacing: 20) {
-            
             Button {
                 self.presentationMode.wrappedValue.dismiss()
+                EditorRecord.shared.cleanCache()
             } label: {
                 Text("完成")
                     .foregroundColor(.green)
@@ -97,17 +99,30 @@ extension MarkdownEditorView {
             }
             
             Button {
-                
+                let backwardText = EditorRecord.shared.backward()
+                contentText = backwardText
             } label: {
-                Image(systemName: "arrow.uturn.backward.circle.fill")
-                    .tint(.gray)
+                if EditorRecord.shared.backwardAvailable == true {
+                    Image(systemName: "arrow.uturn.backward.circle.fill")
+                        .tint(.green)
+                } else {
+                    Image(systemName: "arrow.uturn.backward.circle.fill")
+                        .tint(.gray)
+                }
             }
             
             Button {
-                
+                let forwardText = EditorRecord.shared.forward()
+                contentText = forwardText
             } label: {
-                Image(systemName: "arrow.uturn.forward.circle.fill")
-                    .tint(.gray)
+                if EditorRecord.shared.forwardAvailable == true {
+                    Image(systemName: "arrow.uturn.forward.circle.fill")
+                        .tint(.green)
+                } else {
+                    Image(systemName: "arrow.uturn.forward.circle.fill")
+                        .tint(.gray)
+                }
+               
             }
 
             Button {

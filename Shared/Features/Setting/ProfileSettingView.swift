@@ -16,14 +16,6 @@ struct ProfileSettingView: View {
     var body: some View {
         VStack {
           TextEditor(text: $test)
-                .toolbar {
-                    ToolbarItemGroup(placement: .keyboard) {
-                        Button("Shrug") { test += "\n¯\\_(ツ)_/¯" }
-                        Button("Flip") { test += "\n(╯°□°）╯︵ ┻━┻" }
-                        Spacer()
-                        Button("Hide") { focusedEditor = false }
-                    }
-                }
         }
         .background(.red)
     }

@@ -19,8 +19,10 @@ open class CMToolBarItem: NSObject {
     /// 参考RZTextViewFontStyle的值
     open var items: [NSInteger]?
     
-    /// 可以显示的字符
+    /// markdown按钮显示的文案
     open var textSymbol: String?
+    /// markdown字符
+    open var textStr: String?
     
     /// 初始化类型
     /// - Parameters:
@@ -29,7 +31,7 @@ open class CMToolBarItem: NSObject {
     ///   - selectedImage: 选中时的图片
     ///   - selected: 选中
     ///   - exparams: 附带的额外的参数
-    public init(type: Int, image: UIImage? = nil, selectedImage: UIImage? = nil, textSymbol: String? = nil, selected: Bool = false, exparams: Any? = nil, items: [NSInteger]? = nil) {
+    public init(type: Int, image: UIImage? = nil, selectedImage: UIImage? = nil, textSymbol: String? = nil, textStr: String? = nil, selected: Bool = false, exparams: Any? = nil, items: [NSInteger]? = nil) {
         super.init()
         self.type = type
         self.image = image
@@ -38,6 +40,7 @@ open class CMToolBarItem: NSObject {
         self.exParams = exparams
         self.items = items
         self.textSymbol = textSymbol
+        self.textStr = textStr
     }
     /// 需要显示的图片
     open func displayImage() -> UIImage? {

@@ -14,7 +14,8 @@ import Photos
     case cimage = 0
     case cfont = 1
     case cvideo = 2
-    case clink = 3 
+    case clink = 3
+    case markdown = 4
 }
 
 /// 配置工具条，及相关的属性功能
@@ -79,17 +80,14 @@ open class CMRichTextViewOptions: NSObject {
     open var changeVideoIcon = CMRichTextImage.imageWith(name: "rt_changeVideo")
     /// 键盘上显示的工具条条目
     open lazy var toolbarItems: [CMToolBarItem] = [
-//        .init(type: CMTextViewToolbarItem.cimage.rawValue, image: imageIcon, selectedImage: nil, selected: false, exparams: nil, items: nil),
-//        .init(type: CMTextViewToolbarItem.cfont.rawValue, image: fontIcon, selectedImage: fontHightIcon, selected: false, exparams: nil, items: nil),
-//        .init(type: CMTextViewToolbarItem.cvideo.rawValue, image: videoIcon, selectedImage: nil, selected: false, exparams: nil, items: nil),
-//        .init(type: CMTextViewToolbarItem.clink.rawValue, image: linkIcon, selectedImage: nil, selected: false, exparams: nil, items: nil),
-        .init(type: CMTextViewToolbarItem.cimage.rawValue, image: nil, selectedImage: nil, textSymbol: "H1", selected: false,exparams: nil, items: nil),
-        .init(type: CMTextViewToolbarItem.cimage.rawValue, image: nil, selectedImage: nil, textSymbol: "H2", selected: false,exparams: nil, items: nil),
-        .init(type: CMTextViewToolbarItem.cimage.rawValue, image: nil, selectedImage: nil, textSymbol: "H3", selected: false,exparams: nil, items: nil),
-        .init(type: CMTextViewToolbarItem.cimage.rawValue, image: nil, selectedImage: nil, textSymbol: "```", selected: false,exparams: nil, items: nil),
-        .init(type: CMTextViewToolbarItem.cimage.rawValue, image: nil, selectedImage: nil, textSymbol: "<", selected: false,exparams: nil, items: nil),
-        .init(type: CMTextViewToolbarItem.cimage.rawValue, image: nil, selectedImage: nil, textSymbol: "**", selected: false,exparams: nil, items: nil),
-        .init(type: CMTextViewToolbarItem.cimage.rawValue, image: nil, selectedImage: nil, textSymbol: ">", selected: false,exparams: nil, items: nil),
+        .init(type: CMTextViewToolbarItem.markdown.rawValue, image: nil,textSymbol: "#", textStr: "# "),
+        .init(type: CMTextViewToolbarItem.markdown.rawValue, textSymbol: "代码", textStr: "```"),
+        .init(type: CMTextViewToolbarItem.markdown.rawValue, textSymbol: "-", textStr: "- "),
+        .init(type: CMTextViewToolbarItem.markdown.rawValue, textSymbol: ">", textStr: "> "),
+        .init(type: CMTextViewToolbarItem.markdown.rawValue, textSymbol: "**", textStr: "**"),
+        .init(type: CMTextViewToolbarItem.markdown.rawValue, textSymbol: "***", textStr: "***"),
+        .init(type: CMTextViewToolbarItem.markdown.rawValue, textSymbol: "链接", textStr: "[]()"),
+        .init(type: CMTextViewToolbarItem.markdown.rawValue, textSymbol: "图片", textStr: "![]()"),
     ]
 
     public override init () {
