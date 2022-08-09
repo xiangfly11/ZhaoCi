@@ -14,6 +14,7 @@ enum TextEditorType: Hashable {
 }
 
 struct MarkdownEditorView: View {
+    @State private var selectedPage: Int = 0
     @State private var titleText: String = ""
     @State private var contentText: String = ""
     @State private var selectedType: MarkdownEditorType = MarkdownEditorType.editor
@@ -46,12 +47,21 @@ struct MarkdownEditorView: View {
 
 extension MarkdownEditorView {
     func relayoutSubviews() -> some View {
-        return VStack(alignment: .leading) {
+        return ZStack(alignment: .leading) {
             switch selectedType {
             case .editor:
                 MarkdownTextView(markdownText: $contentText)
             case .preview:
                 iOSPreview(html: html)
+            }
+            HStack {
+                Spacer()
+                VStack(alignment: .center) {
+                    Spacer()
+                    CustomPageControl(selectedPage: $selectedPage)
+                        .frame(width: 150, height: 44)
+                }
+                Spacer()
             }
         }
         .padding(.top)
