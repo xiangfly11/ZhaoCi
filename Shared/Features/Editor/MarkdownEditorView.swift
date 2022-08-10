@@ -17,7 +17,6 @@ struct MarkdownEditorView: View {
     @State private var selectedPage: Int = 0
     @State private var titleText: String = ""
     @State private var contentText: String = ""
-    @State private var selectedType: MarkdownEditorType = MarkdownEditorType.editor
     @FocusState private var focusedEditor: TextEditorType?
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State private var forward: Bool = false
@@ -48,21 +47,23 @@ struct MarkdownEditorView: View {
 extension MarkdownEditorView {
     func relayoutSubviews() -> some View {
         return ZStack(alignment: .leading) {
-            switch selectedType {
-            case .editor:
-                MarkdownTextView(markdownText: $contentText)
-            case .preview:
-                iOSPreview(html: html)
-            }
-            HStack {
-                Spacer()
-                VStack(alignment: .center) {
-                    Spacer()
-                    CustomPageControl(selectedPage: $selectedPage)
-                        .frame(width: 150, height: 44)
+            VStack {
+                if selectedPage == MarkdownEditorType.editor.rawValue {
+                    MarkdownTextView(markdownText: $contentText)
+                } else if selectedPage == MarkdownEditorType.preview.rawValue {
+                    iOSPreview(html: html)
                 }
-                Spacer()
+                HStack {
+                    VStack(alignment: .center) {
+                        Spacer()
+                        CustomPageControl(selectedPage: $selectedPage)
+                            .frame(width: 150, height: 44)
+                            .padding(.bottom, 10)
+                    }
+                }
+                .frame(height: 44)
             }
+            .background(selectedPage == MarkdownEditorType.editor.rawValue ? Color(UIColor.yunShuiLan) : Color(UIColor.yuDuBai))
         }
         .padding(.top)
         .background(.white)
@@ -142,22 +143,22 @@ extension MarkdownEditorView {
                     .tint(.green)
             }
             
-            switch self.selectedType {
-            case .preview:
-                Button {
-                    self.selectedType = .editor
-                } label: {
-                    Image(systemName: "eye.slash")
-                        .tint(.gray)
-                }
-            case .editor:
-                Button {
-                    self.selectedType = .preview
-                } label: {
-                    Image(systemName: "eye")
-                        .tint(.green)
-                }
-            }
+//            switch self.selectedType {
+//            case .preview:
+//                Button {
+//                    self.selectedType = .editor
+//                } label: {
+//                    Image(systemName: "eye.slash")
+//                        .tint(.gray)
+//                }
+//            case .editor:
+//                Button {
+//                    self.selectedType = .preview
+//                } label: {
+//                    Image(systemName: "eye")
+//                        .tint(.green)
+//                }
+//            }
 
             Button {
                 

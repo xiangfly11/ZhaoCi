@@ -23,22 +23,6 @@ struct CustomPageControl: View {
                 RoundedRectangle(cornerRadius: 20)
                     .stroke(Color.gray, lineWidth: 1.5)
                 
-                HStack(alignment: .center, spacing: 0, content: {
-                    ForEach(titleItems) { item in
-                        Button {
-                            let index = titleItems.firstIndex(where: { $0.titleStr == item.titleStr })
-                            selectedPage = index ?? 0
-                        } label: {
-                            Text(item.titleStr)
-                                .frame(width: titleWidth, height: height, alignment: .center)
-                        }
-                        
-                    }
-                })
-                .font(Font.WenKaiMonoBold(size: 16))
-                .foregroundColor(Color(UIColor.chenXiHong))
-                
-                
                 RoundedRectangle(cornerRadius: 20)
                     .fill(Color.black.opacity(0.2))
                 
@@ -46,6 +30,21 @@ struct CustomPageControl: View {
                     .frame(width: titleWidth)
                     .padding(EdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5))
                     .offset(x: indicatorOffsetX)
+                
+                HStack(alignment: .center, spacing: 0, content: {
+                    ForEach(titleItems) { item in
+                        Button {
+                            let index = titleItems.firstIndex(where: { $0.titleStr == item.titleStr })
+                            selectedPage = index ?? 0
+                            print("&&&&&&&&")
+                        } label: {
+                            Text(item.titleStr)
+                                .frame(width: titleWidth, height: height, alignment: .center)
+                        }
+                    }
+                })
+                .font(Font.WenKaiMonoBold(size: 16))
+                .foregroundColor(Color(UIColor.chenXiHong))
             }
         })
     }
