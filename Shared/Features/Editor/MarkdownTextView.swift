@@ -17,7 +17,6 @@ struct MarkdownTextView: View {
             .onTextChange()
             .disableAutocorrection(true)
             .autocapitalization(.none)
-            .background(Color(UIColor.yunShuiLan))
             .focused($focusedEditor, equals: .contentType)
             .onSubmit {
                 focusedEditor = nil

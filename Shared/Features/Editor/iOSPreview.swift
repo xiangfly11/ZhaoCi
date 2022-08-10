@@ -17,7 +17,6 @@ struct iOSPreview: UIViewRepresentable {
     
     func makeUIView(context: Context) -> WKWebView {
         let webview = WKWebView()
-        webview.backgroundColor = UIColor.yuDuBai
         webview.isOpaque = false
         webview.scrollView.backgroundColor = .clear
         return webview
