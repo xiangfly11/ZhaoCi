@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct ZhaoCiApp: App {
+    
+    let persistentContainer = NotePersistentManager.shared.persistentContainer
     var body: some Scene {
         WindowGroup {
-           HomeView()
+            HomeView().environment(\.managedObjectContext, persistentContainer.viewContext)
         }
     }
 }

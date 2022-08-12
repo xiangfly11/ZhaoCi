@@ -19,6 +19,8 @@ struct MarkdownEditorView: View {
     @State private var contentText: String = ""
     @FocusState private var focusedEditor: TextEditorType?
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @Environment(\.managedObjectContext) private var viewContext
+    
     @State private var forward: Bool = false
     @State private var backward: Bool = false
     var html: String {
@@ -49,7 +51,7 @@ extension MarkdownEditorView {
         return ZStack(alignment: .leading) {
             VStack {
                 if selectedPage == MarkdownEditorType.editor.rawValue {
-                    MarkdownTextView(markdownText: $contentText)
+                    MarkdownTextView(markdownText: $contentText, title: $titleText)
                 } else if selectedPage == MarkdownEditorType.preview.rawValue {
                     iOSPreview(html: html)
                 }
@@ -78,7 +80,7 @@ extension MarkdownEditorView {
         case blue
     }
     
-    func setCodeBGBlock(with theme: CodeBlockBGColor = .lightGray, html: String) -> String {
+    private func setCodeBGBlock(with theme: CodeBlockBGColor = .lightGray, html: String) -> String {
         var bgColor = "<p style=\"background-color:rgb(211,211,211);\">"
         switch theme {
         case .lightGray:
@@ -95,12 +97,25 @@ extension MarkdownEditorView {
         let newCodeBlock2 = newCodeBlock1.replacingOccurrences(of: "</code>", with: "</p>")
         return newCodeBlock2
     }
+    
+    private func saveNote() {
+        do {
+            let task = Note(context: viewContext)
+            task.title = titleText
+            task.content = contentText
+            task.createDate = Date()
+            try viewContext.save()
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
 }
 
 extension MarkdownEditorView {
     var navItmes: some View {
         HStack(alignment: .center, spacing: 20) {
             Button {
+                saveNote()
                 self.presentationMode.wrappedValue.dismiss()
                 EditorRecord.shared.cleanCache()
             } label: {

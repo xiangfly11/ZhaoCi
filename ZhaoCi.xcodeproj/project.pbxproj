@@ -21,6 +21,10 @@
 		7A7A4EDE2894F8B800EAB56F /* UIColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7A4EDC2894F8B800EAB56F /* UIColorExt.swift */; };
 		7AB399C22895A130008B047C /* TabClipperShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB399C12895A12F008B047C /* TabClipperShape.swift */; };
 		7AB399C42895A14C008B047C /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB399C32895A14C008B047C /* Tab.swift */; };
+		7AB3CA7828A68D2800F9B444 /* NotePersistentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB3CA7728A68D2800F9B444 /* NotePersistentManager.swift */; };
+		7AB3CA7928A68D2800F9B444 /* NotePersistentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB3CA7728A68D2800F9B444 /* NotePersistentManager.swift */; };
+		7AB3CA7D28A68EA000F9B444 /* NoteDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7AB3CA7B28A68EA000F9B444 /* NoteDataModel.xcdatamodeld */; };
+		7AB3CA7E28A68EA000F9B444 /* NoteDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7AB3CA7B28A68EA000F9B444 /* NoteDataModel.xcdatamodeld */; };
 		7AB413FA2892677C008680C5 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB413F92892677C008680C5 /* HomeViewModel.swift */; };
 		7AB413FB2892677C008680C5 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB413F92892677C008680C5 /* HomeViewModel.swift */; };
 		7AB413FD289268DB008680C5 /* MarkdownEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB413FC289268DB008680C5 /* MarkdownEditorView.swift */; };
@@ -104,6 +108,8 @@
 		7A7A4EDC2894F8B800EAB56F /* UIColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExt.swift; sourceTree = "<group>"; };
 		7AB399C12895A12F008B047C /* TabClipperShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabClipperShape.swift; sourceTree = "<group>"; };
 		7AB399C32895A14C008B047C /* Tab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		7AB3CA7728A68D2800F9B444 /* NotePersistentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotePersistentManager.swift; sourceTree = "<group>"; };
+		7AB3CA7C28A68EA000F9B444 /* NoteDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NoteDataModel.xcdatamodel; sourceTree = "<group>"; };
 		7AB413F92892677C008680C5 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		7AB413FC289268DB008680C5 /* MarkdownEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownEditorView.swift; sourceTree = "<group>"; };
 		7AB414052892787F008680C5 /* iOSPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSPreview.swift; sourceTree = "<group>"; };
@@ -217,6 +223,14 @@
 			path = CustomTabBar;
 			sourceTree = "<group>";
 		};
+		7AB3CA7A28A68D3100F9B444 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				7AB3CA7728A68D2800F9B444 /* NotePersistentManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		7AB41402289277C8008680C5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -303,6 +317,7 @@
 		7AB93624288AF39C003F1842 = {
 			isa = PBXGroup;
 			children = (
+				7AB3CA7B28A68EA000F9B444 /* NoteDataModel.xcdatamodeld */,
 				7AB675142897D25D009F1AE5 /* Podfile */,
 				7AB674FF2897C0AA009F1AE5 /* ZhaoCi--iOS--Info.plist */,
 				7AB93629288AF39C003F1842 /* Shared */,
@@ -318,6 +333,7 @@
 		7AB93629288AF39C003F1842 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				7AB3CA7A28A68D3100F9B444 /* Manager */,
 				7AF67F47289B7087001B8B4E /* Helps */,
 				7AB675002897C144009F1AE5 /* Resource */,
 				7AB399BF2895A0FB008B047C /* CustomView */,
@@ -597,6 +613,7 @@
 				7AB9DCF728912B3400EEBAA3 /* HomeView.swift in Sources */,
 				7AB399C42895A14C008B047C /* Tab.swift in Sources */,
 				7AB9DD092891759000EEBAA3 /* AvatarView.swift in Sources */,
+				7AB3CA7828A68D2800F9B444 /* NotePersistentManager.swift in Sources */,
 				7AB414062892787F008680C5 /* iOSPreview.swift in Sources */,
 				7AF67F4B289B724B001B8B4E /* EditorRecorder.swift in Sources */,
 				7AB47925289A6743000811B0 /* MarkdownInputAccessoryView.swift in Sources */,
@@ -611,6 +628,7 @@
 				7AB399C22895A130008B047C /* TabClipperShape.swift in Sources */,
 				7AB9DCFD28912BAF00EEBAA3 /* NoteListView.swift in Sources */,
 				7AB9DD0028912C0600EEBAA3 /* TabItemView.swift in Sources */,
+				7AB3CA7D28A68EA000F9B444 /* NoteDataModel.xcdatamodeld in Sources */,
 				7A7A4EDD2894F8B800EAB56F /* UIColorExt.swift in Sources */,
 				7AB413FA2892677C008680C5 /* HomeViewModel.swift in Sources */,
 				7AB4792C289A8E7C000811B0 /* CMRichTextViewOptions.swift in Sources */,
@@ -642,10 +660,12 @@
 				7AB4792D289A8E7C000811B0 /* CMRichTextViewOptions.swift in Sources */,
 				7AB47923289A5EBA000811B0 /* HighlightedTextEditorExt.swift in Sources */,
 				7AB9DD042891395200EEBAA3 /* BorderedViewModifiy.swift in Sources */,
+				7AB3CA7E28A68EA000F9B444 /* NoteDataModel.xcdatamodeld in Sources */,
 				7AB9DCFE28912BAF00EEBAA3 /* NoteListView.swift in Sources */,
 				7AB9DD0128912C0600EEBAA3 /* TabItemView.swift in Sources */,
 				7A7A4EDE2894F8B800EAB56F /* UIColorExt.swift in Sources */,
 				7AB47926289A6743000811B0 /* MarkdownInputAccessoryView.swift in Sources */,
+				7AB3CA7928A68D2800F9B444 /* NotePersistentManager.swift in Sources */,
 				7AB413FB2892677C008680C5 /* HomeViewModel.swift in Sources */,
 				7AB413FE289268DB008680C5 /* MarkdownEditorView.swift in Sources */,
 				7AB9DD0728916F8400EEBAA3 /* ProfileSettingView.swift in Sources */,
@@ -1070,6 +1090,19 @@
 			productName = Ink;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		7AB3CA7B28A68EA000F9B444 /* NoteDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7AB3CA7C28A68EA000F9B444 /* NoteDataModel.xcdatamodel */,
+			);
+			currentVersion = 7AB3CA7C28A68EA000F9B444 /* NoteDataModel.xcdatamodel */;
+			path = NoteDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7AB93625288AF39C003F1842 /* Project object */;
 }
