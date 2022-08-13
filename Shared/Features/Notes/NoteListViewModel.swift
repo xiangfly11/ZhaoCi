@@ -7,21 +7,25 @@
 
 import SwiftUI
 
-enum ListType: Int, Identifiable, CaseIterable {
-    var id: Int { self.rawValue }
+enum ListType: Int16, Identifiable, CaseIterable {
+    var id: Int16 { self.rawValue }
     
+    case all = 3
     case notes = 0
     case drafts = 1
     case trash = 2
+    
 
     var listTypeName: String {
         switch self {
         case .notes:
-            return "Notes"
+            return "笔记"
         case .drafts:
-            return "Drafts"
+            return "草稿"
         case .trash:
-            return "Trash"
+            return "垃圾箱"
+        case .all:
+            return "所有"
         }
     }
     

@@ -28,7 +28,7 @@ extension UIFont {
     }
     
     public static func WenKaiMonoBold(size: CGFloat, weight: UIFont.Weight = .bold) -> UIFont {
-        let font = UIFont(name: "LXGWWenKaiMono-Bold", size: size) ?? UIFont.systemFont(ofSize: size) ?? UIFont.systemFont(ofSize: size)
+        let font = UIFont(name: "LXGWWenKaiMono-Bold", size: size) ?? UIFont.systemFont(ofSize: size)
         return font
     }
 }

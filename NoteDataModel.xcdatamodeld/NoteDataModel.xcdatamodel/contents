@@ -4,9 +4,10 @@
         <attribute name="content" attributeType="String" defaultValueString=""/>
         <attribute name="createDate" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="noteId" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="noteType" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="title" attributeType="String" defaultValueString=""/>
     </entity>
     <elements>
-        <element name="Note" positionX="-54" positionY="-9" width="128" height="14"/>
+        <element name="Note" positionX="-54" positionY="-9" width="128" height="104"/>
     </elements>
 </model>

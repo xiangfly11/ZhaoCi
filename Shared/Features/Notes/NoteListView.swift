@@ -10,11 +10,20 @@ import SwiftUI
 struct NoteListView: View {
     @State private var searchedTitle: String = ""
     @FocusState private var searchTitleFocused: Bool
-    @State private var selectedIndex: Int = ListType.notes.rawValue
+    @State private var selectedIndex: Int16 = ListType.all.rawValue
     @FetchRequest(entity: Note.entity(), sortDescriptors: [NSSortDescriptor(key: "createDate", ascending: false)]) private var allNotes: FetchedResults<Note>
     @Environment(\.managedObjectContext) private var noteContext
     
     private var paddingEdgeInset = EdgeInsets(top: 0, leading: 8, bottom: 0, trailing: 8)
+    
+    private var notesType: [ListType] {
+        let allNoteTypes = matchedNotes(type: selectedIndex).map({ $0.noteType })
+        let notesTypes = Array(Set(allNoteTypes)).sorted()
+        let listTypes = notesTypes.map({ ListType(rawValue: $0) ?? .notes })
+        
+        return listTypes
+    }
+    
     var body: some View {
         VStack {
             Picker("", selection: $selectedIndex) {
@@ -27,16 +36,16 @@ struct NoteListView: View {
             .padding(paddingEdgeInset)
             
             List {
-                ForEach(allNotes) { note in
-                    NavigationLink {
-                        let noteModel = NoteModel(titleStr: note.title ?? "", contentStr: note.content ?? "", noteId: note.noteId, createDate: note.createDate ?? Date())
-                        MarkdownEditorView(noteModel: noteModel)
-                    } label: {
-                        Text(note.title ?? "")
+                //特别注意ForEach 会通过模型的Identifiable 协议的id属性去判断不同的模型，因此一定要使用不同的id数字，如果所有的id都返回0，那么就只会有一个模型被重复使用
+                ForEach(notesType) { type in
+                    Section(header: Text(type.listTypeName)) {
+                        ForEach(matchedNotes(type: type.rawValue)) { note in
+                            Text(note.titleStr)
+                        }
+                        .onDelete { indexSet in
+                            deleteNote(atOffsets: indexSet)
+                        }
                     }
-                }
-                .onDelete { indexSet in
-                    deleteNote(atOffsets: indexSet)
                 }
             }
         }
@@ -50,7 +59,9 @@ extension NoteListView {
     
     func deleteNote(atOffsets: IndexSet) {
         for offset in atOffsets {
-            let note = allNotes[offset]
+            let matchedNotes = matchedNotes(type: selectedIndex)
+            let noteModel = matchedNotes[offset]
+            guard let note = allNotes.first(where: { $0.title == noteModel.titleStr }) else { return }
             noteContext.delete(note)
         }
         
@@ -60,6 +71,21 @@ extension NoteListView {
             print("save context failed \(error.localizedDescription)")
         }
         
+    }
+    
+    private func matchedNotes(type: Int16) -> [NoteModel] {
+        let matchNotes = allNotes.map({ NoteModel(titleStr: $0.title ?? "", contentStr: $0.content ?? "", noteId: $0.noteId, createDate: $0.createDate ?? Date(), noteType: $0.noteType)})
+        let noteType = ListType(rawValue: type)
+        switch noteType {
+        case .all, .none:
+            return matchNotes
+        case .notes:
+            return matchNotes.filter({ $0.noteType == ListType.notes.rawValue })
+        case .drafts:
+            return matchNotes.filter({ $0.noteType == ListType.drafts.rawValue })
+        case .trash:
+            return matchNotes.filter({ $0.noteType == ListType.trash.rawValue })
+        }
     }
 }
 

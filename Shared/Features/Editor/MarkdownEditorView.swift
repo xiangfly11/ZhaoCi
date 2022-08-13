@@ -20,6 +20,7 @@ struct MarkdownEditorView: View {
     @FocusState private var focusedEditor: TextEditorType?
     @State private var forward: Bool = false
     @State private var backward: Bool = false
+    @State private var showActionSheet = false
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @Environment(\.managedObjectContext) private var viewContext
@@ -114,19 +115,28 @@ extension MarkdownEditorView {
         return newCodeBlock2
     }
     
-    private func saveNote() {
-        guard titleText.count > 0, contentText.count > 0 else {
-            return
-        }
+    private func finished() {
+        
+    }
+    
+    private func saveNote(noteType: ListType) {
         do {
             let task = Note(context: viewContext)
             task.title = titleText
             task.content = contentText
             task.createDate = Date()
+            task.noteType = noteType.rawValue
+            task.noteId = Int64(Date().timeIntervalSince1970)
             try viewContext.save()
         } catch {
             print(error.localizedDescription)
         }
+        popVC()
+    }
+    
+    private func popVC() {
+        self.presentationMode.wrappedValue.dismiss()
+        EditorRecord.shared.cleanCache()
     }
 }
 
@@ -134,13 +144,41 @@ extension MarkdownEditorView {
     var navItmes: some View {
         HStack(alignment: .center, spacing: 20) {
             Button {
-                saveNote()
-                self.presentationMode.wrappedValue.dismiss()
-                EditorRecord.shared.cleanCache()
+                guard titleText.count > 0, contentText.count > 0 else {
+                    self.popVC()
+                    return
+                }
+                showActionSheet = true
             } label: {
                 Text("完成")
                     .foregroundColor(.green)
                     .font(.WenKaiMonoBold(size: 18))
+            }
+            .actionSheet(isPresented: $showActionSheet) {
+                ActionSheet(title: Text("是否存储笔记"),
+                                   message: Text("请选择笔记存储类型"),
+                                   buttons: [
+                                       .cancel(),
+                                       .default(
+                                           Text("笔记")
+                                            .font(Font.WenKaiMonoBold(size: 18)),
+                                           action: {
+                                               saveNote(noteType: .notes)
+                                           }
+                                       ),
+                                       .default(Text("草稿")
+                                        .font(Font.WenKaiMonoBold(size: 18)), action: {
+                                           saveNote(noteType: .drafts)
+                                       }),
+                                       .default(Text("退出"), action: {
+                                           self.popVC()
+                                       }),
+                                       .destructive(Text("垃圾箱")
+                                        .font(Font.WenKaiMonoBold(size: 18)), action: {
+                                           saveNote(noteType: .trash)
+                                       })
+                                   ]
+                       )
             }
             
             Button {
