@@ -75,7 +75,7 @@ public class EditorRecord {
             currentStep = recordIemList.count - 1
         }
         
-        print("**************** \(text) step:\(currentStep)")
+//        print("**************** \(text) step:\(currentStep)")
     }
     
     
@@ -100,7 +100,7 @@ public class EditorRecord {
         currentStep = tempStep
         let lastItem = recordIemList[currentStep]
         currentOperation = .pop
-        print("&&&&&&&&&&&&& \(lastItem.text) step: \(currentStep)")
+//        print("&&&&&&&&&&&&& \(lastItem.text) step: \(currentStep)")
         return lastItem.text ?? ""
     }
     

@@ -12,24 +12,31 @@ struct NoteListView: View {
     @FocusState private var searchTitleFocused: Bool
     @State private var selectedIndex: Int = ListType.notes.rawValue
     @FetchRequest(entity: Note.entity(), sortDescriptors: [NSSortDescriptor(key: "createDate", ascending: false)]) private var allNotes: FetchedResults<Note>
-
+    @Environment(\.managedObjectContext) private var noteContext
+    
     private var paddingEdgeInset = EdgeInsets(top: 0, leading: 8, bottom: 0, trailing: 8)
     var body: some View {
-        VStack {
-            Picker("", selection: $selectedIndex) {
-                ForEach(ListType.allCases) { type in
-                    Text(type.listTypeName)
-                        .tag(type.rawValue)
+        NavigationView {
+            VStack {
+                Picker("", selection: $selectedIndex) {
+                    ForEach(ListType.allCases) { type in
+                        Text(type.listTypeName)
+                            .tag(type.rawValue)
+                    }
+                }
+                .pickerStyle(SegmentedPickerStyle())
+                .padding(paddingEdgeInset)
+               
+                List {
+                    ForEach(allNotes) { note in
+                        Text(note.title ?? "")
+                    }
+                    .onDelete { indexSet in
+                        deleteNote(atOffsets: indexSet)
+                    }
                 }
             }
-            .pickerStyle(SegmentedPickerStyle())
-            .padding(paddingEdgeInset)
-           
-            List {
-                ForEach(allNotes) { note in
-                    Text(note.title ?? "")
-                }
-            }
+            .navigationBarHidden(true)
         }
     }
 }
@@ -37,6 +44,20 @@ struct NoteListView: View {
 extension NoteListView {
     func searchNote() {
         searchTitleFocused = false
+    }
+    
+    func deleteNote(atOffsets: IndexSet) {
+        for offset in atOffsets {
+            let note = allNotes[offset]
+            noteContext.delete(note)
+        }
+        
+        do {
+            try noteContext.save()
+        } catch {
+            print("save context failed \(error.localizedDescription)")
+        }
+        
     }
 }
 
