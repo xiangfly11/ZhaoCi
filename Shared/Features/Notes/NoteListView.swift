@@ -16,27 +16,29 @@ struct NoteListView: View {
     
     private var paddingEdgeInset = EdgeInsets(top: 0, leading: 8, bottom: 0, trailing: 8)
     var body: some View {
-        NavigationView {
-            VStack {
-                Picker("", selection: $selectedIndex) {
-                    ForEach(ListType.allCases) { type in
-                        Text(type.listTypeName)
-                            .tag(type.rawValue)
-                    }
-                }
-                .pickerStyle(SegmentedPickerStyle())
-                .padding(paddingEdgeInset)
-               
-                List {
-                    ForEach(allNotes) { note in
-                        Text(note.title ?? "")
-                    }
-                    .onDelete { indexSet in
-                        deleteNote(atOffsets: indexSet)
-                    }
+        VStack {
+            Picker("", selection: $selectedIndex) {
+                ForEach(ListType.allCases) { type in
+                    Text(type.listTypeName)
+                        .tag(type.rawValue)
                 }
             }
-            .navigationBarHidden(true)
+            .pickerStyle(SegmentedPickerStyle())
+            .padding(paddingEdgeInset)
+            
+            List {
+                ForEach(allNotes) { note in
+                    NavigationLink {
+                        let noteModel = NoteModel(titleStr: note.title ?? "", contentStr: note.content ?? "", noteId: note.noteId, createDate: note.createDate ?? Date())
+                        MarkdownEditorView(noteModel: noteModel)
+                    } label: {
+                        Text(note.title ?? "")
+                    }
+                }
+                .onDelete { indexSet in
+                    deleteNote(atOffsets: indexSet)
+                }
+            }
         }
     }
 }

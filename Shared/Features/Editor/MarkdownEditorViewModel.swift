@@ -22,3 +22,10 @@ enum MarkdownEditorType: Int, Identifiable, CaseIterable {
         }
     }
 }
+
+struct NoteModel {
+    var titleStr: String
+    var contentStr: String
+    var noteId: Int64
+    var createDate: Date
+}

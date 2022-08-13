@@ -18,11 +18,14 @@ struct MarkdownEditorView: View {
     @State private var titleText: String = ""
     @State private var contentText: String = ""
     @FocusState private var focusedEditor: TextEditorType?
+    @State private var forward: Bool = false
+    @State private var backward: Bool = false
+    
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @Environment(\.managedObjectContext) private var viewContext
     
-    @State private var forward: Bool = false
-    @State private var backward: Bool = false
+    private var noteModel: NoteModel?
+    
     var html: String {
         var parser = MarkdownParser()
         let modifier = Modifier(target: .codeBlocks) { html, markdown in
@@ -44,10 +47,15 @@ struct MarkdownEditorView: View {
     init() {
         UITextView.appearance().backgroundColor = .clear
     }
+    
+    init(noteModel: NoteModel) {
+        self.init()
+        self.noteModel = noteModel
+    }
 }
 
 extension MarkdownEditorView {
-    func relayoutSubviews() -> some View {
+    private func relayoutSubviews() -> some View {
         return ZStack(alignment: .leading) {
             VStack {
                 if selectedPage == MarkdownEditorType.editor.rawValue {
@@ -69,6 +77,14 @@ extension MarkdownEditorView {
         }
         .padding(.top)
         .background(.white)
+        .onAppear {
+            //@State 类型的变量似乎会随着View的出现而被重新创建
+            //因此使用实例变量noteModel在创建MarkdownEditorView的时候存储值
+            //当MarkdownEditorView现实的时候再将值赋值给 @State变量
+            guard let note = noteModel else { return }
+            titleText = note.titleStr
+            contentText = note.contentStr
+        }
     }
 }
 
@@ -99,6 +115,9 @@ extension MarkdownEditorView {
     }
     
     private func saveNote() {
+        guard titleText.count > 0, contentText.count > 0 else {
+            return
+        }
         do {
             let task = Note(context: viewContext)
             task.title = titleText

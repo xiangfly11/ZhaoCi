@@ -16,6 +16,8 @@ struct MarkdownTextView: View {
         VStack {
             TextField("标题", text: $title)
                 .textFieldStyle(.roundedBorder)
+                .padding(EdgeInsets(top: 5, leading: 10, bottom: 5, trailing: 10))
+                .font(Font.WenKaiMonoBold(size: 16))
             HighlightedTextEditor(text: $markdownText, highlightRules: .customMarkdownRules)
                 .configMarkdownToolbar()
                 .onTextChange()
