@@ -43,7 +43,7 @@ struct NoteListView: View {
                             Text(note.titleStr)
                         }
                         .onDelete { indexSet in
-                            deleteNote(atOffsets: indexSet)
+                            deleteNote(type: type, atOffsets: indexSet)
                         }
                     }
                 }
@@ -57,11 +57,11 @@ extension NoteListView {
         searchTitleFocused = false
     }
     
-    func deleteNote(atOffsets: IndexSet) {
+    func deleteNote(type: ListType, atOffsets: IndexSet) {
         for offset in atOffsets {
-            let matchedNotes = matchedNotes(type: selectedIndex)
+            let matchedNotes = matchedNotes(type: type.rawValue)
             let noteModel = matchedNotes[offset]
-            guard let note = allNotes.first(where: { $0.title == noteModel.titleStr }) else { return }
+            guard let note = allNotes.first(where: { $0.noteId == noteModel.noteId }) else { return }
             noteContext.delete(note)
         }
         
