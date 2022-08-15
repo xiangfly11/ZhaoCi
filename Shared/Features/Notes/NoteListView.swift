@@ -40,7 +40,9 @@ struct NoteListView: View {
                 ForEach(notesType) { type in
                     Section(header: Text(type.listTypeName)) {
                         ForEach(matchedNotes(type: type.rawValue)) { note in
-                            Text(note.titleStr)
+                            NavigationLink(destination: MarkdownEditorView(noteModel: note)) {
+                                Text(note.titleStr)
+                            }
                         }
                         .onDelete { indexSet in
                             deleteNote(type: type, atOffsets: indexSet)
