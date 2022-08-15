@@ -24,6 +24,7 @@ struct MarkdownEditorView: View {
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @Environment(\.managedObjectContext) private var viewContext
+    @FetchRequest(entity: Note.entity(), sortDescriptors: [NSSortDescriptor(key: "createDate", ascending: false)]) private var allNotes: FetchedResults<Note>
     
     private var noteModel: NoteModel?
     
@@ -114,20 +115,23 @@ extension MarkdownEditorView {
         let newCodeBlock2 = newCodeBlock1.replacingOccurrences(of: "</code>", with: "</p>")
         return newCodeBlock2
     }
-    
-    private func finished() {
-        
-    }
-    
+
     private func saveNote(noteType: ListType) {
         do {
-            let task = Note(context: viewContext)
-            task.title = titleText
-            task.content = contentText
-            task.createDate = Date()
-            task.noteType = noteType.rawValue
-            task.noteId = Int64(Date().timeIntervalSince1970)
-            try viewContext.save()
+            if let model = noteModel, let note = allNotes.first(where: { $0.noteId == model.noteId }) {
+                note.title = titleText
+                note.content = contentText
+                note.noteType = noteType.rawValue
+                try viewContext.save()
+            } else {
+                let task = Note(context: viewContext)
+                task.title = titleText
+                task.content = contentText
+                task.createDate = Date()
+                task.noteType = noteType.rawValue
+                task.noteId = Int64(Date().timeIntervalSince1970)
+                try viewContext.save()
+            }
         } catch {
             print(error.localizedDescription)
         }
@@ -144,10 +148,6 @@ extension MarkdownEditorView {
     var navItmes: some View {
         HStack(alignment: .center, spacing: 20) {
             Button {
-                guard titleText.count > 0, contentText.count > 0 else {
-                    self.popVC()
-                    return
-                }
                 showActionSheet = true
             } label: {
                 Text("完成")
