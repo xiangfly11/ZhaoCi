@@ -13,6 +13,21 @@ enum TextEditorType: Hashable {
     case contentType
 }
 
+
+
+enum TextEditorOperationType: Int {
+    case finished
+    case backward
+    case forward
+    case share
+    case more
+}
+
+struct ToolOperation: Identifiable {
+    var id = UUID()
+    var operation: TextEditorOperationType
+}
+
 struct MarkdownEditorView: View {
     @State private var selectedPage: Int = 0
     @State private var titleText: String = ""
@@ -21,12 +36,15 @@ struct MarkdownEditorView: View {
     @State private var forward: Bool = false
     @State private var backward: Bool = false
     @State private var showActionSheet = false
+    @State private var currentOperation: TextEditorOperationType?
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @Environment(\.managedObjectContext) private var viewContext
     @FetchRequest(entity: Note.entity(), sortDescriptors: [NSSortDescriptor(key: "createDate", ascending: false)]) private var allNotes: FetchedResults<Note>
     
     private var noteModel: NoteModel?
+    
+    private var toolOperations: [ToolOperation] = [ToolOperation(operation: .finished), ToolOperation(operation: .backward), ToolOperation(operation: .forward), ToolOperation(operation: .share), ToolOperation(operation: .more)]
     
     var html: String {
         var parser = MarkdownParser()
@@ -150,9 +168,8 @@ extension MarkdownEditorView {
             Button {
                 showActionSheet = true
             } label: {
-                Text("完成")
-                    .foregroundColor(.green)
-                    .font(.WenKaiMonoBold(size: 18))
+                Image(systemName: "pencil.tip.crop.circle.badge.plus")
+                    .tint(.green)
             }
             .actionSheet(isPresented: $showActionSheet) {
                 ActionSheet(title: Text("是否存储笔记"),
@@ -215,29 +232,11 @@ extension MarkdownEditorView {
                     .tint(.green)
             }
             
-//            switch self.selectedType {
-//            case .preview:
-//                Button {
-//                    self.selectedType = .editor
-//                } label: {
-//                    Image(systemName: "eye.slash")
-//                        .tint(.gray)
-//                }
-//            case .editor:
-//                Button {
-//                    self.selectedType = .preview
-//                } label: {
-//                    Image(systemName: "eye")
-//                        .tint(.green)
-//                }
-//            }
-
             Button {
                 
             } label: {
-                Text("更多")
-                    .foregroundColor(.green)
-                    .font(.WenKaiMonoBold(size: 18))
+                Image(systemName: "circle.grid.3x3.circle")
+                    .tint(.green)
             }
 
         }
