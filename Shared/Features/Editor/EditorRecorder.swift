@@ -79,13 +79,17 @@ public class EditorRecord {
     }
     
     
-    func popContent(trackType: TrackOperationType) -> String {
+    func popContent(trackType: TrackOperationType) -> String? {
         var tempStep = currentStep
         switch trackType {
         case .forward:
             tempStep += 1
         case .backward:
             tempStep -= 1
+        }
+        
+        guard recordIemList.count > 0 else {
+            return nil
         }
         
         guard tempStep >= 0  else {
@@ -105,11 +109,11 @@ public class EditorRecord {
     }
     
     
-    public func forward() -> String {
+    public func forward() -> String? {
         return popContent(trackType: .forward)
     }
     
-    public func backward() -> String {
+    public func backward() -> String? {
         return popContent(trackType: .backward)
     }
     

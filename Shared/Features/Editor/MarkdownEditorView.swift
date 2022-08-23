@@ -175,9 +175,11 @@ extension MarkdownEditorView {
         case .finished:
             showActionSheet = true
         case .backward:
-            contentText = EditorRecord.shared.backward()
+            guard let popText = EditorRecord.shared.backward() else { return }
+            contentText = popText
         case .forward:
-            contentText = EditorRecord.shared.forward()
+            guard let popText = EditorRecord.shared.forward() else { return }
+            contentText = popText
         case .share:
             shareNote()
         case .more:
