@@ -26,6 +26,7 @@ enum TextEditorOperationType: Int {
 struct ToolOperation: Identifiable {
     var id = UUID()
     var operation: TextEditorOperationType
+    var imgName: String
 }
 
 struct MarkdownEditorView: View {
@@ -44,7 +45,7 @@ struct MarkdownEditorView: View {
     
     private var noteModel: NoteModel?
     
-    private var toolOperations: [ToolOperation] = [ToolOperation(operation: .finished), ToolOperation(operation: .backward), ToolOperation(operation: .forward), ToolOperation(operation: .share), ToolOperation(operation: .more)]
+    private var toolOperations: [ToolOperation] = [ToolOperation(operation: .finished, imgName: "pencil.tip.crop.circle.badge.plus"), ToolOperation(operation: .backward, imgName: "arrow.uturn.backward.circle.fill"), ToolOperation(operation: .forward, imgName:"arrow.uturn.forward.circle.fill"), ToolOperation(operation: .share, imgName: "square.and.arrow.up"), ToolOperation(operation: .more, imgName: "circle.grid.3x3.circle")]
     
     var html: String {
         var parser = MarkdownParser()
@@ -160,87 +161,76 @@ extension MarkdownEditorView {
         self.presentationMode.wrappedValue.dismiss()
         EditorRecord.shared.cleanCache()
     }
+    
+    private func shareNote() {
+        
+    }
+    
+    private func moreOptions() {
+        
+    }
+    
+    private func doOperation() {
+        switch currentOperation {
+        case .finished:
+            showActionSheet = true
+        case .backward:
+            contentText = EditorRecord.shared.backward()
+        case .forward:
+            contentText = EditorRecord.shared.forward()
+        case .share:
+            shareNote()
+        case .more:
+            moreOptions()
+        case .none:
+            break
+        }
+    }
 }
 
 extension MarkdownEditorView {
     var navItmes: some View {
         HStack(alignment: .center, spacing: 20) {
-            Button {
-                showActionSheet = true
-            } label: {
-                Image(systemName: "pencil.tip.crop.circle.badge.plus")
-                    .tint(.green)
+            ForEach(toolOperations) { toolOperation in
+                buildNavItem(toolOperation: toolOperation)
             }
-            .actionSheet(isPresented: $showActionSheet) {
-                ActionSheet(title: Text("是否存储笔记"),
-                                   message: Text("请选择笔记存储类型"),
-                                   buttons: [
-                                       .cancel(),
-                                       .default(
-                                           Text("笔记")
-                                            .font(Font.WenKaiMonoBold(size: 18)),
-                                           action: {
-                                               saveNote(noteType: .notes)
-                                           }
-                                       ),
-                                       .default(Text("草稿")
-                                        .font(Font.WenKaiMonoBold(size: 18)), action: {
-                                           saveNote(noteType: .drafts)
-                                       }),
-                                       .default(Text("退出"), action: {
-                                           self.popVC()
-                                       }),
-                                       .destructive(Text("垃圾箱")
-                                        .font(Font.WenKaiMonoBold(size: 18)), action: {
-                                           saveNote(noteType: .trash)
-                                       })
-                                   ]
-                       )
-            }
-            
-            Button {
-                let backwardText = EditorRecord.shared.backward()
-                contentText = backwardText
-            } label: {
-                if EditorRecord.shared.backwardAvailable == true {
-                    Image(systemName: "arrow.uturn.backward.circle.fill")
-                        .tint(.green)
-                } else {
-                    Image(systemName: "arrow.uturn.backward.circle.fill")
-                        .tint(.gray)
-                }
-            }
-            
-            Button {
-                let forwardText = EditorRecord.shared.forward()
-                contentText = forwardText
-            } label: {
-                if EditorRecord.shared.forwardAvailable == true {
-                    Image(systemName: "arrow.uturn.forward.circle.fill")
-                        .tint(.green)
-                } else {
-                    Image(systemName: "arrow.uturn.forward.circle.fill")
-                        .tint(.gray)
-                }
-               
-            }
-
-            Button {
-                
-            } label: {
-               Image(systemName: "square.and.arrow.up")
-                    .tint(.green)
-            }
-            
-            Button {
-                
-            } label: {
-                Image(systemName: "circle.grid.3x3.circle")
-                    .tint(.green)
-            }
-
         }
         .padding(EdgeInsets(top: 0, leading: 25, bottom: 0, trailing: 25))
+    }
+    
+    func buildNavItem(toolOperation: ToolOperation) -> some View {
+        return Button {
+            currentOperation = toolOperation.operation
+            doOperation()
+        } label: {
+            Image(systemName: toolOperation.imgName)
+                .tint(.green)
+        }.actionSheet(isPresented: $showActionSheet) {
+            ActionSheet(title: Text("是否存储笔记"),
+                               message: Text("请选择笔记存储类型"),
+                               buttons: [
+                                   .cancel(),
+                                   .default(
+                                       Text("笔记")
+                                        .font(Font.WenKaiMonoBold(size: 18)),
+                                       action: {
+                                           saveNote(noteType: .notes)
+                                       }
+                                   ),
+                                   .default(Text("草稿")
+                                    .font(Font.WenKaiMonoBold(size: 18)), action: {
+                                       saveNote(noteType: .drafts)
+                                   }),
+                                   .default(Text("退出"), action: {
+                                       self.popVC()
+                                   }),
+                                   .destructive(Text("垃圾箱")
+                                    .font(Font.WenKaiMonoBold(size: 18)), action: {
+                                       saveNote(noteType: .trash)
+                                   })
+                               ]
+                   )
+        }
     }
 }
 
