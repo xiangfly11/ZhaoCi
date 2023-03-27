@@ -38,7 +38,9 @@ struct NoteListView: View {
             List {
                 //特别注意ForEach 会通过模型的Identifiable 协议的id属性去判断不同的模型，因此一定要使用不同的id数字，如果所有的id都返回0，那么就只会有一个模型被重复使用
                 ForEach(notesType) { type in
-                    Section(header: Text(type.listTypeName)) {
+                    Section(header:
+                                Text(type.listTypeName)
+                        .font(Font.system(size: 17))) {
                         ForEach(matchedNotes(type: type.rawValue)) { note in
                             NavigationLink(destination: MarkdownEditorView(noteModel: note)) {
                                 Text(note.titleStr)
