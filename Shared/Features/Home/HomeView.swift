@@ -64,6 +64,7 @@ struct HomeView: View {
                                 .font(.WenKaiMonoBold(size: 12))
                                 .lineLimit(1)
                         }
+                        .offset(y: 20)
                     } else {
                         NavigationLink(destination: MarkdownEditorView()) {
                             Image(systemName: "plus")
@@ -74,7 +75,7 @@ struct HomeView: View {
                                 .background(Circle()
                                     .fill(LinearGradient(gradient: Gradient(colors: [Color("FloatingButtonTopLeft"), Color("FloatingButtonBottomRight")]), startPoint: .topLeading, endPoint: .bottomTrailing))
                                     .shadow(color: Color.accentColor.opacity(0.3), radius: 10, x: 8, y: 16))
-                                .offset(y: -35)
+                                .offset(y: -10)
                         }
                     }
                 }
@@ -83,9 +84,10 @@ struct HomeView: View {
                 Spacer()
             }
         }
-        .frame(height: 88, alignment: .top)
+        .frame(height: 130, alignment: .top)
         .padding(.horizontal, 8)
         .padding(.top, 14)
+//        .background(Color.red)
         
     }
 }
