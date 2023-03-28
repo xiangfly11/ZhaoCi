@@ -30,7 +30,7 @@ struct ToolOperation: Identifiable {
 }
 
 struct MarkdownEditorView: View {
-    @State private var selectedPage: Int = 1
+    @State private var selectedPage: Int = 0
     @State private var titleText: String = ""
     @State private var contentText: String = ""
     @FocusState private var focusedEditor: TextEditorType?
@@ -72,6 +72,7 @@ struct MarkdownEditorView: View {
     init(noteModel: NoteModel) {
         self.init()
         self.noteModel = noteModel
+        self.selectedPage = 1
     }
 }
 
