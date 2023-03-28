@@ -80,14 +80,18 @@ open class CMRichTextViewOptions: NSObject {
     open var changeVideoIcon = CMRichTextImage.imageWith(name: "rt_changeVideo")
     /// 键盘上显示的工具条条目
     open lazy var toolbarItems: [CMToolBarItem] = [
-        .init(type: CMTextViewToolbarItem.markdown.rawValue, image: nil,textSymbol: "#", textStr: "# "),
-        .init(type: CMTextViewToolbarItem.markdown.rawValue, textSymbol: "代码", textStr: "```"),
-        .init(type: CMTextViewToolbarItem.markdown.rawValue, textSymbol: "-", textStr: "- "),
-        .init(type: CMTextViewToolbarItem.markdown.rawValue, textSymbol: ">", textStr: "> "),
-        .init(type: CMTextViewToolbarItem.markdown.rawValue, textSymbol: "**", textStr: "**"),
-        .init(type: CMTextViewToolbarItem.markdown.rawValue, textSymbol: "***", textStr: "***"),
-        .init(type: CMTextViewToolbarItem.markdown.rawValue, textSymbol: "链接", textStr: "[]()"),
-        .init(type: CMTextViewToolbarItem.markdown.rawValue, textSymbol: "图片", textStr: "![]()"),
+        .init(type: CMTextViewToolbarItem.markdown.rawValue,image: UIImage(systemName: "textformat.size"), textSymbol: "Headings", textStr: "# "),
+        .init(type: CMTextViewToolbarItem.markdown.rawValue,image: UIImage(systemName: "list.bullet"), textSymbol: "Lists", textStr: "# "),
+        .init(type: CMTextViewToolbarItem.markdown.rawValue,image: UIImage(systemName: "textformat.abc"), textSymbol: "Text Styles", textStr: "# "),
+        .init(type: CMTextViewToolbarItem.markdown.rawValue,image: UIImage(systemName: "text.quote"), textSymbol: "Quotes", textStr: "# "),
+        .init(type: CMTextViewToolbarItem.markdown.rawValue,image: UIImage(systemName: "curlybraces"), textSymbol: "Code", textStr: "# "),
+        .init(type: CMTextViewToolbarItem.markdown.rawValue,image: UIImage(systemName: "photo"), textSymbol: "Images", textStr: "# "),
+        .init(type: CMTextViewToolbarItem.markdown.rawValue,image: UIImage(systemName: "tablecells"), textSymbol: "Tables", textStr: "# "),
+        .init(type: CMTextViewToolbarItem.markdown.rawValue,image: UIImage(systemName: "circle.grid.cross.left.filled"), textSymbol: "Syntax Highlighting", textStr: "# "),
+        .init(type: CMTextViewToolbarItem.markdown.rawValue,image: UIImage(systemName: "powerplug"), textSymbol: "Image Providers", textStr: "# "),
+        .init(type: CMTextViewToolbarItem.markdown.rawValue,image: UIImage(systemName: "character.cursor.ibeam"), textSymbol: "Dingus", textStr: "# "),
+        .init(type: CMTextViewToolbarItem.markdown.rawValue,image: UIImage(systemName: "doc.text"), textSymbol: "Repository README", textStr: "# "),
+        .init(type: CMTextViewToolbarItem.markdown.rawValue,image: UIImage(systemName: "scroll"), textSymbol: "Lazy Loading", textStr: "# "),
     ]
 
     public override init () {

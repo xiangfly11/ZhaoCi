@@ -33,7 +33,7 @@ class MarkdownInputAccessoryView: UIView {
         layout.scrollDirection = .horizontal
         layout.minimumLineSpacing = 1
         layout.minimumInteritemSpacing = 1
-        let itemWidth = kScreenWidth / 8
+        let itemWidth = kScreenWidth / 6
         layout.itemSize = .init(width: itemWidth, height: 44)
         layout.sectionInset = .init(top: 0, left: 0, bottom: 0, right: 0)
         collectionView.setCollectionViewLayout(layout, animated: false)
@@ -81,6 +81,8 @@ extension MarkdownInputAccessoryView: UICollectionViewDataSource, UICollectionVi
         }
         guard let cell: RZRichTextAccessoryViewTextCell = collectionView.dequeueReusableCell(withReuseIdentifier: "RZRichTextAccessoryViewTextCell", for: indexPath) as? RZRichTextAccessoryViewTextCell else { return .init(frame: .zero) }
         cell.label.text = item.textSymbol
+        cell.imgView.image = item.image
+        cell.imgView.tintColor = UIColor.colorFromHex(hexValue: 0x008cff)
         return cell
     }
     open func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -110,16 +112,31 @@ public class RZRichTextAccessoryViewCell: UICollectionViewCell {
 public class RZRichTextAccessoryViewTextCell: UICollectionViewCell {
     public lazy var label: UILabel = {
         let label = UILabel()
-        label.font = UIFont.WenKaiMonoBold(size: 16)
+        label.font = UIFont.WenKaiMonoBold(size: 10)
         label.textAlignment = .center
+        label.textColor = .black
         return label
     }()
+    
+    public lazy var imgView: UIImageView = {
+        let imgView = UIImageView()
+        return imgView
+    }()
+    
     public override init(frame: CGRect) {
         super.init(frame: frame)
         self.contentView.addSubview(label)
+        self.contentView.addSubview(imgView)
         self.contentView.backgroundColor = .white
+        
         label.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
+            make.top.leading.trailing.equalToSuperview()
+        }
+        
+        imgView.snp.makeConstraints { make in
+            make.top.equalTo(label.snp.bottom)
+            make.centerX.equalToSuperview()
+            make.size.equalTo(22)
         }
     }
     
