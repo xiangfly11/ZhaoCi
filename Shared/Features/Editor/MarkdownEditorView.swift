@@ -30,7 +30,7 @@ struct ToolOperation: Identifiable {
 }
 
 struct MarkdownEditorView: View {
-    @State private var selectedPage: Int = 0
+    @State private var selectedPage: Int = 1
     @State private var titleText: String = ""
     @State private var contentText: String = ""
     @FocusState private var focusedEditor: TextEditorType?
@@ -82,7 +82,7 @@ extension MarkdownEditorView {
                 if selectedPage == MarkdownEditorType.editor.rawValue {
                     MarkdownTextView(markdownText: $contentText, title: $titleText)
                 } else if selectedPage == MarkdownEditorType.preview.rawValue {
-                    iOSPreview(html: html)
+                    iOSPreview(title: titleText, content: contentText)
                 }
                 HStack {
                     VStack(alignment: .center) {
@@ -94,10 +94,8 @@ extension MarkdownEditorView {
                 }
                 .frame(height: 44)
             }
-            .background(selectedPage == MarkdownEditorType.editor.rawValue ? Color(UIColor.yunShuiLan) : Color(UIColor.yuDuBai))
         }
         .padding(.top)
-        .background(.white)
         .onAppear {
             //@State 类型的变量似乎会随着View的出现而被重新创建
             //因此使用实例变量noteModel在创建MarkdownEditorView的时候存储值

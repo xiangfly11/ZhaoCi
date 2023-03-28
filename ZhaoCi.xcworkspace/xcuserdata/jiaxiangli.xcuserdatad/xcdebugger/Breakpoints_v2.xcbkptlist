@@ -18,6 +18,38 @@
             endingLineNumber = "128"
             landmarkName = "onSelectionChange(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "98B5CD1B-FD62-43B1-A542-D1DBDBDAAE1C - b98b013b6e5b78c2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HighlightedTextEditor.HighlightedTextEditor.onSelectionChange((__C._NSRange) -&gt; ()) -&gt; HighlightedTextEditor.HighlightedTextEditor"
+                  moduleName = "HighlightedTextEditor"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jiaxiangli/WorkingStation/ZhaoCi/Pods/HighlightedTextEditor/Sources/HighlightedTextEditor/HighlightedTextEditor.UIKit.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "128"
+                  endingLineNumber = "128"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "98B5CD1B-FD62-43B1-A542-D1DBDBDAAE1C - b98b013b6e5b78c2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HighlightedTextEditor.HighlightedTextEditor.onSelectionChange((__C._NSRange) -&gt; ()) -&gt; HighlightedTextEditor.HighlightedTextEditor"
+                  moduleName = "HighlightedTextEditor"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jiaxiangli/WorkingStation/ZhaoCi/Pods/HighlightedTextEditor/Sources/HighlightedTextEditor/HighlightedTextEditor.UIKit.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "128"
+                  endingLineNumber = "128"
+                  offsetFromSymbolStart = "150">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -65,38 +97,6 @@
                   offsetFromSymbolStart = "0">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "BB1633A4-16B4-4500-968B-CB8C53C050C3"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Shared/Features/Editor/HighlightedTextEditorExt.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "onTextChange()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D48077AB-C686-4579-B93B-C57FB4F1B00F"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Shared/Features/Editor/HighlightedTextEditorExt.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "configMarkdownToolbar()"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

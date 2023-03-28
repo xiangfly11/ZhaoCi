@@ -6,24 +6,25 @@
 //
 
 import SwiftUI
-import WebKit
+import MarkdownUI
 
-struct iOSPreview: UIViewRepresentable {
-    var html: String
-    
-    init(html: String) {
-        self.html = html
+struct iOSPreview: View {
+    var title: String
+    var content: String
+    var body: some View {
+       ContentPreviewView(content: {
+           Markdown {
+             Heading(.level2) {
+               title
+             }
+             content
+           }
+       })
     }
-    
-    func makeUIView(context: Context) -> WKWebView {
-        let webview = WKWebView()
-        webview.isOpaque = false
-        webview.scrollView.backgroundColor = .clear
-        return webview
-    }
-    
-    func updateUIView(_ uiView: WKWebView, context: Context) {
-        let viewportStr = "<header><meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no'><style>img{max-width:100%}</style></header>"
-        uiView.loadHTMLString(viewportStr.appending(html), baseURL: nil)
+}
+
+struct iOSPreview_Previews: PreviewProvider {
+    static var previews: some View {
+        iOSPreview(title: "Hello", content: "## hello ##")
     }
 }

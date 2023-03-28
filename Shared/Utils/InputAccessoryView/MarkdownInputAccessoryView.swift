@@ -26,6 +26,8 @@ class MarkdownInputAccessoryView: UIView {
         super.init(frame: frame)
         self.backgroundColor = .white
         self.addSubview(collectionView)
+        self.layer.borderColor = UIColor.black.withAlphaComponent(0.4).cgColor
+        self.layer.borderWidth = 1.0
     
         let layout = UICollectionViewFlowLayout.init()
         layout.scrollDirection = .horizontal
@@ -115,7 +117,7 @@ public class RZRichTextAccessoryViewTextCell: UICollectionViewCell {
     public override init(frame: CGRect) {
         super.init(frame: frame)
         self.contentView.addSubview(label)
-        self.contentView.backgroundColor = .lightGray.withAlphaComponent(0.6)
+        self.contentView.backgroundColor = .white
         label.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }

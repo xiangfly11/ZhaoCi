@@ -11,6 +11,8 @@
 		7A1DD1B22899104F00C3C7A2 /* MarkdownTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DD1B02899104F00C3C7A2 /* MarkdownTextView.swift */; };
 		7A1DD1BA289A1EB100C3C7A2 /* CustomMarkdownRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DD1B9289A1EB100C3C7A2 /* CustomMarkdownRules.swift */; };
 		7A1DD1BB289A1EB100C3C7A2 /* CustomMarkdownRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DD1B9289A1EB100C3C7A2 /* CustomMarkdownRules.swift */; };
+		7A2A209729D19E920001299F /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 7A2A209629D19E920001299F /* MarkdownUI */; };
+		7A2A209929D19E9B0001299F /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 7A2A209829D19E9B0001299F /* MarkdownUI */; };
 		7A72805628922C7F00CF96E3 /* ProfileSettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A72805528922C7F00CF96E3 /* ProfileSettingViewModel.swift */; };
 		7A72805728922C7F00CF96E3 /* ProfileSettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A72805528922C7F00CF96E3 /* ProfileSettingViewModel.swift */; };
 		7A7280592892380500CF96E3 /* NoteListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7280582892380500CF96E3 /* NoteListViewModel.swift */; };
@@ -76,6 +78,8 @@
 		7AB9DD0728916F8400EEBAA3 /* ProfileSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB9DD0528916F8400EEBAA3 /* ProfileSettingView.swift */; };
 		7AB9DD092891759000EEBAA3 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB9DD082891759000EEBAA3 /* AvatarView.swift */; };
 		7AB9DD0A2891759000EEBAA3 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB9DD082891759000EEBAA3 /* AvatarView.swift */; };
+		7AE5135B29D1DCE600FB7B09 /* ContentPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE5135A29D1DCE600FB7B09 /* ContentPreviewView.swift */; };
+		7AE5135C29D1DCE700FB7B09 /* ContentPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE5135A29D1DCE600FB7B09 /* ContentPreviewView.swift */; };
 		7AF67F49289B70A0001B8B4E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF67F48289B70A0001B8B4E /* Constants.swift */; };
 		7AF67F4B289B724B001B8B4E /* EditorRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF67F4A289B724B001B8B4E /* EditorRecorder.swift */; };
 		98FBE1AB27F3BD10E2195069 /* Pods_ZhaoCi__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9353338DCC2C3535A43F5069 /* Pods_ZhaoCi__iOS_.framework */; };
@@ -143,6 +147,8 @@
 		7AB9DD022891395200EEBAA3 /* BorderedViewModifiy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedViewModifiy.swift; sourceTree = "<group>"; };
 		7AB9DD0528916F8400EEBAA3 /* ProfileSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingView.swift; sourceTree = "<group>"; };
 		7AB9DD082891759000EEBAA3 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		7ABFE0C729D28C9C00B038E6 /* swift-markdown-ui-main */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "swift-markdown-ui-main"; sourceTree = "<group>"; };
+		7AE5135A29D1DCE600FB7B09 /* ContentPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPreviewView.swift; sourceTree = "<group>"; };
 		7AF67F48289B70A0001B8B4E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7AF67F4A289B724B001B8B4E /* EditorRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorRecorder.swift; sourceTree = "<group>"; };
 		8C926663E80CE059E74C3F77 /* Pods-ZhaoCi (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhaoCi (iOS).debug.xcconfig"; path = "Target Support Files/Pods-ZhaoCi (iOS)/Pods-ZhaoCi (iOS).debug.xcconfig"; sourceTree = "<group>"; };
@@ -154,6 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A2A209729D19E920001299F /* MarkdownUI in Frameworks */,
 				7AB41401289277A7008680C5 /* Ink in Frameworks */,
 				98FBE1AB27F3BD10E2195069 /* Pods_ZhaoCi__iOS_.framework in Frameworks */,
 			);
@@ -164,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AB41404289277C8008680C5 /* Ink in Frameworks */,
+				7A2A209929D19E9B0001299F /* MarkdownUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +287,7 @@
 				7A1DD1B02899104F00C3C7A2 /* MarkdownTextView.swift */,
 				7AF67F4A289B724B001B8B4E /* EditorRecorder.swift */,
 				7AB47921289A5EBA000811B0 /* HighlightedTextEditorExt.swift */,
+				7AE5135A29D1DCE600FB7B09 /* ContentPreviewView.swift */,
 			);
 			path = Editor;
 			sourceTree = "<group>";
@@ -317,6 +326,7 @@
 		7AB93624288AF39C003F1842 = {
 			isa = PBXGroup;
 			children = (
+				7ABFE0C629D28C9B00B038E6 /* Packages */,
 				7AB3CA7B28A68EA000F9B444 /* NoteDataModel.xcdatamodeld */,
 				7AB675142897D25D009F1AE5 /* Podfile */,
 				7AB674FF2897C0AA009F1AE5 /* ZhaoCi--iOS--Info.plist */,
@@ -382,6 +392,14 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
+		7ABFE0C629D28C9B00B038E6 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				7ABFE0C729D28C9C00B038E6 /* swift-markdown-ui-main */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 		7AF67F47289B7087001B8B4E /* Helps */ = {
 			isa = PBXGroup;
 			children = (
@@ -410,6 +428,7 @@
 			name = "ZhaoCi (iOS)";
 			packageProductDependencies = (
 				7AB41400289277A7008680C5 /* Ink */,
+				7A2A209629D19E920001299F /* MarkdownUI */,
 			);
 			productName = "ZhaoCi (iOS)";
 			productReference = 7AB93631288AF3A1003F1842 /* 朝辞.app */;
@@ -430,6 +449,7 @@
 			name = "ZhaoCi (macOS)";
 			packageProductDependencies = (
 				7AB41403289277C8008680C5 /* Ink */,
+				7A2A209829D19E9B0001299F /* MarkdownUI */,
 			);
 			productName = "ZhaoCi (macOS)";
 			productReference = 7AB93637288AF3A1003F1842 /* ZhaoCi.app */;
@@ -619,6 +639,7 @@
 				7AB47925289A6743000811B0 /* MarkdownInputAccessoryView.swift in Sources */,
 				7AB47922289A5EBA000811B0 /* HighlightedTextEditorExt.swift in Sources */,
 				7AF67F49289B70A0001B8B4E /* Constants.swift in Sources */,
+				7AE5135B29D1DCE600FB7B09 /* ContentPreviewView.swift in Sources */,
 				7AB9DCFA28912B9500EEBAA3 /* SettingsView.swift in Sources */,
 				7A1DD1BA289A1EB100C3C7A2 /* CustomMarkdownRules.swift in Sources */,
 				7AB50FB728A23CEB00DB06DC /* CustomPageControl.swift in Sources */,
@@ -647,6 +668,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AB4792A289A67FA000811B0 /* InputToolBarItem.swift in Sources */,
+				7AE5135C29D1DCE700FB7B09 /* ContentPreviewView.swift in Sources */,
 				7AB675032897C170009F1AE5 /* FontExt.swift in Sources */,
 				7AB9DCF828912B3400EEBAA3 /* HomeView.swift in Sources */,
 				7AB47930289A8EEA000811B0 /* CMToolBarItem.swift in Sources */,
@@ -1079,6 +1101,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		7A2A209629D19E920001299F /* MarkdownUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MarkdownUI;
+		};
+		7A2A209829D19E9B0001299F /* MarkdownUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MarkdownUI;
+		};
 		7AB41400289277A7008680C5 /* Ink */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7AB413FF289277A7008680C5 /* XCRemoteSwiftPackageReference "ink" */;

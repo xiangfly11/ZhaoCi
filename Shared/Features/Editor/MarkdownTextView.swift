@@ -29,6 +29,7 @@ struct MarkdownTextView: View {
                 }
             .submitLabel(.done)
         }
+        .background(Color(uiColor: UIColor.clear))
     }
 }
 
